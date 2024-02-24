@@ -24,3 +24,25 @@ $(".carousel-control-next").on("click", function () {
       );
     }
   });
+
+
+  /////////
+  function mostrarInformacion(numero) {
+    // Ocultar todas las informaciones de personas
+    document.querySelectorAll('.person-info').forEach(info => {
+      info.style.display = 'none';
+    });
+    // Mostrar la información de la persona seleccionada
+    document.getElementById('info-' + numero).style.display = 'flex';
+    
+    // Eliminar la clase 'active' de todas las imágenes
+    document.querySelectorAll('.slider img').forEach(img => {
+      img.classList.remove('active');
+    });
+    // Agregar la clase 'active' a la imagen seleccionada
+    document.querySelector('.slider img:nth-child(' + numero + ')').classList.add('active');
+  }
+
+  function irAEnlace(url) {
+    window.location.href = url;
+  }

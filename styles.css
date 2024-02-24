@@ -132,3 +132,44 @@ color: white;
     width: 80%;
     margin: auto;
 }
+
+
+/*********************/
+.slider-container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+  }
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  .slider img {
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 10px;
+    width: 60px; /* Tamaño de las imágenes de perfil */
+    filter: grayscale(100%); /* Imágenes en escala de grises */
+    transition: all 0.3s ease;
+  }
+  .slider img.active {
+    border: 2px solid #00bcd4; /* Borde celeste alrededor de la imagen activa */
+    filter: grayscale(0%); /* Imagen en color */
+  }
+  .person-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .person-info img {
+    max-width: 100px;
+    margin-top: 10px;
+  }
+  @media only screen and (max-width: 600px) {
+    .person-info {
+      flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+    }
+  }
