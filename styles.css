@@ -1,0 +1,97 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*********************/
+/** section nosotros**/
+/*********************/
+.section-about{
+display: block;
+padding: 50px 0;
+text-align: center;
+width: 100%;
+
+margin: auto;
+
+background-color: #EDEDED;
+}
+
+.title_primary{
+    margin: 10px 0;
+}
+.title_primary h3{
+    padding: 10px 0;
+}
+.title_primary_black {
+    color: white;
+    background-color: black;
+    padding: 10px 0;
+    margin: 0 200px ;
+}
+
+.descrip-about{
+    margin: 50px 200px;
+    padding: 10px 0;
+}
+
+.container-social-icons{
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px;
+    padding: 10px 0;
+
+}
+
+
+.container-social-icons a{
+  margin: 0;
+}
+
+.icon{
+    width: 50%;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+.icon:hover{
+    filter: none;
+    -webkit-filter: grayscale(0);
+    cursor: pointer;
+}
+
+/*********************/
+/*** section courses**/
+/*********************/
+.section-courses{
+    display: block;
+    padding: 50px 0;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    background-color: black;
+    color: white;
+
+    }
+
+.title_primary_white{
+    color:black;
+    background-color: white;
+    padding: 10px 0;
+    margin: 0 200px ;
+}
+
+
+/*** botons**/
+
+.btn_outline_sky{
+    border-width: 3px !important;
+    padding: 10px 40px;
+    background-color: none;
+    border-color: #08FFDE;
+    color: #08FFDE;
+}
+
