@@ -134,7 +134,7 @@ color: white;
 }
 
 
-/*********************/
+/*********slider vanilla alumnos************/
 .slider-container {
     width: 80%;
     margin: 0 auto;
@@ -154,7 +154,7 @@ color: white;
     transition: all 0.3s ease;
   }
   .slider img.active {
-    border: 2px solid #00bcd4; /* Borde celeste alrededor de la imagen activa */
+    border: 2px solid #08FFDE; /* Borde celeste alrededor de la imagen activa */
     filter: grayscale(0%); /* Imagen en color */
   }
   .person-info {
@@ -171,5 +171,58 @@ color: white;
   @media only screen and (max-width: 600px) {
     .person-info {
       flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+    }
+  }
+
+  /**slider***/
+  .cards-container {
+    position: relative;
+    margin-top: 20px;
+    overflow: hidden;
+  }
+  .cards-slider {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  .card {
+    flex: 0 0 auto;
+    width: calc(100% / 3); /* Muestra 3 cards en vista grande */
+  }
+  .card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  .slider-btn img {
+    width: 20px;
+    height: auto;
+  }
+  .prev-btn {
+    left: 10px;
+  }
+  .next-btn {
+    right: 10px;
+  }
+  @media only screen and (max-width: 600px) {
+    .card {
+      width: 100%; /* Muestra 1 card en vista responsive */
+    }
+    .slider-btn {
+      display: none; /* Oculta botones en vista responsive */
     }
   }

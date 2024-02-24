@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  nav {
+    background-color: rgba(0, 0, 0, 0.3); /* Fondo con transparencia */
+    color: white;
+    padding:20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que el navbar esté encima de otros elementos */
+    transition: background-color 0.5s ease; /* Transición de color de fondo */
+  }
+  nav .logo {
+    font-size: 1.5rem;
+    
+    margin-left: 20px;
+  }
+
+  .logo img {
+    width: 80%;
+    margin-left: 20px;
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  nav ul li {
+    margin-right: 20px;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s;
+    padding: 8px 15px;
+   
+  }
+  nav ul li a:hover {
+    background-color:#08FFDE; 
+    text-decoration: none;
+  }
+
+  .menu-icon{
+    display: none;
+  }
+
+  /* Estilos para vista móvil */
+  @media screen and (max-width: 768px) {
+    nav {
+      background-color: rgba(0, 0, 0, 0.8); /* Fondo más oscuro */
+      padding: 18px;
+    }
+    nav ul {
+      display: none; /* Ocultar menú en vista responsive */
+      position: absolute;
+      top: 70px;
+      left: 35%;
+      width: 100%;
+      background-color: #333;
+
+    }
+    nav ul.show {
+      display: flex; /* Mostrar menú cuando la clase 'show' está presente */
+      flex-direction: column;
+      align-items: center;
+    }
+    nav ul li {
+      margin: 10px 0;
+      
+    }
+    nav .menu-icon {
+      cursor: pointer;
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 1500; /* Asegura que el ícono esté encima del menú */
+      color: white;
+    }
+
+    .logo img {
+        width: 60%;
+        margin-left: 20px;
+      }
+  }
