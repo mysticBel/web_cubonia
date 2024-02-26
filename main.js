@@ -118,3 +118,19 @@ $(".carousel-control-next").on("click", function () {
     const offset = -slideIndex * slideWidth;
     $('.cards-slider').css('transform', 'translateX(' + Math.min(0, Math.max(offset, -($('.card').length - 3) * slideWidth)) + 'px)');
   }
+
+
+// form 
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    var nombre = document.getElementById("nombre").value;
+    var email = document.getElementById("email").value;
+    var mensaje = document.getElementById("mensaje").value;
+
+    if (nombre && email && mensaje) {
+        alert("Mensaje enviado con éxito.");
+        // Aquí podrías enviar los datos del formulario a tu servidor o realizar alguna otra acción
+    } else {
+        alert("Completa los campos.");
+    }
+});
