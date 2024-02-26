@@ -14,7 +14,7 @@ padding: 50px 0;
 text-align: center;
 width: 100%;
 margin: auto;
-background-color: #EDEDED;
+background-color: white;
 }
 
 .title_primary{
@@ -94,44 +94,6 @@ color: white;
 }
 
 
-/**** cursos slider *******/
-@media (min-width: 768px) {
-    .carousel-inner {
-      display: flex;
-    }
-    .carousel-item {
-      margin-right: 0;
-      flex: 0 0 33.333333%;
-      display: block;
-    }
-  }
-
-
-.carousel-inner{
-    padding: 1em;
-}
-.card{
-    margin: 1em;
-    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-    border: none;
-    
-}
-
-
-.carousel-control-prev, .carousel-control-next{
-    background-color: none;
-    width: 6vh;
-    height: 6vh;
-    border-radius: 50%;
-    top: 50%;
-    transform: translateY(-50%);
-    
-}
-/*--- slider custom **/
-.container-slider-courses{
-    width: 80%;
-    margin: auto;
-}
 
 
 /*********slider vanilla alumnos************/
@@ -174,55 +136,4 @@ color: white;
     }
   }
 
-  /**slider***/
-  .cards-container {
-    position: relative;
-    margin-top: 20px;
-    overflow: hidden;
-  }
-  .cards-slider {
-    display: flex;
-    transition: transform 0.5s ease;
-  }
-  .card {
-    flex: 0 0 auto;
-    width: calc(100% / 3); /* Muestra 3 cards en vista grande */
-  }
-  .card img {
-    width: 100%;
-    border-radius: 10px;
-  }
-  .slider-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    background-color: rgba(255, 255, 255, 0.7);
-    border: none;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-  }
-  .slider-btn img {
-    width: 20px;
-    height: auto;
-  }
-  .prev-btn {
-    left: 10px;
-  }
-  .next-btn {
-    right: 10px;
-  }
-  @media only screen and (max-width: 600px) {
-    .card {
-      width: 100%; /* Muestra 1 card en vista responsive */
-    }
-    .slider-btn {
-      display: none; /* Oculta botones en vista responsive */
-    }
-  }
+  
