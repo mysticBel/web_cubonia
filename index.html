@@ -178,11 +178,14 @@
                 <p>Envíanos tus dudas y te responderemos lo antes posible</p>
                 <p>Cubonia school</p>
             </div>
-            <form id="contactForm" class="flex-container">
-                <input type="text" id="nombre" name="nombre" placeholder="Nombre">
-                <input type="email" id="email" name="email" placeholder="Email">
-                <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje o consulta"></textarea>
-                <input type="submit" value="Enviar">
+            <form id="contactForm" class="flex-container" action="https://formsubmit.co/dnxbel@gmail.com" method="POST">
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <textarea id="mensaje" name="consulta" placeholder="Escribe tu mensaje o consulta" required></textarea>
+                <input type="hidden" name="_subject" value="CUBONIA WEB- Consulta">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_autoresponse" value="Muchas gracias por contactarnos. Desde Cubonia, estamos gustosos de absolver todas sus dudas, estaremos contactándonos con ud. a la brevedad. Saludos y muy buen día.">
+                <input type="submit" value="Enviar" >
             </form>
         </div>
     </div>

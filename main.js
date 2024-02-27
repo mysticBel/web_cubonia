@@ -41,7 +41,7 @@ $(document).ready(function() {
   
 // form 
 document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault();
+    //event.preventDefault();
     var nombre = document.getElementById("nombre").value;
     var email = document.getElementById("email").value;
     var mensaje = document.getElementById("mensaje").value;
