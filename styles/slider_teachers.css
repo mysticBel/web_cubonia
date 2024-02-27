@@ -78,4 +78,13 @@
     border-color: none;
     color: black;
     background-color:#08FFDE;
+    
+}
+
+
+.slide-container{
+    max-width: 1120px;
+    width: 100%;
+    background-color: grey;
+    padding: 40px 0;
 }
