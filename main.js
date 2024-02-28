@@ -53,3 +53,17 @@ document.getElementById("contactForm").addEventListener("submit", function(event
         alert("Completa los campos.");
     }
 });
+
+//slider brands
+const slider = document.querySelector('.slider-brands');
+const slides = slider.children;
+let currentSlide = 0;
+
+function nextSlide() {
+  slides.eq(currentSlide).fadeOut(500, function() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides.eq(currentSlide).fadeIn(500);
+  });
+}
+
+setInterval(nextSlide, 5000); // Change slide every 5 seconds
