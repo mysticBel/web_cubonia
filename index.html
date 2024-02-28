@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="styles/header_main.css">
     <link rel="stylesheet" href="styles/form.css">
-    <link rel="stylesheet" href="styles/slider_teachers.css">
     <link rel="stylesheet" href="styles/footer.css">
+
+    <!-- jquery css -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
@@ -28,7 +29,7 @@
               <li><a href="#section-about">Nosotros</a></li>
               <li><a href="#section-courses">Cursos</a></li>
               <li><a href="#">Instructores</a></li>
-              <li><a href="#">Alumnos</a></li>
+              <li><a href="#section-students">Alumnos</a></li>
               <li><a href="#container-form">Contacto</a></li>
             </ul>
           </nav>
@@ -46,7 +47,7 @@
 
    <!-- <section about> begin ============================-->
     <!-- ============================================-->
-    <section class="section-community">
+    <section class="section-about" id="section-about">
         <span>SOBRE </span><span class="sky-title">NOSOTROS</span> 
         <p>
             ¡Bienvenido a Cubonia School, donde hacer 3D es nuestra especialidad! En nuestra comunidad, te rodearás de instructores que no solo son expertos en cine, publicidad y videojuegos, sino que también están inmersos en proyectos que marcan tendencia en la industria. Aquí, encontrarás el apoyo y los consejos que necesitas para llevar tu talento al siguiente nivel y convertirlo en una carrera emocionante. Únete a nosotros hoy y comienza a forjar tu camino hacia el éxito en el mundo de la producción 3D.
@@ -87,7 +88,7 @@
 
     <!-- ============================================-->
     <!-- <section cursos> begin ============================-->
-        <section class="section-community">
+        <section class="section-community" id="section-courses">
             <h3>ELIGE</h3>
             <span>NUESTROS</span><span class="sky-title">CURSOS</span> 
             <p>
@@ -102,30 +103,7 @@
 
     <!-- <section slider teachers> begin ============================-->
     <!-- ============================================-->
-    <section class="section-slider">
-        <div class="slide-container">
-            <div class="slide-content">
-                <div class="card-wrapper">
-                    <div class="card">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-                            <div class="card-image">
-                                <img src="assets/img/teachers/img_instructor_demo.png" alt="" class="card-img">
-                            </div>
-                        </div>
-
-                        <div class="card-content">
-                            <h2 class="name">Percy Laureano</h2>
-                            <p class="description">Lead Rigging Artist</p>
-
-                            <button class="button-teacher">Conocer más</button>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+ 
     <!-- ============================================-->
     <!-- <section slider teachers> close ============================-->
 
@@ -133,33 +111,7 @@
 
       <!-- <section brands> begin ============================-->
     <!-- ============================================-->  
-    <div class="slider-brands">
-        <div class="slide-brand">
-          <img src="assets/img/logo/logo_navbar.png" alt="Image 1">
-        </div>
-        <div class="slide-brand">
-          <img src="image2.jpg" alt="Image 2">
-        </div>
-        <div class="slide-brand">
-          <img src="image3.jpg" alt="Image 3">
-        </div>
-        <div class="slide-brand">
-            <img src="image4.jpg" alt="Image 4">
-          </div>
-          <div class="slide-brand">
-            <img src="image5.jpg" alt="Image 5">
-          </div>
-          <div class="slide-brand">
-            <img src="image6.jpg" alt="Image 6">
-          </div>
-          <div class="slide-brand">
-            <img src="image7.jpg" alt="Image 7">
-          </div>
-          <div class="slide-brand">
-            <img src="image8.jpg" alt="Image 8">
-          </div>
-        <!-- Add more slides as needed -->
-      </div>
+ 
 
       <!-- <section brands> begin ============================-->
     <!-- ============================================-->  
@@ -167,7 +119,12 @@
 
  
     <!-- <section students> begin ============================-->
-    <!-- ============================================-->       
+    <!-- ============================================-->  
+    <section class="section-students"  id="section-students">
+        <h3>CONOCE LOS PROYECTOS DE</h3>
+        <span>NUESTROS  <span class="black-title">ALUMNOS</span></span> 
+        
+    
     <section>
         <div class="slider-container">
             <div class="slider">
@@ -175,42 +132,75 @@
             <img src="assets/img/courses/course_2.png" alt="Persona 2" onclick="mostrarInformacion(2)">
             <img src="assets/img/courses/course_3.png" alt="Persona 3" onclick="mostrarInformacion(3)">
             <img src="assets/img/courses/course_1.png" alt="Persona 4" onclick="mostrarInformacion(4)">
+            <img src="assets/img/courses/course_2.png" alt="Persona 5" onclick="mostrarInformacion(5)">
             </div>
             <div id="info-1" class="person-info">
-            <h2>Persona 1</h2>
+                <div>
+                    <h2>Persona 1</h2>
             <p>Texto descriptivo de la persona 1.</p>
             <button onclick="irAEnlace('https://www.ejemplo.com/1')">Ir a Enlace</button>
+                </div>
+            <div>
+                <img src="assets/img/courses/course_1.png" alt="Imagen relacionada con Persona 1">
+            </div>
 
-            <img src="assets/img/courses/course_1.png" alt="Imagen relacionada con Persona 1">
+        
             </div>
             <div id="info-2" class="person-info" style="display: none;">
-            <h2>Persona 2</h2>
-            <p>Texto descriptivo de la persona 2.</p>
-            <button onclick="irAEnlace('https://www.ejemplo.com/1')">Ir a Enlace</button>
-            <img src="assets/img/courses/course_2.png" alt="Imagen relacionada con Persona 2">
+                <div><h2>Persona 2</h2>
+                    <p>Texto descriptivo de la persona 2.</p>
+                    <button onclick="irAEnlace('https://www.ejemplo.com/1')">Ir a Enlace</button>
+                </div>
+                <div>
+                    <img src="assets/img/courses/course_2.png" alt="Imagen relacionada con Persona 2">
+                </div>
+            
+            
             </div>
             <div id="info-3" class="person-info" style="display: none;">
-            <h2>Persona 3</h2>
-            <p>Texto descriptivo de la persona 3.</p>
-            <button onclick="irAEnlace('https://www.ejemplo.com/1')">Ir a Enlace</button>
-            <img src="assets/img/courses/course_3.png" alt="Imagen relacionada con Persona 3">
+            <div>
+                <h2>Persona 3</h2>
+                <p>Texto descriptivo de la persona 3.</p>
+                <button onclick="irAEnlace('https://www.ejemplo.com/1')">Ir a Enlace</button>
             </div>
+            <div>
+                <img src="assets/img/courses/course_3.png" alt="Imagen relacionada con Persona 3">
+            </div>
+            </div>
+
             <div id="info-4" class="person-info" style="display: none;">
-            <h2>Persona 4</h2>
+                <div>
+                    <h2>Persona 4</h2>
             <p>Texto descriptivo de la persona 4.</p>
             <button onclick="irAEnlace('https://www.ejemplo.com/1')">Ir a Enlace</button>
-            <img src="assets/img/courses/course_1.png" alt="Imagen relacionada con Persona 4">
+                </div>
+                <div>
+                    <img src="assets/img/courses/course_1.png" alt="Imagen relacionada con Persona 4">
+                </div>
+            
+            
+            </div>
+            <div id="info-5" class="person-info" style="display: none;">
+                <div><h2>Persona 5</h2>
+                    <p>Texto descriptivo de la persona 5.</p>
+                    <button onclick="irAEnlace('https://www.ejemplo.com/1')">Ir a Enlace</button>
+                </div>
+                <div>
+                    <img src="assets/img/courses/course_2.png" alt="Imagen relacionada con Persona 5">
+                </div>
+            
+            
             </div>
         </div>
     </section>
-
+</section> 
     <!-- ============================================-->
     <!-- <section students> close ============================-->
 
     <!---->
    <!-- <section community> begin ============================-->
     <!-- ============================================-->
-    <div class="section-community">
+    <div class="section-community" >
         <span>ÚNETE A LA COMUNIDAD DE </span><span class="sky-title">CUBONIA</span> 
         <p>Sumérgete en un mundo de ideas creativas y colaboración. Inspírate con nuestro liderazgo y pasión por el diseño, donde la creatividad y las ideas se convierten en realidad.</p>
 
@@ -239,14 +229,16 @@
 
  <!-- ============================================-->
     <!-- <section community> close ============================-->
-
+        <section class="section-students">
+            <h3>¿Aún tienes dudas?</h3>
+            <span>SOLICITA <span class="black-title">INFORMACIÓN</span></span> 
+            
 
     <!------ inicio de formulario ----->
     <section id="container-form">
     <div class="container-form">
         <div class="form-container">
             <div class="flex-container">
-                <h2>¿Aun tienes dudas?</h2>
                 <p>Envíanos tus dudas y te responderemos lo antes posible</p>
                 <p>Cubonia school</p>
             </div>
@@ -261,7 +253,7 @@
         </div>
     </div>
    </section>
-
+</section>
 
     <!--fin form-->
 
@@ -288,7 +280,6 @@
 
 
     <script src= "main.js"></script>
-
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
