@@ -32,20 +32,20 @@
     width: 30px;
 }
 
-.slick-next {
+.slider-cursos .slick-next {
     background-image: url('/assets/img/slider/arrow-next.png');
 }
 
-.slick-prev {
+.slider-cursos .slick-prev {
     background-image: url('/assets/img/slider/arrow-prev.png');
 }
 
-.slick-prev:hover,
+.slider-cursos .slick-prev:hover,.slider-cursos 
 .slick-prev:focus {
     background-image: url('/assets/img/slider/arrow-prev.png');
 }
 
-.slick-next:hover,
+.slider-cursos .slick-next:hover,.slider-cursos 
 .slick-next:focus {
     background-image: url('/assets/img/slider/arrow-next.png');
 }
@@ -58,11 +58,11 @@
     content: none;
 }
 
-.slick-dots li.slick-active button {
+.slider-cursos .slick-dots li.slick-active button {
     background-color: #08FFDE;
 }
 
-.slick-dots li button {
+.slider-cursos .slick-dots li button {
     border-radius: 50%;
     border: 2px solid #08FFDE;
 }

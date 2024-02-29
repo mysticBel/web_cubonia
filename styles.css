@@ -252,3 +252,25 @@
     height: 200px;
   }
 }
+
+.bg-black {
+  background-color: black;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.p-05{
+  padding: 0.5rem;
+}
