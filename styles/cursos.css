@@ -1,0 +1,68 @@
+.section-curses {
+    background-color: black;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.slider-cursos img {
+    margin: auto;
+    max-width: 320px;
+}
+
+@media screen and (min-width:768px) {
+    .slider-cursos img {
+        max-width: 200px;
+    }
+}
+
+.slick-prev::before,
+.slick-next::before {
+    content: none;
+}
+
+.slick-prev,
+.slick-next,
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+}
+
+.slider-cursos .slick-next {
+    background-image: url('/assets/img/slider/arrow-next.png');
+}
+
+.slider-cursos .slick-prev {
+    background-image: url('/assets/img/slider/arrow-prev.png');
+}
+
+.slider-cursos .slick-prev:hover,.slider-cursos 
+.slick-prev:focus {
+    background-image: url('/assets/img/slider/arrow-prev.png');
+}
+
+.slider-cursos .slick-next:hover,.slider-cursos 
+.slick-next:focus {
+    background-image: url('/assets/img/slider/arrow-next.png');
+}
+
+.slick-dots {
+    bottom: -45px;
+}
+
+.slick-dots li button:before {
+    content: none;
+}
+
+.slider-cursos .slick-dots li.slick-active button {
+    background-color: #08FFDE;
+}
+
+.slider-cursos .slick-dots li button {
+    border-radius: 50%;
+    border: 2px solid #08FFDE;
+}

@@ -1,0 +1,16 @@
+.slider-workdone img {
+    margin: auto;
+    max-width: 120px;
+}
+.section-workdone {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.slider-workdone .slick-dots li.slick-active button {
+    background-color: #000000;
+}
+
+.slider-workdone .slick-dots li button {
+    border-radius: 50%;
+    border: 2px solid #000000;
+}
