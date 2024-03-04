@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles/header_main.css">
     <link rel="stylesheet" href="styles/form.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/courses-dynamic.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
@@ -47,126 +48,49 @@
 
     <!-- ============================================-->
     <!-- <section> begin ============================-->
-    <section class="section-about"  id="section-about">
-        <div class="title_primary">
-            <h3>CONOCE</h3>
-            <div class="title_primary_black">
-                <h2>SOBRE NOSOTROS</h2>
-            </div>
-            
-        </div>
-        
-        <div class="descrip-about">
-            <p>
-                ¡Bienvenido a Cubonia School, donde hacer 3D es nuestra especialidad! En nuestra comunidad, te rodearás de instructores que no solo son expertos en cine, publicidad y videojuegos, sino que también están inmersos en proyectos que marcan tendencia en la industria. Aquí, encontrarás el apoyo y los consejos que necesitas para llevar tu talento al siguiente nivel y convertirlo en una carrera emocionante. Únete a nosotros hoy y comienza a forjar tu camino hacia el éxito en el mundo de la producción 3D.
-            </p>
 
-        </div>
-        <div>
-
-        </div>
-        <!--rrss-->
-       <div class="container-social-icons">
-        <a href="https://www.facebook.com/"><img
-            class="icon"  
-            src="assets/img/rrss/icon_discord.png" alt="discord"></a>
-        <a href="https://www.facebook.com/"><img 
-            class="icon" 
-            src="assets/img/rrss/icon_instagram.png" alt="instagram"></a>
-        <a href="https://www.facebook.com/"><img 
-            class="icon" 
-            src="assets/img/rrss/icon_facebook.png" alt="facebook"></a>
-        <a href="https://www.facebook.com/"><img 
-            class="icon" 
-            src="assets/img/rrss/icon_tiktok.png" alt="tiktok"></a>
-        <a href="https://www.facebook.com/"><img 
-            class="icon" 
-            src="assets/img/rrss/icon_linkedin.png" alt="linkedin"></a>
-        <a href="https://www.facebook.com/"><img 
-            class="icon" 
-            src="assets/img/rrss/icon_youtube.png" alt="youtube"></a>
-        <a href="https://www.facebook.com/"><img 
-            class="icon" 
-            src="assets/img/rrss/icon_whatsapp.png" alt="whatsapp"></a>
-            
-        </div>
-        
-    </section>
 
     <!-- <section> close ============================-->
     <!-- ============================================-->
 
 
     <!-- ============================================-->
-    <!-- <section cursos> begin ============================-->
-    <section class="section-courses" id="section-courses">
-
-        <div class="title_primary">
-            <h3>ELIGE</h3>
-            <div class="title_primary_white">
-                <h2>NUESTROS CURSOS</h2>
-            </div>
-            <p>Comienza, especializate y demuestra. </p>
-            
-        </div>
-
-        <div>
-
-            <p>swipper 1 aqui</p>
-                <!--slider-->
-            <p>swipper aqui...</p>
-        </div>
-
-        <div>
-            <button class="btn_outline_sky">
-                Inscríbete Ahora
-            </button>
-        </div>
-
-
-    </section>
-
-
-
+    <!-- <section  requerimientos> begin ============================-->
+  
 
     <section>
         <div class="slider-container">
             <div class="slider">
-            <img src="assets/img/courses/course_1.png" alt="Persona 1" onclick="mostrarInformacion(1)">
-            <img src="assets/img/courses/course_2.png" alt="Persona 2" onclick="mostrarInformacion(2)">
-            <img src="assets/img/courses/course_3.png" alt="Persona 3" onclick="mostrarInformacion(3)">
-            <img src="assets/img/courses/course_1.png" alt="Persona 4" onclick="mostrarInformacion(4)">
+                <button onclick="mostrarInformacionCurso(1)">Especificaciones minimas</button>
+                <button onclick="mostrarInformacionCurso(2)">Software a utilizar</button>
+                <button onclick="mostrarInformacionCurso(3)">Aplicaciones del curso</button>
             </div>
-            <div id="info-1" class="person-info">
+            <div id="info-1" class="course-info">
             <h2>Persona 1</h2>
             <p>Texto descriptivo de la persona 1.</p>
-            <button onclick="irAEnlace('https://www.ejemplo.com/1')">Ir a Enlace</button>
+            </div>
+            <div id="info-2" class="course-info" style="display: none;">        
+                <img src="assets/img/logo_software_courses/logo_zbrush.png" alt="Imagen logo zbrush">
+                <img src="assets/img/logo_software_courses/logo_maya.png" alt="Imagen logo maya">        
+                <img src="assets/img/logo_software_courses/logo_pt.png" alt="Imagen logo substance painter">
+                <img src="assets/img/logo_software_courses/logo_arn.png" alt="Imagen logo arnold">   
+                <img src="assets/img/logo_software_courses/logo_ps.png" alt="Imagen logo photoshop">
+                <img src="assets/img/logo_software_courses/logo_nuke.png" alt="Imagen logo nuke">
+            </div>
+            <div id="info-3" class="course-info" style="display: none;">
+                <img src="assets/img/courses/course_1.png" alt="Imagen logo classroom">
+                <img src="assets/img/courses/course_2.png" alt="Imagen logo zoom">        
+                <img src="assets/img/courses/course_1.png" alt="Imagen logo drive">
+                <img src="assets/img/courses/course_2.png" alt="Imagen logo gmail">   
+                
+            </div>
 
-            <img src="assets/img/courses/course_1.png" alt="Imagen relacionada con Persona 1">
-            </div>
-            <div id="info-2" class="person-info" style="display: none;">
-            <h2>Persona 2</h2>
-            <p>Texto descriptivo de la persona 2.</p>
-            <button onclick="irAEnlace('https://www.ejemplo.com/1')">Ir a Enlace</button>
-            <img src="assets/img/courses/course_2.png" alt="Imagen relacionada con Persona 2">
-            </div>
-            <div id="info-3" class="person-info" style="display: none;">
-            <h2>Persona 3</h2>
-            <p>Texto descriptivo de la persona 3.</p>
-            <button onclick="irAEnlace('https://www.ejemplo.com/1')">Ir a Enlace</button>
-            <img src="assets/img/courses/course_3.png" alt="Imagen relacionada con Persona 3">
-            </div>
-            <div id="info-4" class="person-info" style="display: none;">
-            <h2>Persona 4</h2>
-            <p>Texto descriptivo de la persona 4.</p>
-            <button onclick="irAEnlace('https://www.ejemplo.com/1')">Ir a Enlace</button>
-            <img src="assets/img/courses/course_1.png" alt="Imagen relacionada con Persona 4">
-            </div>
         </div>
     </section>
 
     <!---->
-
+   <!-- <section requerimientos> close ============================-->
+    <!-- ============================================-->
 
 
 
