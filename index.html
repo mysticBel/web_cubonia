@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="styles/cursos.css">
     <link rel="stylesheet" href="styles/instructors.css">
     <link rel="stylesheet" href="styles/workdone.css">
+    <link rel="stylesheet" href="styles/alumnos.css">
+    <link rel="stylesheet" href="styles/about.css">
 
 </head>
 
@@ -50,7 +52,8 @@
     <!-- ============================================-->
     <!-- <section header> begin ============================-->
     <header>
-        <img src="assets/img/bg/bg_header_course11.png" alt="Imagen de Header">
+        <img src="assets/img/bg/bg__main_v2.png" alt="Imagen de Header">
+        <button onclick="irAEnlace('https://www.ejemplo.com/1')">Inscríbete ahora</button>
     </header>
     <!-- <section header> close ============================-->
     <!-- ============================================-->
@@ -58,7 +61,12 @@
     <!-- <section about> begin ============================-->
     <!-- ============================================-->
     <section class="section-about" id="section-about">
-        <span>SOBRE </span><span class="sky-title">NOSOTROS</span>
+        <h3>
+            CONOCE
+        </h3>
+        <h3>
+            SOBRE <strong>NOSOTROS</strong>
+        </h3>
         <p>
             ¡Bienvenido a Cubonia School, donde hacer 3D es nuestra especialidad! En nuestra comunidad, te rodearás de
             instructores que no solo son expertos en cine, publicidad y videojuegos, sino que también están inmersos en
@@ -66,7 +74,10 @@
             llevar tu talento al siguiente nivel y convertirlo en una carrera emocionante. Únete a nosotros hoy y
             comienza a forjar tu camino hacia el éxito en el mundo de la producción 3D.
         </p>
-
+        <div class="contenedor contenedor-btns">
+            <button onclick="irAEnlace('https://www.ejemplo.com/1')">Ver Cursos</button>
+            <button onclick="irAEnlace('https://www.ejemplo.com/1')">Inscríbete ahora</button>
+        </div>
         <!--rrss-->
         <div class="container-social-icons">
             <a href="https://www.facebook.com/"><img class="icon" src="assets/img/rrss/icon_discord.png"
@@ -98,59 +109,74 @@
     <section class="section-curses" id="section-courses">
         <div class="container">
             <h3 class="text-white text-center">ELIGE</h3>
-            <div class="text-center">
-                <span>NUESTROS</span><span class="sky-title">CURSOS</span>
-            </div>
+            <h3>
+                NUESTROS <strong>CURSOS</strong>
+            </h3>
 
             <p class="text-white text-center">
                 Comienza, especializate y demuestra.
             </p>
             <!--slider-->
             <div class="slider-cursos">
-                <div>
-                    <picture>
-                        <img src="/assets/img/courses/course_1.png" class="img-fluid">
-                    </picture>
-                </div>
-                <div>
-                    <picture>
-                        <img src="/assets/img/courses/course_2.png" class="img-fluid">
-                    </picture>
-                </div>
-                <div>
-                    <picture>
-                        <img src="/assets/img/courses/course_3.png" class="img-fluid">
-                    </picture>
-                </div>
-                <div>
-                    <picture>
-                        <img src="/assets/img/courses/course_1.png" class="img-fluid">
-                    </picture>
-                </div>
-                <div>
-                    <picture>
-                        <img src="/assets/img/courses/course_2.png" class="img-fluid">
-                    </picture>
-                </div>
-                <div>
-                    <picture>
-                        <img src="/assets/img/courses/course_3.png" class="img-fluid">
-                    </picture>
+                <div class="slide">
+                    <div>
+                        <img src="/assets/img/courses/Web_Afiches_Cursos-01.png" class="img-fluid hide-hover">
+                        <img src="/assets/img/courses/Web_Afiches_Cursos-02.png" class="img-fluid show-hover">
+                    </div>
                 </div>
 
+                <div class="slide">
+                    <div>
+                        <img src="/assets/img/courses/Web_Afiches_Cursos-03.png" class="img-fluid hide-hover">
+                        <img src="/assets/img/courses/Web_Afiches_Cursos-04.png" class="img-fluid show-hover">
+                    </div>
+                </div>
 
+                <div class="slide">
+                    <div>
+                        <img src="/assets/img/courses/Web_Afiches_Cursos-05.png" class="img-fluid hide-hover">
+                        <img src="/assets/img/courses/Web_Afiches_Cursos-06.png" class="img-fluid show-hover">
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div>
+                        <img src="/assets/img/courses/Web_Afiches_Cursos-07.png" class="img-fluid hide-hover">
+                        <img src="/assets/img/courses/Web_Afiches_Cursos-08.png" class="img-fluid show-hover">
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div>
+                        <img src="/assets/img/courses/Web_Afiches_Cursos-09.png" class="img-fluid hide-hover">
+                        <img src="/assets/img/courses/Web_Afiches_Cursos-10.png" class="img-fluid show-hover">
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div>
+                        <img src="/assets/img/courses/Web_Afiches_Cursos-11.png" class="img-fluid hide-hover">
+                        <img src="/assets/img/courses/Web_Afiches_Cursos-12.png" class="img-fluid show-hover">
+                    </div>
+                </div>
+
+            </div>
+            <div class="contenedor contenedor-inscribete">
+                <button onclick="irAEnlace('https://www.ejemplo.com/1')">Inscríbete ahora</button>
             </div>
 
         </div>
 
     </section>
+
     <section class="section-instructor" id="section-instructor">
         <div class="container">
             <h3 class="text-center">CONOCE A</h3>
             <div class="contenedor">
 
                 <h3 class="text-white text-center bg-black d-inline-block mx-auto p-05">NUESTROS
-                    <strong>INSTRUCTORES</strong> </h3>
+                    <strong>INSTRUCTORES</strong>
+                </h3>
             </div>
 
 
@@ -159,37 +185,46 @@
             </p>
             <!--slider-->
             <div class="slider-instructor">
-                <div>
-                    <picture>
-                        <img src="/assets/img/courses/course_1.png" class="img-fluid">
-                    </picture>
+                <div class="slice">
+                    <div>
+                        <img src="/assets/img/instructores/Web_Instructores_Individuales-01.png" class="img-fluid">
+                    </div>
                 </div>
-                <div>
-                    <picture>
-                        <img src="/assets/img/courses/course_2.png" class="img-fluid">
-                    </picture>
+                <div class="slice">
+                    <div>
+                        <img src="/assets/img/instructores/Web_Instructores_Individuales-02.png" class="img-fluid">
+                    </div>
                 </div>
-                <div>
-                    <picture>
-                        <img src="/assets/img/courses/course_3.png" class="img-fluid">
-                    </picture>
+                <div class="slice">
+                    <div>
+                        <img src="/assets/img/instructores/Web_Instructores_Individuales-03.png" class="img-fluid">
+                    </div>
                 </div>
-                <div>
-                    <picture>
-                        <img src="/assets/img/courses/course_1.png" class="img-fluid">
-                    </picture>
+                <div class="slice">
+                    <div>
+                        <img src="/assets/img/instructores/Web_Instructores_Individuales-04.png" class="img-fluid">
+                    </div>
                 </div>
-                <div>
-                    <picture>
-                        <img src="/assets/img/courses/course_2.png" class="img-fluid">
-                    </picture>
+                <div class="slice">
+                    <div>
+                        <img src="/assets/img/instructores/Web_Instructores_Individuales-05.png" class="img-fluid">
+                    </div>
                 </div>
-                <div>
-                    <picture>
-                        <img src="/assets/img/courses/course_3.png" class="img-fluid">
-                    </picture>
+                <div class="slice">
+                    <div>
+                        <img src="/assets/img/instructores/Web_Instructores_Individuales-06.png" class="img-fluid">
+                    </div>
                 </div>
-
+                <div class="slice">
+                    <div>
+                        <img src="/assets/img/instructores/Web_Instructores_Individuales-07.png" class="img-fluid">
+                    </div>
+                </div>
+                <div class="slice">
+                    <div>
+                        <img src="/assets/img/instructores/Web_Instructores_Individuales-08.png" class="img-fluid">
+                    </div>
+                </div>
 
             </div>
 
@@ -261,7 +296,9 @@
     <!-- ============================================-->
     <section class="section-students" id="section-students">
         <h3>CONOCE LOS PROYECTOS DE</h3>
-        <span>NUESTROS <span class="black-title">ALUMNOS</span></span>
+        <h3>
+            NUESTROS <strong>ALUMNOS</strong>
+        </h3>
 
 
         <section>
@@ -277,7 +314,7 @@
                     <div>
                         <h2>Persona 1</h2>
                         <p>Texto descriptivo de la persona 1.</p>
-                        <button onclick="irAEnlace('https://www.ejemplo.com/1')">Ir a Enlace</button>
+                        <button onclick="irAEnlace('https://www.ejemplo.com/1')">Ver Proyecto Final</button>
                     </div>
                     <div>
                         <img src="assets/img/courses/course_1.png" alt="Imagen relacionada con Persona 1">
@@ -289,7 +326,7 @@
                     <div>
                         <h2>Persona 2</h2>
                         <p>Texto descriptivo de la persona 2.</p>
-                        <button onclick="irAEnlace('https://www.ejemplo.com/1')">Ir a Enlace</button>
+                        <button onclick="irAEnlace('https://www.ejemplo.com/1')">Ver Proyecto Final</button>
                     </div>
                     <div>
                         <img src="assets/img/courses/course_2.png" alt="Imagen relacionada con Persona 2">
@@ -301,7 +338,7 @@
                     <div>
                         <h2>Persona 3</h2>
                         <p>Texto descriptivo de la persona 3.</p>
-                        <button onclick="irAEnlace('https://www.ejemplo.com/1')">Ir a Enlace</button>
+                        <button onclick="irAEnlace('https://www.ejemplo.com/1')">Ver Proyecto Final</button>
                     </div>
                     <div>
                         <img src="assets/img/courses/course_3.png" alt="Imagen relacionada con Persona 3">
@@ -312,7 +349,7 @@
                     <div>
                         <h2>Persona 4</h2>
                         <p>Texto descriptivo de la persona 4.</p>
-                        <button onclick="irAEnlace('https://www.ejemplo.com/1')">Ir a Enlace</button>
+                        <button onclick="irAEnlace('https://www.ejemplo.com/1')">Ver Proyecto Final</button>
                     </div>
                     <div>
                         <img src="assets/img/courses/course_1.png" alt="Imagen relacionada con Persona 4">
@@ -324,7 +361,7 @@
                     <div>
                         <h2>Persona 5</h2>
                         <p>Texto descriptivo de la persona 5.</p>
-                        <button onclick="irAEnlace('https://www.ejemplo.com/1')">Ir a Enlace</button>
+                        <button onclick="irAEnlace('https://www.ejemplo.com/1')">Ver Proyecto Final</button>
                     </div>
                     <div>
                         <img src="assets/img/courses/course_2.png" alt="Imagen relacionada con Persona 5">
@@ -337,6 +374,43 @@
     </section>
     <!-- ============================================-->
     <!-- <section students> close ============================-->
+
+
+
+
+    <!-- ============================================-->
+    <!-- <section community> close ============================-->
+    <section class="section-form">
+        <h3>¿Aún tienes dudas?</h3>
+        <h3>SOLICITA <strong>INFORMACIÓN</strong></h3>
+
+
+        <!------ inicio de formulario ----->
+        <section id="container-form">
+            <div class="container-form container">
+                <div class="form-container">
+                    <div class="flex-container">
+                        <p>Envíanos tus dudas y te responderemos lo antes posible</p>
+                        <p>Cubonia school</p>
+                    </div>
+                    <form id="contactForm" class="flex-container" action="https://formsubmit.co/dnxbel@gmail.com"
+                        method="POST">
+                        <div class="contenedor">
+                            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        <textarea id="mensaje" name="consulta" placeholder="Escribe tu mensaje o consulta"
+                            required></textarea>
+                        <input type="hidden" name="_subject" value="CUBONIA WEB- Consulta">
+
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!--fin form-->
 
     <!---->
     <!-- <section community> begin ============================-->
@@ -363,41 +437,6 @@
 
     </div>
 
-
-    <!-- ============================================-->
-    <!-- <section community> close ============================-->
-    <section class="section-students">
-        <h3>¿Aún tienes dudas?</h3>
-        <span>SOLICITA <span class="black-title">INFORMACIÓN</span></span>
-
-
-        <!------ inicio de formulario ----->
-        <section id="container-form">
-            <div class="container-form">
-                <div class="form-container">
-                    <div class="flex-container">
-                        <p>Envíanos tus dudas y te responderemos lo antes posible</p>
-                        <p>Cubonia school</p>
-                    </div>
-                    <form id="contactForm" class="flex-container" action="https://formsubmit.co/dnxbel@gmail.com"
-                        method="POST">
-                        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
-                        <input type="email" id="email" name="email" placeholder="Email" required>
-                        <textarea id="mensaje" name="consulta" placeholder="Escribe tu mensaje o consulta"
-                            required></textarea>
-                        <input type="hidden" name="_subject" value="CUBONIA WEB- Consulta">
-
-                        <input type="submit" value="Enviar">
-                    </form>
-                </div>
-            </div>
-        </section>
-    </section>
-
-    <!--fin form-->
-
-
-
     <!--FOOTER-->
     <section class="section-footer">
         <footer>
@@ -419,7 +458,7 @@
 
 
 
-    |
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>

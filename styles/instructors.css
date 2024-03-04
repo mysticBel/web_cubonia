@@ -22,3 +22,7 @@
     border-radius: 50%;
     border: 2px solid #000000;
 }
+
+.section-instructor  .contenedor > h3 {
+    width: 662px;
+}

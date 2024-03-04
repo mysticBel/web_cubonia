@@ -5,6 +5,8 @@ $(document).ready(function () {
     arrows: true,
     autoplay: false,
     slidesToShow: 3,
+    centerMode: true,
+    centerPadding: "10px",
     responsive: [
       {
         breakpoint: 768,
@@ -15,8 +17,8 @@ $(document).ready(function () {
     ],
   });
   $(".slider-instructor").slick({
-    dots: true,
-    arrows: true,
+    dots: false,
+    arrows: false,
     autoplay: false,
     slidesToShow: 3,
     responsive: [
@@ -29,12 +31,12 @@ $(document).ready(function () {
     ],
   });
   $(".slider-workdone").slick({
-    dots: true,
+    dots: false,
     arrows: false,
     autoplay: true,
     slidesToShow: 5,
   });
-  
+
   $(window).scroll(function () {
     var scroll = $(window).scrollTop();
     if (scroll > 100) {
@@ -53,6 +55,16 @@ $(document).ready(function () {
   $(".menu-icon").click(function () {
     $("nav ul").toggleClass("show");
   });
+  $(".slide").hover(
+    function () {
+      $(this).find(".hide-hover").hide();
+      $(this).find(".show-hover").show();
+    },
+    function () {
+      $(this).find(".hide-hover").show();
+      $(this).find(".show-hover").hide();
+    }
+  );
 });
 
 /////////
