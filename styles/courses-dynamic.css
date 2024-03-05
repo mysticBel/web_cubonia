@@ -1,0 +1,14 @@
+
+.course-info{
+    width: 70%;
+    margin: 100px auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.course-info img{
+    width: 100px;
+    margin: auto 20px;
+    
+}

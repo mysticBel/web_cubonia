@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="styles/header_main.css">
     <link rel="stylesheet" href="styles/form.css">
     <link rel="stylesheet" href="styles/footer.css">
-
-   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
@@ -54,25 +52,51 @@
 
 
     <!-- ============================================-->
-    <!-- <section objetivos> begin ============================-->
-    <div>
-        <h1>
-            Objetivos del Curso
-        </h1>
-        <div class="container-objectives">
-            <div class="description-part">
-                <p>Aprenderás a trabajar de manera eficiente, obteniendo un personaje 3D funcional en base a las técnicas y métodos usados en la industria del cine y la publicidad, estando preparado para el ámbito laboral.</p>
-                <div>
-                    <img src="assets/img/subpage_courses/img-niveles/img_level_4.png" alt="">
-                </div>
-                <button> Ver Temario</button>
-                <button> Ver Precios</button>
+    <!-- <section> begin ============================-->
+
+
+    <!-- <section> close ============================-->
+    <!-- ============================================-->
+
+
+    <!-- ============================================-->
+    <!-- <section  requerimientos> begin ============================-->
+  
+
+    <section>
+        <div class="slider-container">
+            <div class="slider">
+                <button onclick="mostrarInformacionCurso(1)">Especificaciones minimas</button>
+                <button onclick="mostrarInformacionCurso(2)">Software a utilizar</button>
+                <button onclick="mostrarInformacionCurso(3)">Aplicaciones del curso</button>
             </div>
-            <div class="img-part">
-                <img src="assets/img/subpage_courses/img_subpage_course1.png" alt="">
+            <div id="info-1" class="course-info">
+            <h2>Persona 1</h2>
+            <p>Texto descriptivo de la persona 1.</p>
             </div>
+            <div id="info-2" class="course-info" style="display: none;">        
+                <img src="assets/img/logo_software_courses/logo_zbrush.png" alt="Imagen logo zbrush">
+                <img src="assets/img/logo_software_courses/logo_maya.png" alt="Imagen logo maya">        
+                <img src="assets/img/logo_software_courses/logo_pt.png" alt="Imagen logo substance painter">
+                <img src="assets/img/logo_software_courses/logo_arn.png" alt="Imagen logo arnold">   
+                <img src="assets/img/logo_software_courses/logo_ps.png" alt="Imagen logo photoshop">
+                <img src="assets/img/logo_software_courses/logo_nuke.png" alt="Imagen logo nuke">
+            </div>
+            <div id="info-3" class="course-info" style="display: none;">
+                <img src="assets/img/courses/course_1.png" alt="Imagen logo classroom">
+                <img src="assets/img/courses/course_2.png" alt="Imagen logo zoom">        
+                <img src="assets/img/courses/course_1.png" alt="Imagen logo drive">
+                <img src="assets/img/courses/course_2.png" alt="Imagen logo gmail">   
+
+            </div>
+
         </div>
-    </div>
+
+    </section>
+
+    <!---->
+   <!-- <section requerimientos> close ============================-->
+    <!-- ============================================-->
 
 
         <!-- ============================================-->

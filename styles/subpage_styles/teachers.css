@@ -1,0 +1,75 @@
+
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  .container{
+    background-color: #505050;
+  }
+  /*********************/
+  /** section teachers**/
+  /*********************/
+
+.teachers_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.teacher_card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px;
+    width: 70%;
+    transition: 0.3s;
+}
+
+.image_card{
+width:60%;
+text-align: center;
+    justify-content: center;
+}
+
+.image_card img{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.descrip_card{
+    margin: auto 20px;
+}
+.descrip_card h2{
+    color:#08FFDE;
+    padding: 20px 0px;
+}
+
+.descrip_card p,
+.descrip_card ul{
+    color: white;
+}
+
+.descrip_card ul{
+    margin : 20px 0 30px 10px;
+
+}
+
+
+@media only screen and (max-width: 750px) {
+    .image_card{
+        width:100%;
+
+    }     
+    .image_card img{
+        width: 100%;
+    }
+        
+  }
