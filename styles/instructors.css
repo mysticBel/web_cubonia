@@ -4,8 +4,12 @@
 }
 
 .section-instructor {
-    padding-top: 60px;
+    padding-top: 80px;
     padding-bottom: 60px;
+}
+
+.slice{
+    text-align: center;
 }
 
 @media screen and (min-width:768px) {

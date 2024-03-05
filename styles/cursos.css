@@ -56,7 +56,7 @@
 }
 
 .slick-dots {
-    bottom: -45px;
+    bottom: -65px;
 }
 
 .slick-dots li button:before {
@@ -82,6 +82,7 @@
     display: block;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 50px;
 }
 
 .section-curses .contenedor-inscribete button:hover {

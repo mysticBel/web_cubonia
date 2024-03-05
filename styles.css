@@ -15,7 +15,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px 10px;
+  margin: 100px 10px 10px 10px;
   padding: 10px 0;
 
 }
@@ -42,7 +42,7 @@
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  padding: 250px 40px;
+  padding: 150px 40px;
   background-color: rgb(255, 255, 255);
 }
 
@@ -62,7 +62,7 @@
   font-size: 16px;
   margin-bottom: 2rem;
   max-width: 800px;
-  margin: 40px auto;
+  margin: 80px auto;
 
 }
 
@@ -102,8 +102,25 @@
   color: #08FFDE;
 }
 
+.button-ver-temario{
+  padding: 10px 10px;
+  border: #ffffff 2px solid;
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
+  width: 80%;
+  display: block;
 
 
+
+}
+
+
+.button-ver-temario:hover{
+  background-color: #2ba58b;
+    color: #ffffff;
+    border: #2ba58b 2px solid;
+}
 
 /***section students***/
 
@@ -146,6 +163,7 @@
   transition: transform 0.5s ease;
   justify-content: center;
   margin: 3rem auto;
+  flex-wrap: wrap;
 
 }
 
@@ -176,6 +194,17 @@
   justify-content: center;
   margin-top: 10px;
 }
+.person-info-text{
+  text-align: start !important;
+  width: 30%;
+}
+
+.person-info-text h2{
+  text-align: start !important;
+  width: 100%;
+  color: #08FFDE;
+
+}
 
 .person-info img {
   max-width: 300px;
@@ -186,8 +215,16 @@
   .person-info {
     flex-direction: column;
     /* Cambiar a columna en pantallas pequeñas */
-    align-items: center;
+    align-items: center;  
+    justify-content: center;
+
   }
+  .person-info-text{
+    text-align: center;
+    width: 100%;
+
+  }
+
 
 }
 
@@ -224,11 +261,16 @@
 
 
 /**slider brands**/
+
+.slider-workdone{
+  margin-top: 60px;
+}
 .slider-brands {
   width: 100%;
   height: 400px;
   /* Set the height of the slider */
   overflow: hidden;
+  
 }
 
 .slide-brand {
@@ -239,6 +281,7 @@
   top: 0;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
+
 }
 
 .slide-brand:first-child {

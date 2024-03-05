@@ -19,7 +19,7 @@ $(document).ready(function () {
   $(".slider-instructor").slick({
     dots: false,
     arrows: false,
-    autoplay: false,
+    autoplay: true,
     slidesToShow: 3,
     responsive: [
       {
