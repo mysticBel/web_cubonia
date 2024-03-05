@@ -1,0 +1,90 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /*********************/
+  /** section nosotros**/
+  /*********************/
+
+  .container-objectives{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+  
+  }
+
+  .description-part{
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+  }
+
+  .img-part{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+  }
+  .img-part img{
+    width: 350px;
+   
+  }
+  @media only screen and (max-width: 600px) {
+
+    .description-part{
+      
+        width: 100%;
+      }
+      .img-part{
+        width: 100%;
+        margin: auto;
+      }
+  }
+  
+
+
+
+  /* Estilos para vista móvil */
+  @media screen and (max-width: 768px) {
+    nav {
+      background-color: rgba(0, 0, 0, 0.8); /* Fondo más oscuro */
+      padding: 18px;
+    }
+    nav ul {
+      display: none; /* Ocultar menú en vista responsive */
+      position: absolute;
+      top: 70px;
+      left: 35%;
+      width: 100%;
+      background-color: #333;
+
+    }
+    nav ul.show {
+      display: flex; /* Mostrar menú cuando la clase 'show' está presente */
+      flex-direction: column;
+      align-items: center;
+    }
+    nav ul li {
+      margin: 10px 0;
+      
+    }
+    nav .menu-icon {
+      cursor: pointer;
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 1500; /* Asegura que el ícono esté encima del menú */
+      color: white;
+    }
+
+    .logo img {
+        width: 60%;
+        margin-left: 20px;
+      }
+  }
