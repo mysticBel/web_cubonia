@@ -13,6 +13,7 @@
   footer ul {
     list-style-type: none;
     padding: 0;
+    margin-bottom: 50px;
   }
   footer ul li {
     margin-bottom: 10px;
@@ -25,6 +26,19 @@
   }
   footer ul li a:hover {
     background-color:#08FFDE; 
+    text-decoration: none;
+  }
+  
+
+  .cubonia-link{
+   
+    color:rgb(128, 128, 128); 
+    text-decoration: none;
+  }
+
+  .cubonia-link:hover{
+   
+    color:#08FFDE;  
     text-decoration: none;
   }
 

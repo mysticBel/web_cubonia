@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cubonia - Cursos Online</title>
-
+    <link rel="stylesheet" href="styles/subpage/style_page_course.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
     <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="styles/header_main.css">
     <link rel="stylesheet" href="styles/form.css">
     <link rel="stylesheet" href="styles/footer.css">
+
+   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
@@ -18,19 +20,25 @@
 
     <!-- ============================================-->
     <!-- <section navbar> begin ============================-->
-        <nav>
+        <!-- <nav>
             <div class="logo">
                 <img src="assets/img/logo/logo_navbar.png" alt="">
             </div>
             <span class="menu-icon">&#9776;</span>
             <ul class="nav-links">
-              <li><a href="#section-about">Nosotros</a></li>
-              <li><a href="#section-courses">Cursos</a></li>
-              <li><a href="#">Instructores</a></li>
-              <li><a href="#">Alumnos</a></li>
-              <li><a href="#">Contacto</a></li>
+              <li><a href="index.html">Volver al Inicio</a></li>
             </ul>
-          </nav>
+          </nav> -->
+        
+          <nav>
+            <div class="logo">
+                <img src="assets/img/logo/logo_navbar.png" alt="">
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="index.html">Volver al Inicio</a></li>
+            </ul>
+        </nav>
 
     <!-- <section navbar> close ============================-->
     <!-- ============================================-->
@@ -46,128 +54,30 @@
 
 
     <!-- ============================================-->
-    <!-- <section> begin ============================-->
-    <section class="section-about"  id="section-about">
-        <div class="title_primary">
-            <h3>CONOCE</h3>
-            <div class="title_primary_black">
-                <h2>SOBRE NOSOTROS</h2>
+    <!-- <section objetivos> begin ============================-->
+    <div>
+        <h1>
+            Objetivos del Curso
+        </h1>
+        <div class="container-objectives">
+            <div class="description-part">
+                <p>Aprenderás a trabajar de manera eficiente, obteniendo un personaje 3D funcional en base a las técnicas y métodos usados en la industria del cine y la publicidad, estando preparado para el ámbito laboral.</p>
+                <div>
+                    <img src="assets/img/subpage_courses/img-niveles/img_level_4.png" alt="">
+                </div>
+                <button> Ver Temario</button>
+                <button> Ver Precios</button>
             </div>
-            
-        </div>
-        
-        <div class="descrip-about">
-            <p>
-                ¡Bienvenido a Cubonia School, donde hacer 3D es nuestra especialidad! En nuestra comunidad, te rodearás de instructores que no solo son expertos en cine, publicidad y videojuegos, sino que también están inmersos en proyectos que marcan tendencia en la industria. Aquí, encontrarás el apoyo y los consejos que necesitas para llevar tu talento al siguiente nivel y convertirlo en una carrera emocionante. Únete a nosotros hoy y comienza a forjar tu camino hacia el éxito en el mundo de la producción 3D.
-            </p>
-
-        </div>
-        <div>
-
-        </div>
-        <!--rrss-->
-       <div class="container-social-icons">
-        <a href="https://www.facebook.com/"><img
-            class="icon"  
-            src="assets/img/rrss/icon_discord.png" alt="discord"></a>
-        <a href="https://www.facebook.com/"><img 
-            class="icon" 
-            src="assets/img/rrss/icon_instagram.png" alt="instagram"></a>
-        <a href="https://www.facebook.com/"><img 
-            class="icon" 
-            src="assets/img/rrss/icon_facebook.png" alt="facebook"></a>
-        <a href="https://www.facebook.com/"><img 
-            class="icon" 
-            src="assets/img/rrss/icon_tiktok.png" alt="tiktok"></a>
-        <a href="https://www.facebook.com/"><img 
-            class="icon" 
-            src="assets/img/rrss/icon_linkedin.png" alt="linkedin"></a>
-        <a href="https://www.facebook.com/"><img 
-            class="icon" 
-            src="assets/img/rrss/icon_youtube.png" alt="youtube"></a>
-        <a href="https://www.facebook.com/"><img 
-            class="icon" 
-            src="assets/img/rrss/icon_whatsapp.png" alt="whatsapp"></a>
-            
-        </div>
-        
-    </section>
-
-    <!-- <section> close ============================-->
-    <!-- ============================================-->
-
-
-    <!-- ============================================-->
-    <!-- <section cursos> begin ============================-->
-    <section class="section-courses" id="section-courses">
-
-        <div class="title_primary">
-            <h3>ELIGE</h3>
-            <div class="title_primary_white">
-                <h2>NUESTROS CURSOS</h2>
-            </div>
-            <p>Comienza, especializate y demuestra. </p>
-            
-        </div>
-
-        <div>
-
-            <p>swipper 1 aqui</p>
-                <!--slider-->
-            <p>swipper aqui...</p>
-        </div>
-
-        <div>
-            <button class="btn_outline_sky">
-                Inscríbete Ahora
-            </button>
-        </div>
-
-
-    </section>
-
-
-
-
-    <section>
-        <div class="slider-container">
-            <div class="slider">
-            <img src="assets/img/courses/course_1.png" alt="Persona 1" onclick="mostrarInformacion(1)">
-            <img src="assets/img/courses/course_2.png" alt="Persona 2" onclick="mostrarInformacion(2)">
-            <img src="assets/img/courses/course_3.png" alt="Persona 3" onclick="mostrarInformacion(3)">
-            <img src="assets/img/courses/course_1.png" alt="Persona 4" onclick="mostrarInformacion(4)">
-            </div>
-            <div id="info-1" class="person-info">
-            <h2>Persona 1</h2>
-            <p>Texto descriptivo de la persona 1.</p>
-            <button onclick="irAEnlace('https://www.ejemplo.com/1')">Ir a Enlace</button>
-
-            <img src="assets/img/courses/course_1.png" alt="Imagen relacionada con Persona 1">
-            </div>
-            <div id="info-2" class="person-info" style="display: none;">
-            <h2>Persona 2</h2>
-            <p>Texto descriptivo de la persona 2.</p>
-            <button onclick="irAEnlace('https://www.ejemplo.com/1')">Ir a Enlace</button>
-            <img src="assets/img/courses/course_2.png" alt="Imagen relacionada con Persona 2">
-            </div>
-            <div id="info-3" class="person-info" style="display: none;">
-            <h2>Persona 3</h2>
-            <p>Texto descriptivo de la persona 3.</p>
-            <button onclick="irAEnlace('https://www.ejemplo.com/1')">Ir a Enlace</button>
-            <img src="assets/img/courses/course_3.png" alt="Imagen relacionada con Persona 3">
-            </div>
-            <div id="info-4" class="person-info" style="display: none;">
-            <h2>Persona 4</h2>
-            <p>Texto descriptivo de la persona 4.</p>
-            <button onclick="irAEnlace('https://www.ejemplo.com/1')">Ir a Enlace</button>
-            <img src="assets/img/courses/course_1.png" alt="Imagen relacionada con Persona 4">
+            <div class="img-part">
+                <img src="assets/img/subpage_courses/img_subpage_course1.png" alt="">
             </div>
         </div>
-    </section>
-
-    <!---->
+    </div>
 
 
+        <!-- ============================================-->
+    <!-- <section objetivos> close ============================-->
+    
 
 
     <!------ inicio de formulario ----->

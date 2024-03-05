@@ -42,7 +42,7 @@
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  padding: 250px 40px;
+  padding: 150px 40px;
   background-color: rgb(255, 255, 255);
 }
 
@@ -189,6 +189,54 @@
 
 }
 
+
+/***section form***/
+
+.section-form {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px;
+  color: white;
+  background-color: #ccc;
+}
+
+.section-form span {
+  font-size: 30px;
+  /* margin-bottom: 1rem; */
+  padding: 0.5rem 5rem; 
+
+  display: inline-block;
+}
+
+.black-title-form {
+  background-color: black;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 600px) {
+  .form-container {
+      width: 100%;
+      border: none;
+      flex-direction: column;
+  }
+  .flex-container {
+      margin-right: 0;
+  }
+
+  input[type="submit"] {
+
+      width: 100%;
+  }
+  .section-form {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px;
+    color: white;
+    background-color: #ccc;
+  }
+}
 
 /***section community***/
 
