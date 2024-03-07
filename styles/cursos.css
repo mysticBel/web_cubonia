@@ -4,6 +4,14 @@
     padding-bottom: 60px;
 }
 
+.slide {
+    cursor: pointer; /* Cambia el cursor a mano */
+}
+
+.slide:hover {
+    cursor: pointer; /* Cambia el cursor a mano al hacer hover */
+}
+
 .slider-cursos .hide-hover,
 .slider-cursos .show-hover {
     /* margin: auto; */

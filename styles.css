@@ -224,6 +224,25 @@ p,h1,h2,h3,h4,h5,h6,li, ul,a{
   margin: 10px 80px;
 }
 
+.container-country{
+  display: flex;
+  justify-content:left;
+  
+}
+.container-country div {
+  margin-right: 0px; /* Espacio entre los elementos */
+  justify-content:left;
+}
+.container-img-flag{
+  justify-content:left;
+}
+
+.img-flag {
+  height: 5x; /* Ancho de la bandera */
+  width: 40px;
+  
+}
+
 @media only screen and (max-width: 600px) {
   .person-info {
     flex-direction: column;

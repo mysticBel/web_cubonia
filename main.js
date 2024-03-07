@@ -23,7 +23,7 @@ $(document).ready(function () {
     slidesToShow: 3,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 668,
         settings: {
           slidesToShow: 1,
         },
@@ -133,3 +133,15 @@ document
       }, 1000); // Duración de la animación en milisegundos
     });
   });
+
+
+  //cursos
+  function irACurso1() {
+    window.location.href = 'modelado-de-personajes.html'; // Reemplaza 'nuevo.html' con la URL de tu página HTML destino
+}
+
+
+
+
+
+
