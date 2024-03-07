@@ -26,280 +26,147 @@
     <link rel="stylesheet" href="styles/alumnos.css">
     <link rel="stylesheet" href="styles/about.css">
     <link rel="stylesheet" href="styles/buttons-fixed.css">
+    <link rel="stylesheet" href="styles/instructores.css">
 
 </head>
 
-<body>
+<body class="body-instructor">
 
 
     <!-- ============================================-->
     <!-- <section navbar> begin ============================-->
-    <nav>
-        <div class="logo">
-            <img src="assets/img/logo/logo_navbar.png" alt="">
-        </div>
-        <span class="menu-icon">&#9776;</span>
-        <ul class="nav-links">
-            <li><a class = "nav-item" href="#section-about">Nosotros</a></li>
-            <li><a class = "nav-item"  href="#section-courses">Cursos</a></li>
-            <li><a class = "nav-item" href="#section-instructor">Instructores</a></li>
-            <li><a class = "nav-item"  href="#section-students">Alumnos</a></li>
-            <li><a class = "nav-item"  href="#container-form">Contacto</a></li>
-        </ul>
-    </nav>
 
+        <nav>
+            <div class="logo">
+                <img src="assets/img/logo/logo_navbar.png" alt="">
+            </div>
+            <span class="menu-icon">&#9776;</span>
+            <ul class="nav-links">
+               
+                <li><a class = "nav-item"  href="index.html#section-courses">Volver a Cursos</a></li>
+            
+                <li><a class = "nav-item"  href="#container-form">Contacto</a></li>
+            </ul>
+        </nav>
     <!-- <section navbar> close ============================-->
     <!-- ============================================-->
 
     <!-- ============================================-->
     <!-- <section header> begin ============================-->
     <header id="section-header">
-        <img src="assets/img/bg/background_header_main_v2.png" alt="Imagen de Header">
-        <button   onclick="irAEnlace('https://api.whatsapp.com/send?phone=51949150692')">Inscríbete ahora</button>
+        <!-- <img src="assets/img/bg/bg_header_course11.png" alt="Imagen de Header"> -->
     </header>
     <!-- <section header> close ============================-->
     <!-- ============================================-->
 
-    <!-- <section about> begin ============================-->
+    <!-- <section> begin ============================-->
     <!-- ============================================-->
-    <section class="section-about" id="section-about">
-        <h3>
-            CONOCE
-        </h3>
-        <h3>
-            SOBRE <strong>NOSOTROS</strong>
-        </h3>
-        <p>
-            ¡Bienvenido a <strong>Cubonia School</strong>, donde hacer <strong>3D </strong>es nuestra especialidad! <br> <br>En nuestra comunidad, te rodearás de
-            instructores que no solo son expertos en cine, publicidad y videojuegos, sino que también están inmersos en
-            proyectos que marcan tendencia en la industria. Aquí, <strong>encontrarás el apoyo y los consejos </strong> que necesitas para
-            llevar tu talento al siguiente nivel y convertirlo en una carrera emocionante. <br> <br><strong>Únete a nosotros hoy</strong> y
-            comienza a forjar tu camino hacia el éxito en el mundo de la producción 3D.
-        </p>
-        <div class="contenedor contenedor-btns">
-            <button onclick="irAEnlace('https://linktr.ee/cubonia.com')">Más información</button>
-            <button onclick="irAEnlace('https://api.whatsapp.com/send?phone=51949150692')">Inscríbete ahora</button>
-        </div>
-        <!--rrss-->
-        <div class="container-social-icons">
-            <!-- <a href="https://www.facebook.com/"><img class="icon" src="assets/img/rrss/icon_discord.png"
-                    alt="discord"></a> -->
-            <a href="https://www.instagram.com/cubonia.school"><img class="icon" src="assets/img/rrss/icon_instagram.png"
-                    alt="instagram"></a>
-            <a href="https://www.facebook.com/cubonia"><img class="icon" src="assets/img/rrss/icon_facebook.png"
-                    alt="facebook"></a>
-            <a href="https://www.tiktok.com/@cubonia.com"><img class="icon" src="assets/img/rrss/icon_tiktok.png"
-                    alt="tiktok"></a>
-            <a href="https://www.linkedin.com/company/cubonia/"><img class="icon" src="assets/img/rrss/icon_linkedin.png"
-                    alt="linkedin"></a>
-            <!-- <a href="https://www.facebook.com/"><img class="icon" src="assets/img/rrss/icon_youtube.png"
-                    alt="youtube"></a> -->
-            <a href="https://api.whatsapp.com/send?phone=51949150692"><img class="icon" src="assets/img/rrss/icon_whatsapp.png"
-                    alt="whatsapp"></a>
 
-        </div>
-
-    </section>
-
-
-    <!-- ============================================-->
-    <!-- <section about> close ============================-->
-
-
-    <!-- ============================================-->
-    <!-- <section cursos> begin ============================-->
-    <section class="section-curses" id="section-courses">
-        <div class="container">
-            <h3 class="text-white text-center">ELIGE</h3>
-            <h3>
-                NUESTROS <strong>CURSOS</strong>
-            </h3>
-
-            <p class="text-white text-center">
-                Comienza, especializate y demuestra.
-            </p>
-            <!--slider-->
-            <div class="slider-cursos">
-                <div class="slide" >               
-                    <div>
-                        <img src="/assets/img/courses/Web_Afiches_Cursos-01.png" class="img-fluid hide-hover">
-                        <img src="/assets/img/courses/Web_Afiches_Cursos-02.png" class="img-fluid show-hover" onclick="irACurso1()">
-                    </div>
+    <div class="container">
+     
+        <section class="instructor_container">   
+            <div class="teacher_card" id="teacher_01" alt="teacher_01">
+                <div class="image_card">
+                    <img src="assets/img/instructores/Web_Instructores_Individuales-01.png" alt="instructor Elvis Lopez ">
                 </div>
-
-                <div class="slide">
-                    <div>
-                        <img src="/assets/img/courses/Web_Afiches_Cursos-03.png" class="img-fluid hide-hover">
-                        <img src="/assets/img/courses/Web_Afiches_Cursos-04.png" class="img-fluid show-hover">
-                    </div>
-                </div>
-
-                <div class="slide">
-                    <div>
-                        <img src="/assets/img/courses/Web_Afiches_Cursos-05.png" class="img-fluid hide-hover">
-                        <img src="/assets/img/courses/Web_Afiches_Cursos-06.png" class="img-fluid show-hover">
+                <div  class="descrip_card">
+                    <h2>Elvis Lopez </h2>
+                    <p>Experiencia:</p>
+                    <ul>
+                        <li>Pipeline Studios | <strong>Dora</strong></li>
+                        <li>Gizmo Animation Studio | <strong>Angel Soft</strong></li>
+                        <li>Maneki Studios | <strong>La granja de zenón</strong></li>
+                        <li>Huevocartoon | <strong>Gungo y las Olimpiadas Cavernícolas</strong></li>
+                        <li>Isil | <strong>Docente</strong></li>
+                        <li>Leo Design | <strong>Docente</strong></li>
+                        <li>Always On | <strong>Primax</strong></li>
+                        <li>Always On | <strong>Clinica SANNA</strong></li>
+                        <li>Maneki Studios | <strong>Star Wars Funko</strong></li>
+                        <li>Maneki Studios | <strong>Marvel Funko</strong></li>
+                        <li>Maneki Studios | <strong>Zoe Descubre</strong></li>
+                        <li>Maneki Studios | <strong>VeeFriends</strong></li>
+                        <li>Maneki Studios | <strong>Kids TV</strong></li>
+                        <li>Maneki Studios | <strong>Lima 2019, jugamos Todos</strong></li>
+                        <li>Golem Studios | <strong>Dahlia and the Red Book</strong></li>
+                        <li>Golem Studios | <strong>Bobo</strong></li>
+                        <li>Apus Studios | <strong>Escuela 51</strong></li>
+                        <li>Apus Studios | <strong>Khomanta</strong></li>
+                        <li>Bacol Animation Studio | <strong>Bottentrålning</strong></li>
+                        <li>Hampa Studios | <strong>Bebés Llorones</strong></li>
+                        <li>Tunche Films | <strong>Ainbo: El espíritu del Amazonas</strong></li>
+                        <li>Labase Entertainment | <strong>El Hincha</strong></li>
+                        <li>Aronnax Films | <strong>Condorito, la película</strong></li>
+                        <li>Crehana | <strong>Docente</strong></li>
                         
+                    </ul>
+
+                    <div>
+                        <button>
+                            Ver artstation
+                        </button>
+                        <button>
+                            Linkedin
+                        </button>
                     </div>
                     
-                </div>
-
-                <div class="slide">
-                    <div>
-                        <img src="/assets/img/courses/Web_Afiches_Cursos-07.png" class="img-fluid hide-hover">
-                        <img src="/assets/img/courses/Web_Afiches_Cursos-08.png" class="img-fluid show-hover">
-                    </div>
-                </div>
-
-                <div class="slide">
-                    <div>
-                        <img src="/assets/img/courses/Web_Afiches_Cursos-09.png" class="img-fluid hide-hover">
-                        <img src="/assets/img/courses/Web_Afiches_Cursos-10.png" class="img-fluid show-hover">
-                    </div>
-                </div>
-
-                <div class="slide">
-                    <div>
-                        <img src="/assets/img/courses/Web_Afiches_Cursos-11.png" class="img-fluid hide-hover">
-                        <img src="/assets/img/courses/Web_Afiches_Cursos-12.png" class="img-fluid show-hover">
-                    </div>
-                </div>
-
+                </div>        
             </div>
-            <div class="contenedor contenedor-inscribete">
-                <!-- <button onclick="irAEnlace('https://drive.google.com/file/d/1lV_nfaf8n1n8xtkVORa8Sp6C9GPiTJGJ/view?usp=sharing')">Ver Temarios</button> -->
-                <button onclick="irAEnlace('https://api.whatsapp.com/send?phone=51949150692')">Inscríbete ahora</button>
+            <div class="teacher_card" id="teacher_02" alt="teacher_02">
+                <div class="image_card">
+                    <img src="assets/img/teachers/Web_Instructores_Individuales-01.png" alt="teacher 01">
+                </div>
+                <div  class="descrip_card">
+                    <h2>Alissa Paiva</h2>
+                    <p>Proyectos</p>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+    
+                    <button>
+                        Ver artstation
+                    </button>
+                </div>        
             </div>
-
+            <div class="teacher_card" id="teacher_03" alt="teacher_03">
+                <div class="image_card">
+                    <img src="assets/img/teachers/Web_Instructores_Individuales-01.png" alt="teacher 01">
+                </div>
+                <div  class="descrip_card">
+                    <h2>Alissa Paiva</h2>
+                    <p>Proyectos</p>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+    
+                    <button>
+                        Ver artstation
+                    </button>
+                </div>        
+            </div>
+            </section>
         </div>
-
-    </section>
-
-    <section class="section-instructor" id="section-instructor">
-        <div class="container">
-            <h3 class="text-center">CONOCE A</h3>
-            <div class="contenedor">
-
-                <h3 class="text-white text-center bg-black d-inline-block mx-auto p-05">NUESTROS
-                    <strong>INSTRUCTORES</strong>
-                </h3>
-            </div>
+        
 
 
-            <p class="text-white text-center">
-                Comienza, especializate y demuestra.
-            </p>
-            <!--slider-->
-            <div class="slider-instructor">
-                <div class="slice">
-                    <div>
-                        <img src="/assets/img/instructores/Web_Instructores_Individuales-01.png" class="img-fluid">
-                        <h3>Elvis <strong>Lopez</strong></h3>
-                        <p> <strong>3D </strong>Supervisor</p>
-                    </div>
-                </div>
-                <div class="slice">
-                    <div>
-                        <img src="/assets/img/instructores/Web_Instructores_Individuales-02.png" class="img-fluid">
-                        <h3>Edson <strong>Cortez</strong></h3>
-                        <p> <strong>Lookdev - </strong>Texturing</p>
-                    </div>
-                </div>
-                <div class="slice">
-                    <div>
-                        <img src="/assets/img/instructores/Web_Instructores_Individuales-03.png" class="img-fluid">
-                        <h3>Edwin <strong>Ayala</strong></h3>
-                        <p> <strong>3D Modeler </strong>Artist</p>
-                    </div>
-                </div>
-                <div class="slice">
-                    <div>
-                        <img src="/assets/img/instructores/Web_Instructores_Individuales-04.png" class="img-fluid">
-                        <h3>Percy <strong>Laureano</strong></h3>
-                        <p> <strong>Lead Rigging </strong>Artist</p>
-                    </div>
-                </div>
-                <div class="slice">
-                    <div>
-                        <img src="/assets/img/instructores/Web_Instructores_Individuales-05.png" class="img-fluid">
-                        <h3>Jose <strong>Arias</strong></h3>
-                        <p> <strong>3D </strong>Generalist</p>
-                    </div>
-                </div>
-                <div class="slice">
-                    <div>
-                        <img src="/assets/img/instructores/Web_Instructores_Individuales-06.png" class="img-fluid">
-                        <h3>Betto <strong>Vera</strong></h3>
-                        <p> <strong>3D </strong>Sculptor</p>
-                    </div>
-                </div>
-                <div class="slice">
-                    <div>
-                        <img src="/assets/img/instructores/Web_Instructores_Individuales-07.png" class="img-fluid">
-                        <h3>Ignacio <strong>Corrales</strong></h3>
-                        <p> <strong>Lighting </strong>Supervisor</p>
-                    </div>
-                </div>
-                <div class="slice">
-                    <div>
-                        <img src="/assets/img/instructores/Web_Instructores_Individuales-08.png" class="img-fluid">
-                        <h3>Alissa <strong>Paiva</strong></h3>
-                        <p> <strong>CFX Groom - </strong>Cloth</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="contenedor contenedor-inscribete">
-                
-                <button onclick="window.location.href = 'instructores.html';">Ver más</button>
-            </div>
-
-        </div>
-
-    </section>
-    <section class="section-workdone" id="section-workdone">
-        <div class="container">
-            <h3 class="text-center">ESTUDIOS DONDE <strong>TRABAJAMOS</strong></h3>
-
-            <!--slider-->
-            <div class="slider-workdone">
-                <div>
-                    <picture>
-                        <img src="/assets/img/brands/Spotify.png" class="img-fluid">
-                    </picture>
-                </div>
-                <div>
-                    <picture>
-                        <img src="/assets/img/brands/gizmo.png" class="img-fluid">
-                    </picture>
-                </div>
-                <div>
-                    <picture>
-                        <img src="/assets/img/brands/Puma.png" class="img-fluid">
-                    </picture>
-                </div>
-                <div>
-                    <picture>
-                        <img src="/assets/img/brands/Pipeline.png" class="img-fluid">
-                    </picture>
-                </div>
-                <div>
-                    <picture>
-                        <img src="/assets/img/brands/crehana.jpg" class="img-fluid">
-                    </picture>
-                </div>
-                <div>
-                    <picture>
-                        <img src="/assets/img/brands/Huevocartoon.png" class="img-fluid">
-                    </picture>
-                </div>
+ 
 
 
-            </div>
-
-        </div>
-
-    </section>
 
 
     <!-- <section students> begin ============================-->
@@ -405,7 +272,7 @@
 
     <!-- ============================================-->
     <!-- <section community> close ============================-->
-    <section class="section-form">
+    <section class="section-form" id="section-form">
         <h3>¿Aún tienes dudas?</h3>
         <h3>SOLICITA <strong>INFORMACIÓN</strong></h3>
 
@@ -482,10 +349,10 @@
             </a>
             <ul>
 
-                <li><a class = "nav-item"  href="#section-about">Nosotros</a></li>
-                <li><a class = "nav-item"  href="#section-courses">Cursos</a></li>
-                <li><a class = "nav-item"  href="#section-instructor">Instructor</a></li>
-                <li><a class = "nav-item"  href="#section-students">Alumnos</a></li>
+                <li><a class = "nav-item"  href="index.html#section-about">Nosotros</a></li>
+                <li><a class = "nav-item"  href="index.html#section-courses">Cursos</a></li>
+                <li><a class = "nav-item"  href="index.html#section-instructor">Instructor</a></li>
+                <li><a class = "nav-item"  href="index.html#section-students">Alumnos</a></li>
                 <li><a class = "nav-item"  href="#section-form">Contacto</a></li>
             </ul>
             <p>COPYRIGHT &copy; 2024 - ALL RIGHTS RESERVED BY <a class="link-cubonia" href="https://www.linkedin.com/company/cubonia/">CUBONIA SCHOOL</a></p>
