@@ -142,6 +142,15 @@ document
 
 
 
+//instructores template
+
+function abrirEnlace(url) {
+  window.open(url, '_blank');
+}
+
+
+
+
 
 
 

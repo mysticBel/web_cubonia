@@ -8,6 +8,7 @@
   
 .body-instructor{
     background-color: #505050;
+    padding-bottom: 150px ;
 }
   .container{
     background-color: #505050;
@@ -23,6 +24,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 150px;
+    
 }
 
 .teacher_card{
@@ -81,6 +83,16 @@ text-align: center;
         margin: 20px;
         width: 100%;
         transition: 0.3s;
+    }
+
+    .instructor_container{
+      
+        margin-top: 0px;
+        
+    }
+    .body-instructor{
+        
+        padding-top: 100px ;
     }
     
         
