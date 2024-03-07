@@ -72,6 +72,9 @@ function mostrarInformacion(numero) {
   // Ocultar todas las informaciones de personas
   document.querySelectorAll(".person-info").forEach((info) => {
     info.style.display = "none";
+    document
+    .querySelector(".slider img:nth-child(" + 1 + ")")
+    .classList.add("active");
   });
   // Mostrar la información de la persona seleccionada
   document.getElementById("info-" + numero).style.display = "flex";
@@ -87,7 +90,13 @@ function mostrarInformacion(numero) {
 }
 
 function irAEnlace(url) {
-  window.location.href = url;
+   // Evitar el comportamiento predeterminado del evento onclick
+   event.preventDefault();
+    // Abrir el enlace en otra página
+    window.open(url, '_blank');
+    return false;
+     // Evitar el comportamiento predeterminado del enlace
+   
 }
 
 // form

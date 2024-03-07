@@ -36,15 +36,17 @@ p,h1,h2,h3,h4,h5,h6,li, ul,a{
 }
 
 .icon {
-  width: 40%;
+  width: 50%;
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
+  transition: 0.35s ease;
 }
 
 .icon:hover {
   filter: none;
   -webkit-filter: grayscale(0);
   cursor: pointer;
+ 
 }
 
 /**/
@@ -140,11 +142,8 @@ p,h1,h2,h3,h4,h5,h6,li, ul,a{
 
 .section-students {
   width: 100%;
-  /* margin: 40px auto; */
-  padding-top: 40px;
-  padding-bottom: 40px;
   text-align: center;
-  padding: 40px;
+  padding: 100px 0 20px 0;
   color: white;
   background-color: #000000;
 }
@@ -163,10 +162,11 @@ p,h1,h2,h3,h4,h5,h6,li, ul,a{
 }
 
 
+
 /*********container vanilla alumnos************/
 .slider-container {
 
-  margin: 0 auto;
+  margin: 40px 0 150px 0;
   overflow: hidden;
   position: relative;
 }
@@ -175,7 +175,7 @@ p,h1,h2,h3,h4,h5,h6,li, ul,a{
   display: flex;
   transition: transform 0.5s ease;
   justify-content: center;
-  margin: 3rem auto;
+  margin: 4rem auto;
   flex-wrap: wrap;
 
 }
@@ -184,9 +184,9 @@ p,h1,h2,h3,h4,h5,h6,li, ul,a{
   border-radius: 50%;
   cursor: pointer;
   margin: 0 20px;
-  width: 80px;
+  width: 90px;
   /* Tamaño de las imágenes de perfil */
-  height: 80px;
+  height: 90px;
   filter: grayscale(100%);
   /* Imágenes en escala de grises */
   transition: all 0.3s ease;
@@ -205,7 +205,7 @@ p,h1,h2,h3,h4,h5,h6,li, ul,a{
   align-items: flex-start;
   text-align: center;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 100px;
 }
 .person-info-text{
   text-align: start !important;
@@ -221,7 +221,7 @@ p,h1,h2,h3,h4,h5,h6,li, ul,a{
 
 .person-info img {
   max-width: 300px;
-  margin: 10px 30px;
+  margin: 10px 80px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -230,14 +230,28 @@ p,h1,h2,h3,h4,h5,h6,li, ul,a{
     /* Cambiar a columna en pantallas pequeñas */
     align-items: center;  
     justify-content: center;
+    text-align: start !important;
+    flex-direction: column-reverse;
 
   }
   .person-info-text{
     text-align: center;
-    width: 100%;
+    justify-content: center;
+    width: 80%;
+  
 
   }
 
+  .person-info-text p{
+    margin: 50px auto;
+    text-align: center;
+  }
+
+  .person-info-text h2{
+    text-align: center;
+    margin: 50px auto;
+
+  }
 
 }
 
@@ -276,7 +290,11 @@ p,h1,h2,h3,h4,h5,h6,li, ul,a{
 
 }
 
+@media only screen and (max-width: 600px) {
+.container-social-icons{
 
+}
+}
 
 /**slider brands**/
 
