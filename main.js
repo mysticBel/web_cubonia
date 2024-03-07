@@ -18,7 +18,7 @@ $(document).ready(function () {
   });
   $(".slider-instructor").slick({
     dots: false,
-    arrows: false,
+    arrows: true,
     autoplay: true,
     slidesToShow: 3,
     responsive: [
@@ -31,7 +31,7 @@ $(document).ready(function () {
     ],
   });
   $(".slider-workdone").slick({
-    dots: false,
+    dots: true,
     arrows: false,
     autoplay: true,
     slidesToShow: 5,

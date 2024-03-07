@@ -1,9 +1,15 @@
+@import url('../assets/fonts/fonts.css');
 
 
 .section-instructor {
-    padding-top: 100px;
+    padding-top: 120px;
     padding-bottom: 60px;
    
+}
+
+.text-instructores{
+    margin-top: 20px;
+    margin-bottom:100px;
 }
 
 .slider-instructor img {
@@ -17,6 +23,29 @@
     text-align: center;
 
 }
+
+.boton-ver-mas{
+    padding: 10px 20px;
+    border: black 2px solid;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    width: 313px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 80px;
+}
+
+
+.boton-ver-mas:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
+
 
 
 
@@ -37,4 +66,58 @@
 
 .section-instructor  .contenedor > h3 {
     width: 662px;
+}
+
+
+/***/
+.slick-prev::before,
+.slick-next::before {
+    content: none;
+}
+
+.slick-prev,
+.slick-next,
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+}
+
+.slider-instructor .slick-next {
+    background-image: url('/assets/img/slider/arrow-next-black.png');
+}
+
+.slider-instructor .slick-prev {
+    background-image: url('/assets/img/slider/arrow-prev-black.png');
+}
+
+.slider-instructor .slick-prev:hover,
+.slider-instructor .slick-prev:focus {
+    background-image: url('/assets/img/slider/arrow-prev.png');
+}
+
+.slider-instructor .slick-next:hover,
+.slider-instructor .slick-next:focus {
+    background-image: url('/assets/img/slider/arrow-next.png');
+}
+
+.slick-dots {
+    bottom: -65px;
+}
+
+.slick-dots li button:before {
+    content: none;
+}
+
+.slider-instructor .slick-dots li.slick-active button {
+    background-color: #08FFDE;
+}
+
+.slider-cursos .slick-dots li button {
+    border-radius: 50%;
+    border: 2px solid #08FFDE;
 }

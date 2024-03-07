@@ -8,11 +8,13 @@
   box-sizing: border-box;
 }
 
-p,h1,h2,h3,h4,h5,h6,li, ul,a{
+p,h1,h2,h3,h4,h5,h6,li, ul,a, button{
   font-family: FractulLight;
 }
 
-
+button{
+  font-family: FractulAltMedium;
+}
 
 
 /*********************/
