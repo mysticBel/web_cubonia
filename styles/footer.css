@@ -1,3 +1,5 @@
+@import url('../assets/fonts/fonts.css');
+
 .section-footer {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -13,6 +15,7 @@
   footer ul {
     list-style-type: none;
     padding: 0;
+    margin: 30px auto;
   }
   footer ul li {
     margin-bottom: 10px;
@@ -26,6 +29,22 @@
   footer ul li a:hover {
     background-color:#08FFDE; 
     text-decoration: none;
+    color: black;
+  }
+
+  footer p{
+    margin: 60px 0 40px 0;
+  }
+
+  .link-cubonia{
+    text-decoration: none;
+    color: #08FFDE; 
+  }
+
+  .link-cubonia:hover{
+    text-decoration: none;
+ 
+    color: rgb(127, 196, 202);
   }
 
     /* Estilos para el logo */

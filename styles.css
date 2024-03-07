@@ -1,9 +1,19 @@
+
+@import url('../assets/fonts/fonts.css');
+
 /* Base styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+p,h1,h2,h3,h4,h5,h6,li, ul,a{
+  font-family: FractulLight;
+}
+
+
+
 
 /*********************/
 /** section nosotros**/
@@ -26,7 +36,7 @@
 }
 
 .icon {
-  width: 50%;
+  width: 40%;
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
 }
@@ -122,7 +132,10 @@
     border: #2ba58b 2px solid;
 }
 
-/***section students***/
+
+/*********************/
+/*** section students**/
+/*********************/
 
 
 .section-students {
@@ -228,8 +241,9 @@
 
 }
 
-
-/***section community***/
+/*********************/
+/*** section community*/
+/*********************/
 
 .section-community {
   width: 100%;
@@ -244,10 +258,14 @@
   /* padding: 0.5rem; */
   border: 5px solid #08FFDE;
   display: inline-block;
+  font-family: 'FractulAltMedium' !important;
+  letter-spacing: 0.2em; /* Espacio entre letras */
+  padding: 0 20px 0 20px;
 }
 
 .sky-title {
   background-color: #08FFDE;
+  letter-spacing: 0.2em; /* Espacio entre letras */
 }
 
 .section-community p {

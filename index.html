@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="styles/workdone.css">
     <link rel="stylesheet" href="styles/alumnos.css">
     <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/buttons-fixed.css">
 
 </head>
 
@@ -39,11 +40,11 @@
         </div>
         <span class="menu-icon">&#9776;</span>
         <ul class="nav-links">
-            <li><a href="#section-about">Nosotros</a></li>
-            <li><a href="#section-courses">Cursos</a></li>
-            <li><a href="#">Instructores</a></li>
-            <li><a href="#section-students">Alumnos</a></li>
-            <li><a href="#container-form">Contacto</a></li>
+            <li><a class = "nav-item" href="#section-about">Nosotros</a></li>
+            <li><a class = "nav-item"  href="#section-courses">Cursos</a></li>
+            <li><a class = "nav-item" href="#section-instructor">Instructores</a></li>
+            <li><a class = "nav-item"  href="#section-students">Alumnos</a></li>
+            <li><a class = "nav-item"  href="#container-form">Contacto</a></li>
         </ul>
     </nav>
 
@@ -52,7 +53,7 @@
 
     <!-- ============================================-->
     <!-- <section header> begin ============================-->
-    <header>
+    <header id="section-header">
         <img src="assets/img/bg/background_header_main_v2.png" alt="Imagen de Header">
         <button   onclick="irAEnlace('https://api.whatsapp.com/send?phone=51949150692')">Inscríbete ahora</button>
     </header>
@@ -69,10 +70,10 @@
             SOBRE <strong>NOSOTROS</strong>
         </h3>
         <p>
-            ¡Bienvenido a Cubonia School, donde hacer 3D es nuestra especialidad! En nuestra comunidad, te rodearás de
+            ¡Bienvenido a <strong>Cubonia School</strong>, donde hacer <strong>3D </strong>es nuestra especialidad! <br> <br>En nuestra comunidad, te rodearás de
             instructores que no solo son expertos en cine, publicidad y videojuegos, sino que también están inmersos en
-            proyectos que marcan tendencia en la industria. Aquí, encontrarás el apoyo y los consejos que necesitas para
-            llevar tu talento al siguiente nivel y convertirlo en una carrera emocionante. Únete a nosotros hoy y
+            proyectos que marcan tendencia en la industria. Aquí, <strong>encontrarás el apoyo y los consejos </strong> que necesitas para
+            llevar tu talento al siguiente nivel y convertirlo en una carrera emocionante. <br> <br><strong>Únete a nosotros hoy</strong> y
             comienza a forjar tu camino hacia el éxito en el mundo de la producción 3D.
         </p>
         <div class="contenedor contenedor-btns">
@@ -447,21 +448,33 @@
 
     </div>
 
+
+    <!-- boton flotante whastapp-->
+  
+      <div class="whatsapp-container">
+        <a href="#section-header" class="scroll-top">
+          <img  src="assets/img/buttons_fixed/icon_scroll_top_bottom_fixed.png" alt="Subir al Inicio" class="scroll-top-icon">
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=51949150692" target="_blank" class="whatsapp-link">
+          <img src="assets/img/buttons_fixed/icon_whatsapp_bottom_fixed.png" alt="WhatsApp" class="whatsapp-icon">
+        </a>
+      </div>
+
     <!--FOOTER-->
     <section class="section-footer">
         <footer>
             <a href="#">
-                <img src="assets/img/logo/logo_navbar.png" alt="Logo">
+                <img src="assets/img/logo/logo_cubonia_footer.png" alt="Logo">
             </a>
             <ul>
 
-                <li><a href="#section-about">Nosotros</a></li>
-                <li><a href="#section-courses">Cursos</a></li>
-                <li><a href="#">Instructor</a></li>
-                <li><a href="#">Alumnos</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a class = "nav-item"  href="#section-about">Nosotros</a></li>
+                <li><a class = "nav-item"  href="#section-courses">Cursos</a></li>
+                <li><a class = "nav-item"  href="#section-instructor">Instructor</a></li>
+                <li><a class = "nav-item"  href="#section-students">Alumnos</a></li>
+                <li><a class = "nav-item"  href="#section-form">Contacto</a></li>
             </ul>
-            <p>COPYRIGHT &copy; 2024 - ALL RIGHTS RESERVED BY CUBONIA SCHOOL</p>
+            <p>COPYRIGHT &copy; 2024 - ALL RIGHTS RESERVED BY <a class="link-cubonia" href="https://www.linkedin.com/company/cubonia/">CUBONIA SCHOOL</a></p>
         </footer>
     </section>
     <!--fin footer-->

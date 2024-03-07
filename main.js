@@ -106,3 +106,21 @@ document
       alert("Completa los campos.");
     }
   });
+
+
+
+  ///scroll top
+  $(document).ready(function() {
+    // Desplazamiento suave al hacer clic en el botón de "Subir al Inicio"
+    $('.scroll-top').on('click', function(event) {
+      // Evitar el comportamiento predeterminado del enlace
+      event.preventDefault();
+      // Obtener la posición del enlace de destino
+      var target = $(this).attr('href');
+      var targetOffset = $(target).offset().top;
+      // Animar el desplazamiento a la posición del destino
+      $('html, body').animate({
+        scrollTop: targetOffset
+      }, 1000); // Duración de la animación en milisegundos
+    });
+  });
