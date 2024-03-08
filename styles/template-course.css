@@ -149,6 +149,71 @@ margin: 0 auto;
     color: white;
 }
 
+
+/*******instructores del curso*******/
+
+.container-instructors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px auto;
+  }
+  
+  .instructor {
+    text-align: center;
+    margin: 50px 60px;
+  }
+  
+  .instructor .instructor-img {
+    width: 200px;
+    height: 200px;
+    /* border-radius: 50%; */
+    filter: grayscale(100%); /* Aplica escala de grises */
+    transition: filter 0.3s; /* Agrega transición al filtro */
+  }
+  
+  .instructor:hover .instructor-img {
+    filter: grayscale(0%); /* Elimina la escala de grises en el hover */
+  }
+    
+  .instructor-img-linkedin {
+    width: 35px;
+    height: 35px;
+    /* border-radius: 50%; */
+    filter: grayscale(100%); /* Aplica escala de grises */
+    transition: filter 0.3s; /* Agrega transición al filtro */
+  }
+  
+  .instructor-img-linkedin:hover {
+    filter: grayscale(0%); /* Elimina la escala de grises en el hover */
+  cursor: pointer;
+}
+  
+  
+  .name,
+  .lastname {
+    margin: 10px 0;
+  }
+  
+  .linkedin-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s; /* Agrega transición al tamaño en el hover */
+  }
+  
+  .linkedin-icon:hover {
+   cursor: pointer;
+  }
+
+
+
+
+
+
+
+
+
+
 /*******certificado*******/
 .highlight-span-sky{
     background-color: #08FFDE;;
