@@ -69,6 +69,23 @@
     margin-right: 10px;
 }
 
+/********* 1 columna :fecha y horario *********/
+.contenido-1-column{
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    line-height: 1.5; 
+}
+
+
+
+.texto-1-column p{
+    width: 100%;
+    margin: 20px auto;
+} 
+
+
 @media only screen and (max-width: 1000px) {
 
     .section_template {
@@ -80,14 +97,11 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        width: 100%;
+        width: 90%;
     }
-    .texto-2-columns{
-        width: 80%;
-        margin: auto;
+
     
-    }
-    
+
     
 
 }
