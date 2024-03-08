@@ -88,13 +88,13 @@ background-color: rgb(236, 236, 236);
     margin: 20px auto;
 } 
 
-/*******reqierimientos*******/
+/*******requerimientos*******/
 
 .course-info {
     justify-content: space-around;
     background-color: rgb(255, 255, 255);
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 70px;
+    padding-bottom: 70px;
     width: 90%;
     margin: 0 auto;
 }
@@ -127,6 +127,28 @@ margin: 0 auto;
     margin: 5px 20px;
 }
 
+
+.button-box-dynamic{
+    padding: 10px 10px;
+    border: black 2px solid;
+    color: black;
+    cursor: pointer;
+    width: 250px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    transition: background-color 0.3s;
+}
+
+.button-box-dynamic:hover{
+    background-color: black;
+    color: white;
+}
+.button-box-dynamic:active{
+    background-color: black;
+    color: white;
+}
+
 /*******certificado*******/
 .highlight-span-sky{
     background-color: #08FFDE;;
@@ -157,6 +179,11 @@ margin: 0 auto;
         flex-direction: column;
     
     }
+
+    .button-box-dynamic{
+       margin-top: 20px;
+    }
+    
     
 
 }

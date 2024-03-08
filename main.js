@@ -152,24 +152,26 @@ function abrirEnlace(url) {
 //mostrar informacion de cursos - cursos template
   /////////
   function mostrarInformacionCurso(numero) {
+ 
     // Ocultar todas las informaciones de personas
     document.querySelectorAll('.course-info').forEach(info => {
       info.style.display = 'none';
+ 
     });
 
     // Mostrar la información de la persona seleccionada
     document.getElementById('info-' + numero).style.display = 'flex';
     
     // Eliminar la clase 'active' de todas las imágenes
-    document.querySelectorAll('.slider img').forEach(img => {
-      img.classList.remove('active');
+    document.querySelectorAll('.button-box-dynamic').forEach(button => {
+      button.classList.remove('active');
     });
     // Agregar la clase 'active' a la imagen seleccionada
-    document.querySelector('.slider img:nth-child(' + numero + ')').classList.add('active');
+    document.querySelector('.button-box-dynamic:nth-child(' + numero + ')').classList.add('active');
   }
 
 
-
+//
 
 
 
