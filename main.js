@@ -135,14 +135,16 @@ document
   });
 
 
+
+
   //cursos
   function irACurso1() {
-    window.location.href = 'modelado-de-personajes.html'; // Reemplaza 'nuevo.html' con la URL de tu página HTML destino
+    window.location.href = 'modelado-personajes-3d.html'; // Reemplaza 'nuevo.html' con la URL de tu página HTML destino
 }
 
 
 
-//instructores template
+//instructores template 
 
 function abrirEnlace(url) {
   window.open(url, '_blank');
@@ -171,8 +173,35 @@ function abrirEnlace(url) {
   }
 
 
-//
+//temario - cursos template
+$(document).ready(function () {
+  $('.archive_year ul').hide();
 
+  $('.years').on('click', function () {
+      $(this).children('ul.archive_month').slideToggle();
+      $('.archive_month').not($(this).children('ul.archive_month')).slideUp();
+  });
 
+  $('.months').on('click', function (e) {
+      $(this).children('ul.archive_posts').slideToggle();
+      $('.archive_posts').not($(this).children('ul.archive_posts')).slideUp();
+  });
+});
 
+//accordion
 
+jQuery(document).ready(function() {
+  // run the accordion
+var allPanels = jQuery('.accord-content').hide();
+var heads = jQuery('.accordion header');
+jQuery(heads).on('click', function() {
+    $this = jQuery(this);
+    $target =  $this.parent().find('div.accord-content');
+    if(!$target.hasClass('active')){
+        heads.removeClass('selected');
+        $this.addClass('selected');
+        allPanels.removeClass('active').slideUp();
+        $target.addClass('active').slideDown();
+    }
+});
+});

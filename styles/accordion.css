@@ -1,0 +1,50 @@
+.accordion {
+    margin: 0 auto;
+  }
+  
+  .accordion header {  
+    cursor:pointer;
+    background: #004B92;
+    padding: 18px;
+    border-bottom: 1px solid #00256C;
+    transition: background 1.0s ease-in-out;
+    -moz-transition: background 1.0s ease-in-out;
+    -webkit-transition: background 1.0s ease-in-out;
+  }
+  
+  .accordion header h5 {
+      font-weight: 300!important;
+      font-size: 1.8rem!important;  
+    color: white!important;
+      margin-bottom: 0!important;
+  }
+  
+  .accordion .accord-content { 
+    display: none;
+    width:100%;
+    color: #00256C;
+    background-color: #fff;
+    box-sizing: border-box;
+  
+    }
+  
+  .accord-content p {
+    padding:18px;
+    margin-bottom: 0;
+  }
+  
+  
+  .accord-content .selected h5 {
+    background: #00256C;
+  }
+  .accordion h5:after {
+    content: '\002B';
+    color: #fff;
+    font-weight: bold;
+    float: right;
+    margin: 0 5px;
+  }
+  
+  .accordion .selected h5:after {
+    content: "\2212";
+  }
