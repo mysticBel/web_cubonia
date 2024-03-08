@@ -93,19 +93,25 @@ background-color: rgb(236, 236, 236);
 .course-info {
     justify-content: space-around;
     background-color: rgb(255, 255, 255);
-padding-top: 100px;
-padding-bottom: 100px;
-width: 90%;
-margin: 0 auto;
-
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 90%;
+    margin: 0 auto;
 }
-.course-info img{
+
+.software {
+    text-align: center;
+}
+
+.software img {
     width: 70px;
     height: 70px;
-    /* margin-right: 10px;
-    margin-left: 10px; */
 }
 
+.software p {
+    margin-top: 5px;
+    font-size: 14px;
+}
 
 .course-info-text {
     display: flex;
@@ -146,7 +152,11 @@ margin: 0 auto;
     }
 
     
-
+    .course-info-text {
+        display: flex;
+        flex-direction: column;
+    
+    }
     
 
 }
