@@ -1,0 +1,127 @@
+
+.section_template {
+    width: 70%;
+    margin: auto;
+}
+
+
+
+.subtitle__main{
+    display: flex;
+    color: white;
+    background-color: black;
+}
+
+.subtitle__main div h2 {
+    margin:  10px 0 10px 40px;
+}
+
+.subtitle__main div img{
+    margin:  10px 0 10px 50px;
+}
+
+
+
+
+.section_template .contenido {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.section_template .texto, .imagen, .descripcion, .botones {
+    width: 48%;
+}
+
+.section_template .texto, .descripcion, .botones {
+    margin-bottom: 20px;
+}
+
+.imagen img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/********* dirigido a *********/
+.contenido-2-columns{
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    line-height: 1.5;
+   
+}
+
+
+.texto-2-columns {
+    margin-right: 150px; /* Ajusta este valor según el espacio que desees entre las columnas */
+}
+.texto-2-columns p{
+    width: 300px;
+}
+
+
+.span-ul{
+    color: rgb(69, 219, 207);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .section_template {
+        width: 90%;
+        margin: auto;
+    }
+    
+    .contenido-2-columns{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .texto-2-columns{
+        width: 80%;
+        margin: auto;
+    
+    }
+    
+    
+
+}
+
+
+
+
+
+
+/* Estilos para vista móvil */
+@media only screen and (max-width: 768px) {
+    .section_template {
+        width: 100%;
+        margin: auto;
+    }
+    .contenido {
+        flex-direction: column-reverse;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .imagen, .descripcion, .botones {
+        width: 100%;
+    }
+    .texto{
+        width: 100%;
+        margin: auto;
+        text-align: justify;
+    }
+
+    .texto-2-columns {
+        margin-right: 0px; /* Ajusta este valor según el espacio que desees entre las columnas */
+    }
+    
+}
