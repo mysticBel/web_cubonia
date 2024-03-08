@@ -97,6 +97,7 @@ background-color: rgb(236, 236, 236);
     padding-bottom: 70px;
     width: 90%;
     margin: 0 auto;
+    border: #08FFDE 3px solid;
 }
 
 .software {
@@ -207,36 +208,7 @@ margin: 0 auto;
 
 /*******temario*******/
 
-.archive_year {
-    margin-left: 1em;
-    font-size: large;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.archive_month {
-    margin-left: 1em;
-    margin-top: 0;
-    margin-bottom: 1em;
-    list-style-type: circle;
-    font-size: medium;
-    cursor: pointer;
-}
-
-.archive_posts {
-    margin-left: 1em;
-    margin-top: 0;
-    margin-bottom: 1em;
-    list-style: square url('http://www.webbossuk.com/admin/images/reply-arrow.png');
-    font-weight: normal;
-    cursor: pointer;
-}
-
-.months {
-    background-color: #08FFDE;
-}
-
-
+ 
 
 
 
