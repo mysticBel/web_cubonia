@@ -1,3 +1,5 @@
+@import url('../assets/fonts/fonts.css');
+
 .template_course_body{
 background-color: rgb(236, 236, 236);
 }
@@ -45,7 +47,33 @@ background-color: rgb(236, 236, 236);
     height: auto;
 }
 
+/*******objectives*******/
+.container-objectives{
+    display: flex;
+    flex-direction: row;
+    margin: 50px auto;
+}
 
+.container-objectives div{
+    width: 50%;
+    margin: 20px 20px;
+
+}
+
+.card-img-main{
+    width: 100%;
+    text-align: center;
+}
+.img-main{
+    width: 80%;
+    margin:  auto;
+    
+
+}
+.img-level{
+    width: 130px;
+    margin-top: 20px;
+}
 
 /********* dirigido a *********/
 .contenido-2-columns{
@@ -206,13 +234,6 @@ margin: 0 auto;
    cursor: pointer;
   }
 
-/*******temario*******/
-
- 
-
-
-
-
 
 /*******certificado*******/
 .highlight-span-sky{
@@ -222,7 +243,52 @@ margin: 0 auto;
     margin: 0 3px 0 3px;
 }
 
+/********* inversion *********/
+.container-cost{
+    width: 100%;
+    margin: 20px auto;
+    
+   
+}
+/* .card-cost{
+    padding-top: 20px;
+} */
 
+.card-cost-header,
+.card-cost-content{
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0 0 20px;
+   margin-bottom: 20px;
+}
+.card-header-left,
+.card-content-left{
+    width: 70%;
+
+}
+.card-header-left p span{
+    font-family: 'FractulAltMedium' !important;
+}
+
+.card-header-right,
+.card-content-right{
+    width: 30%;
+}
+
+.span-cost-bold{
+    font-family: 'FractulAltMedium' !important;
+    font-size: 20px;
+}
+
+/*********payments *********/
+
+.card-cost-header{
+    background-color: #08FFDE;
+}
+
+.card-cost-content{
+    background-color: #f5f4f4;
+}
 
 @media only screen and (max-width: 1000px) {
 
@@ -248,6 +314,7 @@ margin: 0 auto;
     .button-box-dynamic{
        margin-top: 20px;
     }
+    
     
     
 
@@ -284,6 +351,35 @@ margin: 0 auto;
     .texto-2-columns {
         margin-right: 0px; /* Ajusta este valor según el espacio que desees entre las columnas */
     }
+
+    /*******temario objectives*******/
+    .container-objectives{
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+  
+        width: 90%;
+    }
+
+    .container-objectives div{
+        width: 100%;
+        margin: auto;
+        
+
+    }
+
+    .card-img-main{
+        width: 100%;
+        text-align: center;
+    }
+    .img-main{
+        width: 80%;
+        margin:  50px 0 50px 0;
+        
+
+    }
+
+
     
 }
 
