@@ -178,6 +178,13 @@ margin: 0 auto;
     color: white;
 }
 
+.slider-container-requirements {
+
+    margin: 0px 0 120px 0;
+    overflow: hidden;
+    position: relative;
+  }
+  
 
 /*******instructores del curso*******/
 
