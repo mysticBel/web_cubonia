@@ -137,10 +137,19 @@ document
 
 
 
-  //cursos
+  //cursos slider
   function irACurso1() {
-    window.location.href = 'modelado-personajes-3d.html'; // Reemplaza 'nuevo.html' con la URL de tu página HTML destino
-}
+    window.location.href = 'modelado-personajes-3d.html'; 
+  }
+  function irACurso2() {
+    window.location.href = 'modelado-props.html'; 
+  }
+  function irACurso3() {
+    window.location.href = 'modelado-hardsurface.html'; 
+  }
+  function irACurso4() {
+    window.location.href = 'escultura-personajes-zbrush.html'; 
+  }
 
 
 
