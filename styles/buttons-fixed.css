@@ -8,25 +8,30 @@
 .whatsapp-link img {
   width: 60px;
   height: auto;
-  filter: drop-shadow(0 0 10px green); /* Sombra verde */
-  animation: pulse 1.5s infinite alternate; /* Animación de parpadeo */
+  /* filter: drop-shadow(0 0 10px green); Sombra verde */
+  /* animation: pulse 1.5s infinite alternate; Animación de parpadeo */
 }
 
 .scroll-top {
   position: absolute;
   top: -80px;
 
-  /* right: 10px; */
+ 
+  transition: filter 0.3s; /* Agrega transición al filtro */
 }
 
 .scroll-top:hover .scroll-top-icon {
   cursor: pointer;
-  filter: drop-shadow(0 0 10px #0b7462); /* Sombra azul */
+   /* filter: grayscale(100%);Aplica escala de grises */
+  /* filter: drop-shadow(0 0 10px #0b7462); Sombra azul */
 }
 
 .scroll-top-icon {
   width: 60px;
   height: auto;
+   /* right: 10px; */
+  /*  filter:  grayscale(0%); Elimina la escala de grises en el hover */
+   
   transition: filter 0.3s; /* Transición para el cambio de filtro */
 }
 

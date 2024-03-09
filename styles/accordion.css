@@ -1,6 +1,9 @@
+@import url('../assets/fonts/fonts.css');
+
 .accordion {
     margin: 50px auto;
     width: 90%;
+   
     
   }
   
@@ -15,12 +18,24 @@
     -webkit-transition: background 1.0s ease-in-out;
     text-align: left;
   }
-  
+
+  .module-title{
+    font-family: 'FractulAltMedium' !important;
+    
+  }
+
+  .module-title-sky{
+    font-family: 'FractulAltMedium' !important;
+     
+    color:#21ccb5 !important;  
+  }
+
   .accordion header h5 {
-      font-weight: 600!important;
+    font-family: 'FractulAltLight' ;
+      /* font-weight: 600!important; */
       font-size: 1.1rem!important;  
     color: rgb(0, 0, 0)!important;
-      margin-bottom: 0!important;
+      margin-bottom: 5px !important;
   }
   
 
@@ -33,9 +48,14 @@
     box-sizing: border-box;
   
     }
+
+  .span-header{
+    
+    color: #969696;
+  }
   
   .accord-content p {
-    padding:18px;
+    padding:8px;
     margin-bottom: 0;
   }
   
