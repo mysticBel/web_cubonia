@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'FractulAltLight';
+    src: url('FractulAlt-Light.eot');
+    src: url('FractulAlt-Light.eot?#iefix') format('embedded-opentype'),
+        url('FractulAlt-Light.woff2') format('woff2'),
+        url('FractulAlt-Light.woff') format('woff'),
+        url('FractulAlt-Light.ttf') format('truetype'),
+        url('FractulAlt-Light.svg#FractulAlt-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FractulLight';
+    src: url('Fractul-Light.eot');
+    src: url('Fractul-Light.eot?#iefix') format('embedded-opentype'),
+        url('Fractul-Light.woff2') format('woff2'),
+        url('Fractul-Light.woff') format('woff'),
+        url('Fractul-Light.ttf') format('truetype'),
+        url('Fractul-Light.svg#Fractul-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FractulAltBold';
+    src: url('FractulAlt-Bold.eot');
+    src: url('FractulAlt-Bold.eot?#iefix') format('embedded-opentype'),
+        url('FractulAlt-Bold.woff2') format('woff2'),
+        url('FractulAlt-Bold.woff') format('woff'),
+        url('FractulAlt-Bold.ttf') format('truetype'),
+        url('FractulAlt-Bold.svg#FractulAlt-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FractulAltMedium';
+    src: url('FractulAlt-Medium.eot');
+    src: url('FractulAlt-Medium.eot?#iefix') format('embedded-opentype'),
+        url('FractulAlt-Medium.woff2') format('woff2'),
+        url('FractulAlt-Medium.woff') format('woff'),
+        url('FractulAlt-Medium.ttf') format('truetype'),
+        url('FractulAlt-Medium.svg#FractulAlt-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+.FractulAltMedium{
+    font-family: 'FractulAltMedium';
+}
+.FractulAltBold{
+    font-family: 'FractulAltBold';
+}
+.FractulLight{
+    font-family: 'FractulLight';
+}
+.FractulAltLight{
+    font-family: 'FractulAltLight';
+}

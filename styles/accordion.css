@@ -1,0 +1,85 @@
+@import url('../assets/fonts/fonts.css');
+
+.accordion {
+    margin: 50px auto;
+    width: 90%;
+   
+    
+  }
+  
+  .accordion header {  
+    cursor:pointer;
+    background: #ffffff;
+    padding: 18px;
+    margin: 10px auto;
+    border-bottom: 3px solid #17f1d4;
+    transition: background 1.0s ease-in-out;
+    -moz-transition: background 1.0s ease-in-out;
+    -webkit-transition: background 1.0s ease-in-out;
+    text-align: left;
+  }
+
+  .module-title{
+    font-family: 'FractulAltMedium' !important;
+    
+  }
+
+  .module-title-sky{
+    font-family: 'FractulAltMedium' !important;
+     
+    color:#21ccb5 !important;  
+  }
+
+  .accordion header h5 {
+    font-family: 'FractulAltLight' ;
+      /* font-weight: 600!important; */
+      font-size: 1.1rem!important;  
+    color: rgb(0, 0, 0)!important;
+      margin-bottom: 5px !important;
+  }
+  
+
+  .accordion .accord-content { 
+    display: none;
+    width:100%;
+    color: #000000;
+    background-color:  #f8f7f7;
+    /* border: #08FFDE 3px solid; */
+    box-sizing: border-box;
+  
+    }
+
+  .span-header{
+    
+    color: #969696;
+  }
+  
+  .accord-content p {
+    padding:8px;
+    margin-bottom: 0;
+  }
+  
+  
+  .accord-content .selected h5 {
+    background: #00256C;
+  }
+  .accordion h5:after {
+    content: '';
+    background-image: url('../assets/img/flechas/arrow-down.png');
+    width: 20px; /* ajusta el ancho de la imagen según sea necesario */
+    height: 20px; /* ajusta el alto de la imagen según sea necesario */
+    display: inline-block;
+    background-size: cover; /* para cubrir todo el espacio disponible */
+    float: right;
+    margin: 0 5px;
+  }
+  
+  .accordion .selected h5:after {
+  
+    content: '';
+    background-image:url('../assets/img/flechas/arrow-up.png');
+    width: 20px; /* ajusta el ancho de la imagen según sea necesario */
+    height: 20px; /* ajusta el alto de la imagen según sea necesario */
+    display: inline-block;
+    background-size: cover; /* para cubrir todo el espacio disponible */
+  }

@@ -1,0 +1,30 @@
+.section-students .person-info button {
+    padding: 10px 20px;
+    border: #08FFDE 2px solid;
+    background-color: #000000;
+    color: #08FFDE;
+    cursor: pointer;
+}
+
+.section-students .person-info button:hover {
+    background-color: #08FFDE;
+    color: #000000;
+}
+
+.section-students .person-info button:active {
+    background-color: #08FFDE;
+    color: #000000;
+}
+
+.section-students>h3:nth-of-type(2) {
+    background-color: #FFFFFF;
+    color: #000000;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    width: 100%;
+    max-width: 530px;
+    padding: 10px 25px;
+}
+

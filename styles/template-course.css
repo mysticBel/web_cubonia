@@ -1,0 +1,290 @@
+.template_course_body{
+background-color: rgb(236, 236, 236);
+}
+
+.section_template {
+    width: 70%;
+    margin: auto;
+}
+
+
+
+.subtitle__main{
+    display: flex;
+    color: white;
+    background-color: black;
+}
+
+.subtitle__main div h2 {
+    margin:  10px 0 10px 40px;
+}
+
+.subtitle__main div img{
+    margin:  10px 0 10px 50px;
+}
+
+
+
+
+.section_template .contenido {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.section_template .texto, .imagen, .descripcion, .botones {
+    width: 48%;
+}
+
+.section_template .texto, .descripcion, .botones {
+    margin-bottom: 20px;
+}
+
+.imagen img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/********* dirigido a *********/
+.contenido-2-columns{
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    line-height: 1.5;
+   
+}
+
+
+.texto-2-columns {
+    margin-right: 150px; /* Ajusta este valor según el espacio que desees entre las columnas */
+}
+.texto-2-columns p{
+    width: 300px;
+}
+
+
+.span-ul{
+    color: rgb(69, 219, 207);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/********* 1 columna :fecha y horario *********/
+.contenido-1-column{
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    line-height: 1.5; 
+}
+
+
+
+.texto-1-column p{
+    width: 100%;
+    margin: 20px auto;
+} 
+
+/*******requerimientos*******/
+
+.course-info {
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    padding-top: 70px;
+    padding-bottom: 70px;
+    width: 90%;
+    margin: 0 auto;
+    border: #08FFDE 3px solid;
+}
+
+.software {
+    text-align: center;
+}
+
+.software img {
+    width: 70px;
+    height: 70px;
+}
+
+.software p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.course-info-text {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+padding-top: 50px;
+padding-bottom: 50px;
+width: 90%;
+margin: 0 auto;
+
+}
+.column-info-text{
+    margin: 5px 20px;
+}
+
+
+.button-box-dynamic{
+    padding: 10px 10px;
+    border: black 2px solid;
+    color: black;
+    cursor: pointer;
+    width: 250px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    transition: background-color 0.3s;
+}
+
+.button-box-dynamic:hover{
+    background-color: black;
+    color: white;
+}
+.button-box-dynamic:active{
+    background-color: black;
+    color: white;
+}
+
+
+/*******instructores del curso*******/
+
+.container-instructors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px auto;
+  }
+  
+  .instructor {
+    text-align: center;
+    margin: 50px 60px;
+  }
+  
+  .instructor .instructor-img {
+    width: 200px;
+    height: 200px;
+    /* border-radius: 50%; */
+    filter: grayscale(100%); /* Aplica escala de grises */
+    transition: filter 0.3s; /* Agrega transición al filtro */
+  }
+  
+  .instructor:hover .instructor-img {
+    filter: grayscale(0%); /* Elimina la escala de grises en el hover */
+  }
+    
+  .instructor-img-linkedin {
+    width: 35px;
+    height: 35px;
+    /* border-radius: 50%; */
+    filter: grayscale(100%); /* Aplica escala de grises */
+    transition: filter 0.3s; /* Agrega transición al filtro */
+  }
+  
+  .instructor-img-linkedin:hover {
+    filter: grayscale(0%); /* Elimina la escala de grises en el hover */
+  cursor: pointer;
+}
+  
+  
+  .name,
+  .lastname {
+    margin: 10px 0;
+  }
+  
+  .linkedin-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s; /* Agrega transición al tamaño en el hover */
+  }
+  
+  .linkedin-icon:hover {
+   cursor: pointer;
+  }
+
+/*******temario*******/
+
+ 
+
+
+
+
+
+/*******certificado*******/
+.highlight-span-sky{
+    background-color: #08FFDE;;
+    font-weight: bold;
+    padding: 0 3px 0 3px;
+    margin: 0 3px 0 3px;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+
+    .section_template {
+        width: 90%;
+        margin: auto;
+    }
+    
+    .contenido-2-columns{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 90%;
+    }
+
+    
+    .course-info-text {
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    .button-box-dynamic{
+       margin-top: 20px;
+    }
+    
+    
+
+}
+
+
+
+
+
+
+/* Estilos para vista móvil */
+@media only screen and (max-width: 768px) {
+    .section_template {
+        width: 100%;
+        margin: auto;
+    }
+    .contenido {
+        flex-direction: column-reverse;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .imagen, .descripcion, .botones {
+        width: 100%;
+    }
+    .texto{
+        width: 100%;
+        margin: auto;
+        text-align: justify;
+    }
+
+    .texto-2-columns {
+        margin-right: 0px; /* Ajusta este valor según el espacio que desees entre las columnas */
+    }
+    
+}
+
+

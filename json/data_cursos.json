@@ -1,0 +1,37 @@
+{
+  "curso": "MASTER - MODELADO Y TEXTURIZADO DE PERSONAJES - CINE Y PUBLICIDAD",
+  "modulos": [
+    {
+      "nombre": "MÓDULO 01 : INTRODUCCIÓN Y ESCULTURA DIGITAL.",
+      "duracion": "4 Semanas",
+      "clases": 8,
+      "horas_totales": 24,
+      "detalle_clases": [
+        {"CLASE 01": "Presentación y Selección de Arte", "horas": 3},
+        {"CLASE 02": "Interfaz y Flujo de Trabajo (ZBrush)", "horas": 3},
+        {"CLASE 03": "Block-Out Facial y Corporal (ZBrush)", "horas": 3},
+        {"CLASE 04": "Block-Out Accesorios e Interior Boca (ZBrush)", "horas": 3},
+        {"CLASE 05": "Detallado de Cabeza (ZBrush)", "horas": 3},
+        {"CLASE 06": "Detallado de Cuerpo (ZBrush)", "horas": 3},
+        {"CLASE 07": "Detallado de Accesorios (ZBrush)", "horas": 3},
+        {"CLASE 08": "Detallado de Interior de Boca (ZBrush)", "horas": 3}
+      ]
+    },
+    {
+      "nombre": "MÓDULO 02 : RETOPOLOGIA, MODELADO Y CARPETAJE.",
+      "duracion": "4 Semanas",
+      "clases": 8,
+      "horas_totales": 24,
+      "detalle_clases": [
+        {"CLASE 01": "Estudio de Topología Facial", "horas": 3},
+        {"CLASE 02": "Retopología Facial (Maya)", "horas": 3},
+        {"CLASE 03": "Estudio de Topología Corporal", "horas": 3},
+        {"CLASE 04": "Retopología corporal (Maya)", "horas": 3},
+        {"CLASE 05": "Interior de Boca y Ojos (Maya)", "horas": 3},
+        {"CLASE 06": "Modelado de Ropa (Maya)", "horas": 3},
+        {"CLASE 07": "Modelado de Accesorios (Maya)", "horas": 3},
+        {"CLASE 08": "Nomenclatura y Carpetaje (Entregable Final)", "horas": 3}
+      ]
+    }
+  ]
+}

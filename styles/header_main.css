@@ -1,55 +1,92 @@
 header {
-    position: relative;
-    text-align: right; /* Para alinear el texto a la derecha */
-  }
-  header img {
-    width: 100%; /* Para asegurar que la imagen ocupe todo el ancho del header */
+  position: relative;
+  text-align: right;
+  /* Para alinear el texto a la derecha */
+}
+
+header img {
+  width: 100%;
+  /* Para asegurar que la imagen ocupe todo el ancho del header */
+  height: 100%;
+  display: block;
+}
+
+/* Estilos para la vista de escritorio */
+@media only screen and (min-width: 768px) {
+  header {
     height: 100%;
-    display: block;
+    /* Altura deseada para el header en la vista de escritorio */
+    overflow: hidden;
+    /* Para ocultar el texto que pueda desbordar del header */
   }
-  /* Estilos para la vista de escritorio */
-  @media only screen and (min-width: 768px) {
-    header {
-      height: 100%; /* Altura deseada para el header en la vista de escritorio */
-      overflow: hidden; /* Para ocultar el texto que pueda desbordar del header */
-    }
-    .header-text {
-      position: absolute;
-      bottom: 20px; /* Espacio entre el texto y el borde inferior del header */
-      right: 20px; /* Espacio entre el texto y el borde derecho del header */
-      background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para que el texto sea legible */
-      padding: 10px;
-      color: white;
-      font-size: 16px;
-    }
-    .header-text h2 {
-      margin: 0;
-      font-size: 24px; /* Tamaño de fuente más grande para el título */
-    }
-    .header-text a {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #333;
-      color: white;
-      text-decoration: none;
-      transition: background-color 0.3s ease; /* Transición del color de fondo */
-    }
-    .header-text a:hover {
-      background-color: #00bfff; /* Celeste al hacer hover */
-    }
+
+  .header-text {
+    position: absolute;
+    bottom: 20px;
+    /* Espacio entre el texto y el borde inferior del header */
+    right: 20px;
+    /* Espacio entre el texto y el borde derecho del header */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo semi-transparente para que el texto sea legible */
+    padding: 10px;
+    color: white;
+    font-size: 16px;
   }
-  /* Estilos para la vista móvil */
-  @media only screen and (max-width: 767px) {
-    header {
-      height: auto; /* Altura automática en vista móvil */
-    }
-    .header-text {
-      position: relative;
-      text-align: center; /* Para centrar el texto en la vista móvil */
-      background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para que el texto sea legible */
-      padding: 10px;
-      color: white;
-      font-size: 16px;
-      margin-top: -50px; /* Espacio negativo para superponer el texto sobre la imagen */
-    }
+
+  .header-text h2 {
+    margin: 0;
+    font-size: 24px;
+    /* Tamaño de fuente más grande para el título */
   }
+
+  .header-text a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    /* Transición del color de fondo */
+  }
+
+  .header-text a:hover {
+    background-color: #00bfff;
+    /* Celeste al hacer hover */
+  }
+}
+
+/* Estilos para la vista móvil */
+@media only screen and (max-width: 767px) {
+  header {
+    height: auto;
+    /* Altura automática en vista móvil */
+  }
+
+  .header-text {
+    position: relative;
+    text-align: center;
+    /* Para centrar el texto en la vista móvil */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo semi-transparente para que el texto sea legible */
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+    margin-top: -50px;
+    /* Espacio negativo para superponer el texto sobre la imagen */
+  }
+}
+
+header button {
+  padding: 10px 20px;
+  border: #08FFDE 2px solid;
+  background-color: #000000;
+  color: #08FFDE;
+  cursor: pointer;
+  width: 313px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  position: absolute;
+  bottom: 10vw;
+  right: 15vw;
+}

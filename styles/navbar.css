@@ -1,6 +1,8 @@
+@import url('../assets/fonts/fonts.css');
+
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+  
   }
   nav {
     background-color: rgba(0, 0, 0, 0.3); /* Fondo con transparencia */
@@ -20,6 +22,11 @@ body {
     font-size: 1.5rem;
     
     margin-left: 20px;
+  }
+
+  .nav-item{
+    font-family: 'FractulAltMedium' !important;
+    /* font-weight: bold; */
   }
 
   .logo img {
@@ -46,6 +53,7 @@ body {
   nav ul li a:hover {
     background-color:#08FFDE; 
     text-decoration: none;
+    color: black;
   }
 
   .menu-icon{

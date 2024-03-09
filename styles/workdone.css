@@ -1,10 +1,39 @@
-.slider-workdone img {
-    margin: auto;
-    max-width: 120px;
+.slider-workdone {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
 }
+.slider-workdone div {
+    margin: 0 10px; /* Añade un espacio entre las imágenes */
+    justify-content: center;
+}
+
+.slider-workdone img {
+    margin: auto auto;
+    max-width: 200px;
+    max-height: 100px;
+    justify-content: center;
+    text-align: center; 
+    filter: grayscale(100%); /* Convierte la imagen a escala de grises */
+    transition: filter 0.3s ease; /* Agrega una transición suave */
+
+}
+
+.slider-workdone img:hover {
+    filter: grayscale(0%); /* Cambia la imagen de escala de grises a su color original */
+}
+
+
+.slider-workdone picture {
+    margin: 0 40px;
+    /* max-width: 200px; */
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+} 
 .section-workdone {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 80px;
+    padding-bottom: 180px;
 }
 .slider-workdone .slick-dots li.slick-active button {
     background-color: #000000;

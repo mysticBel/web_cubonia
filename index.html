@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
+    <link rel="stylesheet" href="assets/fonts/fonts.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="styles/header_main.css">
@@ -22,6 +23,10 @@
     <link rel="stylesheet" href="styles/cursos.css">
     <link rel="stylesheet" href="styles/instructors.css">
     <link rel="stylesheet" href="styles/workdone.css">
+    <link rel="stylesheet" href="styles/alumnos.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/buttons-fixed.css">
+    <link rel="stylesheet" href="styles/accordion.css">
 
 </head>
 
@@ -36,11 +41,11 @@
         </div>
         <span class="menu-icon">&#9776;</span>
         <ul class="nav-links">
-            <li><a href="#section-about">Nosotros</a></li>
-            <li><a href="#section-courses">Cursos</a></li>
-            <li><a href="#">Instructores</a></li>
-            <li><a href="#section-students">Alumnos</a></li>
-            <li><a href="#container-form">Contacto</a></li>
+            <li><a class = "nav-item" href="#section-about">Nosotros</a></li>
+            <li><a class = "nav-item"  href="#section-courses">Cursos</a></li>
+            <li><a class = "nav-item" href="#section-instructor">Instructores</a></li>
+            <li><a class = "nav-item"  href="#section-students">Alumnos</a></li>
+            <li><a class = "nav-item"  href="#container-form">Contacto</a></li>
         </ul>
     </nav>
 
@@ -49,8 +54,9 @@
 
     <!-- ============================================-->
     <!-- <section header> begin ============================-->
-    <header>
-        <img src="assets/img/bg/bg__main_v2.png" alt="Imagen de Header">
+    <header id="section-header">
+        <img src="assets/img/bg/background_header_main_v2.png" alt="Imagen de Header">
+        <button   onclick="irAEnlace('https://api.whatsapp.com/send?phone=51949150692')">Inscríbete ahora</button>
     </header>
     <!-- <section header> close ============================-->
     <!-- ============================================-->
@@ -58,30 +64,38 @@
     <!-- <section about> begin ============================-->
     <!-- ============================================-->
     <section class="section-about" id="section-about">
-        <span>SOBRE </span><span class="sky-title">NOSOTROS</span>
+        <h3>
+            CONOCE
+        </h3>
+        <h3>
+            SOBRE <strong>NOSOTROS</strong>
+        </h3>
         <p>
-            ¡Bienvenido a Cubonia School, donde hacer 3D es nuestra especialidad! En nuestra comunidad, te rodearás de
+            ¡Bienvenido a <strong>Cubonia School</strong>, donde hacer <strong>3D </strong>es nuestra especialidad! <br> <br>En nuestra comunidad, te rodearás de
             instructores que no solo son expertos en cine, publicidad y videojuegos, sino que también están inmersos en
-            proyectos que marcan tendencia en la industria. Aquí, encontrarás el apoyo y los consejos que necesitas para
-            llevar tu talento al siguiente nivel y convertirlo en una carrera emocionante. Únete a nosotros hoy y
+            proyectos que marcan tendencia en la industria. Aquí, <strong>encontrarás el apoyo y los consejos </strong> que necesitas para
+            llevar tu talento al siguiente nivel y convertirlo en una carrera emocionante. <br> <br><strong>Únete a nosotros hoy</strong> y
             comienza a forjar tu camino hacia el éxito en el mundo de la producción 3D.
         </p>
-
+        <div class="contenedor contenedor-btns">
+            <button onclick="irAEnlace('https://linktr.ee/cubonia.com')">Más información</button>
+            <button onclick="irAEnlace('https://api.whatsapp.com/send?phone=51949150692')">Inscríbete ahora</button>
+        </div>
         <!--rrss-->
         <div class="container-social-icons">
-            <a href="https://www.facebook.com/"><img class="icon" src="assets/img/rrss/icon_discord.png"
-                    alt="discord"></a>
-            <a href="https://www.facebook.com/"><img class="icon" src="assets/img/rrss/icon_instagram.png"
+            <!-- <a href="https://www.facebook.com/"><img class="icon" src="assets/img/rrss/icon_discord.png"
+                    alt="discord"></a> -->
+            <a href="https://www.instagram.com/cubonia.school"><img class="icon" src="assets/img/rrss/icon_instagram.png"
                     alt="instagram"></a>
-            <a href="https://www.facebook.com/"><img class="icon" src="assets/img/rrss/icon_facebook.png"
+            <a href="https://www.facebook.com/cubonia"><img class="icon" src="assets/img/rrss/icon_facebook.png"
                     alt="facebook"></a>
-            <a href="https://www.facebook.com/"><img class="icon" src="assets/img/rrss/icon_tiktok.png"
+            <a href="https://www.tiktok.com/@cubonia.com"><img class="icon" src="assets/img/rrss/icon_tiktok.png"
                     alt="tiktok"></a>
-            <a href="https://www.facebook.com/"><img class="icon" src="assets/img/rrss/icon_linkedin.png"
+            <a href="https://www.linkedin.com/company/cubonia/"><img class="icon" src="assets/img/rrss/icon_linkedin.png"
                     alt="linkedin"></a>
-            <a href="https://www.facebook.com/"><img class="icon" src="assets/img/rrss/icon_youtube.png"
-                    alt="youtube"></a>
-            <a href="https://www.facebook.com/"><img class="icon" src="assets/img/rrss/icon_whatsapp.png"
+            <!-- <a href="https://www.facebook.com/"><img class="icon" src="assets/img/rrss/icon_youtube.png"
+                    alt="youtube"></a> -->
+            <a href="https://api.whatsapp.com/send?phone=51949150692"><img class="icon" src="assets/img/rrss/icon_whatsapp.png"
                     alt="whatsapp"></a>
 
         </div>
@@ -98,99 +112,147 @@
     <section class="section-curses" id="section-courses">
         <div class="container">
             <h3 class="text-white text-center">ELIGE</h3>
-            <div class="text-center">
-                <span>NUESTROS</span><span class="sky-title">CURSOS</span>
-            </div>
+            <h3>
+                NUESTROS <strong>CURSOS</strong>
+            </h3>
 
-            <p class="text-white text-center">
+            <p class="text-white-descrip text-center">
                 Comienza, especializate y demuestra.
             </p>
             <!--slider-->
             <div class="slider-cursos">
-                <div>
-                    <picture>
-                        <img src="/assets/img/courses/course_1.png" class="img-fluid">
-                    </picture>
-                </div>
-                <div>
-                    <picture>
-                        <img src="/assets/img/courses/course_2.png" class="img-fluid">
-                    </picture>
-                </div>
-                <div>
-                    <picture>
-                        <img src="/assets/img/courses/course_3.png" class="img-fluid">
-                    </picture>
-                </div>
-                <div>
-                    <picture>
-                        <img src="/assets/img/courses/course_1.png" class="img-fluid">
-                    </picture>
-                </div>
-                <div>
-                    <picture>
-                        <img src="/assets/img/courses/course_2.png" class="img-fluid">
-                    </picture>
-                </div>
-                <div>
-                    <picture>
-                        <img src="/assets/img/courses/course_3.png" class="img-fluid">
-                    </picture>
+                <div class="slide" >               
+                    <div>
+                        <img src="/assets/img/courses/Web_Afiches_Cursos-01.png" class="img-fluid hide-hover">
+                        <img src="/assets/img/courses/Web_Afiches_Cursos-02.png" class="img-fluid show-hover" onclick="irACurso1()">
+                    </div>
                 </div>
 
+                <div class="slide">
+                    <div>
+                        <img src="/assets/img/courses/Web_Afiches_Cursos-03.png" class="img-fluid hide-hover">
+                        <img src="/assets/img/courses/Web_Afiches_Cursos-04.png" class="img-fluid show-hover">
+                    </div>
+                </div>
 
+                <div class="slide">
+                    <div>
+                        <img src="/assets/img/courses/Web_Afiches_Cursos-05.png" class="img-fluid hide-hover">
+                        <img src="/assets/img/courses/Web_Afiches_Cursos-06.png" class="img-fluid show-hover">
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="slide">
+                    <div>
+                        <img src="/assets/img/courses/Web_Afiches_Cursos-07.png" class="img-fluid hide-hover">
+                        <img src="/assets/img/courses/Web_Afiches_Cursos-08.png" class="img-fluid show-hover">
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div>
+                        <img src="/assets/img/courses/Web_Afiches_Cursos-09.png" class="img-fluid hide-hover">
+                        <img src="/assets/img/courses/Web_Afiches_Cursos-10.png" class="img-fluid show-hover">
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div>
+                        <img src="/assets/img/courses/Web_Afiches_Cursos-11.png" class="img-fluid hide-hover">
+                        <img src="/assets/img/courses/Web_Afiches_Cursos-12.png" class="img-fluid show-hover">
+                    </div>
+                </div>
+
+            </div>
+            <div class="contenedor contenedor-inscribete">
+                <!-- <button onclick="irAEnlace('https://drive.google.com/file/d/1lV_nfaf8n1n8xtkVORa8Sp6C9GPiTJGJ/view?usp=sharing')">Ver Temarios</button> -->
+                <button onclick="irAEnlace('https://api.whatsapp.com/send?phone=51949150692')">Inscríbete ahora</button>
             </div>
 
         </div>
 
     </section>
+
     <section class="section-instructor" id="section-instructor">
         <div class="container">
             <h3 class="text-center">CONOCE A</h3>
             <div class="contenedor">
 
                 <h3 class="text-white text-center bg-black d-inline-block mx-auto p-05">NUESTROS
-                    <strong>INSTRUCTORES</strong> </h3>
+                    <strong>INSTRUCTORES</strong>
+                </h3>
             </div>
 
 
-            <p class="text-white text-center">
-                Comienza, especializate y demuestra.
+            <p class="text-instructores text-center">
+                Siempre dispuestos a apoyarte en base a su experiencia
             </p>
             <!--slider-->
             <div class="slider-instructor">
-                <div>
-                    <picture>    
-                        <img src="/assets/img/courses/course_1.png" class="img-fluid">               
-                    </picture>
+                <div class="slice">
+                    <div>
+                        <img src="/assets/img/instructores/Web_Instructores_Individuales-01.png" class="img-fluid">
+                        <h3>Elvis <strong>Lopez</strong></h3>
+                        <p> <strong>3D </strong>Supervisor</p>
+                    </div>
                 </div>
-                <div>
-                    <picture>
-                        <img src="/assets/img/courses/course_2.png" class="img-fluid">
-                    </picture>
+                <div class="slice">
+                    <div>
+                        <img src="/assets/img/instructores/Web_Instructores_Individuales-02.png" class="img-fluid">
+                        <h3>Edson <strong>Cortez</strong></h3>
+                        <p> <strong>Lookdev - </strong>Texturing</p>
+                    </div>
                 </div>
-                <div>
-                    <picture>
-                        <img src="/assets/img/courses/course_3.png" class="img-fluid">
-                    </picture>
+                <div class="slice">
+                    <div>
+                        <img src="/assets/img/instructores/Web_Instructores_Individuales-03.png" class="img-fluid">
+                        <h3>Edwin <strong>Ayala</strong></h3>
+                        <p> <strong>3D Modeler </strong>Artist</p>
+                    </div>
                 </div>
-                <div>
-                    <picture>
-                        <img src="/assets/img/courses/course_1.png" class="img-fluid">
-                    </picture>
+                <div class="slice">
+                    <div>
+                        <img src="/assets/img/instructores/Web_Instructores_Individuales-04.png" class="img-fluid">
+                        <h3>Percy <strong>Laureano</strong></h3>
+                        <p> <strong>Lead Rigging </strong>Artist</p>
+                    </div>
                 </div>
-                <div>
-                    <picture>
-                        <img src="/assets/img/courses/course_2.png" class="img-fluid">
-                    </picture>
+                <div class="slice">
+                    <div>
+                        <img src="/assets/img/instructores/Web_Instructores_Individuales-05.png" class="img-fluid">
+                        <h3>Jose <strong>Arias</strong></h3>
+                        <p> <strong>3D </strong>Generalist</p>
+                    </div>
                 </div>
-                <div>
-                    <picture>
-                        <img src="/assets/img/courses/course_3.png" class="img-fluid">
-                    </picture>
+                <div class="slice">
+                    <div>
+                        <img src="/assets/img/instructores/Web_Instructores_Individuales-06.png" class="img-fluid">
+                        <h3>Betto <strong>Vera</strong></h3>
+                        <p> <strong>3D </strong>Sculptor</p>
+                    </div>
+                </div>
+                <div class="slice">
+                    <div>
+                        <img src="/assets/img/instructores/Web_Instructores_Individuales-07.png" class="img-fluid">
+                        <h3>Ignacio <strong>Corrales</strong></h3>
+                        <p> <strong>Lighting </strong>Supervisor</p>
+                    </div>
+                </div>
+                <div class="slice">
+                    <div>
+                        <img src="/assets/img/instructores/Web_Instructores_Individuales-08.png" class="img-fluid">
+                        <h3>Alissa <strong>Paiva</strong></h3>
+                        <p> <strong>CFX Groom - </strong>Cloth</p>
+                    </div>
                 </div>
 
+            </div>
 
+            <div class="contenedor contenedor-inscribete">
+                
+                <button class="boton-ver-mas" onclick="window.location.href = 'instructores.html';">Ver más</button>
             </div>
 
         </div>
@@ -204,35 +266,84 @@
             <div class="slider-workdone">
                 <div>
                     <picture>
-                        <img src="/assets/img/courses/course_1.png" class="img-fluid">
+                        <img src="/assets/img/brands/Spotify.png" class="img-fluid">
                     </picture>
                 </div>
                 <div>
                     <picture>
-                        <img src="/assets/img/courses/course_2.png" class="img-fluid">
+                        <img src="/assets/img/brands/gizmo.png" class="img-fluid">
                     </picture>
                 </div>
                 <div>
                     <picture>
-                        <img src="/assets/img/courses/course_3.png" class="img-fluid">
+                        <img src="/assets/img/brands/Puma.png" class="img-fluid">
                     </picture>
                 </div>
                 <div>
                     <picture>
-                        <img src="/assets/img/courses/course_1.png" class="img-fluid">
+                        <img src="/assets/img/brands/Pipeline.png" class="img-fluid">
                     </picture>
                 </div>
                 <div>
                     <picture>
-                        <img src="/assets/img/courses/course_2.png" class="img-fluid">
+                        <img src="/assets/img/brands/crehana.jpg" class="img-fluid">
                     </picture>
                 </div>
                 <div>
                     <picture>
-                        <img src="/assets/img/courses/course_3.png" class="img-fluid">
+                        <img src="/assets/img/brands/Huevocartoon.png" class="img-fluid">
                     </picture>
                 </div>
-
+                <div>
+                    <picture>
+                        <img src="/assets/img/brands/3dar.png" class="img-fluid">
+                    </picture>
+                </div>
+                <div>
+                    <picture>
+                        <img src="/assets/img/brands/Alligator.jpg" class="img-fluid">
+                    </picture>
+                </div>
+                <div>
+                    <picture>
+                        <img src="/assets/img/brands/Animun.jpg" class="img-fluid">
+                    </picture>
+                </div>
+                <div>
+                    <picture>
+                        <img src="/assets/img/brands/apus.png" class="img-fluid">
+                    </picture>
+                </div>
+                <div>
+                    <picture>
+                        <img src="/assets/img/brands/aronax.jpg" class="img-fluid">
+                    </picture>
+                </div>
+                <div>
+                    <picture>
+                        <img src="/assets/img/brands/axis.png" class="img-fluid">
+                    </picture>
+                </div>
+                <div>
+                    <picture>
+                        <img src="/assets/img/brands/bacol_animation_studio_logo.jpg" class="img-fluid">
+                    </picture>
+                </div>
+                <div>
+                    <picture>
+                        <img src="/assets/img/brands/fluree.png" class="img-fluid">
+                    </picture>
+                </div>
+                <div>
+                    <picture>
+                        <img src="/assets/img/brands/getaclub.jpg" class="img-fluid">
+                    </picture>
+                </div>
+                <div>
+                    <picture>
+                        <img src="/assets/img/brands/Golem.png" class="img-fluid">
+                    </picture>
+                </div>
 
             </div>
 
@@ -240,94 +351,95 @@
 
     </section>
 
-    <!-- <section slider teachers> begin ============================-->
-    <!-- ============================================-->
-
-    <!-- ============================================-->
-    <!-- <section slider teachers> close ============================-->
-
-
-
-    <!-- <section brands> begin ============================-->
-    <!-- ============================================-->
-
-
-    <!-- <section brands> begin ============================-->
-    <!-- ============================================-->
-
-
 
     <!-- <section students> begin ============================-->
     <!-- ============================================-->
     <section class="section-students" id="section-students">
         <h3>CONOCE LOS PROYECTOS DE</h3>
-        <span>NUESTROS <span class="black-title">ALUMNOS</span></span>
+        <h3>
+            NUESTROS <strong>ALUMNOS</strong>
+        </h3>
 
 
         <section>
             <div class="slider-container">
                 <div class="slider">
-                    <img src="assets/img/courses/course_1.png" alt="Persona 1" onclick="mostrarInformacion(1)">
-                    <img src="assets/img/courses/course_2.png" alt="Persona 2" onclick="mostrarInformacion(2)">
-                    <img src="assets/img/courses/course_3.png" alt="Persona 3" onclick="mostrarInformacion(3)">
-                    <img src="assets/img/courses/course_1.png" alt="Persona 4" onclick="mostrarInformacion(4)">
-                    <img src="assets/img/courses/course_2.png" alt="Persona 5" onclick="mostrarInformacion(5)">
+                    <img src="assets/img/Alumnos/Henry Hugo - Perú/Henry_Hugo_Foto.jpg" alt="Persona 1" onclick="mostrarInformacion(1)">
+                    <img src="assets/img/Alumnos/Diego Meza - México/Diego_Meza_Foto.png" alt="Persona 2" onclick="mostrarInformacion(2)">
+                    <img src="assets/img/Alumnos/Mariel Nieto - México/Mariel_foto.jpeg" alt="Persona 3" onclick="mostrarInformacion(3)">
+                    <img src="assets/img/Alumnos/Alexis Franco - México/Alexis_Franco_Foto.jpeg" alt="Persona 4" onclick="mostrarInformacion(4)">
+                    <img src="assets/img/Alumnos/Luis David - México/Luis David_Foto.jpeg" alt="Persona 5" onclick="mostrarInformacion(5)">
+            
                 </div>
                 <div id="info-1" class="person-info">
-                    <div>
-                        <h2>Persona 1</h2>
-                        <p>Texto descriptivo de la persona 1.</p>
-                        <button onclick="irAEnlace('https://www.ejemplo.com/1')">Ir a Enlace</button>
+                    <div class="person-info-text">
+                        <h2>Henry Hugo</h2>
+                        <div class="container-country">
+                            <div>
+                                <h4>PERÚ</h4>
+                            </div>
+                            <div class="container-img-flag" >
+                                <img class="img-flag"  src="assets/img/flags/flag_peru.png" alt="bandera Perú">
+                            </div>
+                            
+                          
+                            
+                        </div>
+                        <p>Este curso me ayudó a enderezar el workflow que tenía sobre modelado de personajes, además me permitió comprender mejor el uso de programas como Substance Painter y maximizar todas sus herramientas a disposición para conseguir buenos acabados.</p>
+                        <button onclick="irAEnlace('https://www.artstation.com/henryhugo', event)">Ver Proyecto Final</button>
                     </div>
-                    <div>
-                        <img src="assets/img/courses/course_1.png" alt="Imagen relacionada con Persona 1">
+                    <div class="person-info-img">
+                        <img src="assets/img/Alumnos/img_proyect_Henry-Hugo.png" alt="Imagen relacionada con Persona 1">
                     </div>
 
 
                 </div>
                 <div id="info-2" class="person-info" style="display: none;">
-                    <div>
-                        <h2>Persona 2</h2>
-                        <p>Texto descriptivo de la persona 2.</p>
-                        <button onclick="irAEnlace('https://www.ejemplo.com/1')">Ir a Enlace</button>
+                    <div class="person-info-text">
+                        <h2>Diego Meza</h2>
+                        <p>Gracias a este curso, he tenido la oportunidad de explorar y explotar mis habilidades en 3d al máximo y sobretodo realizar cada paso de la manera más eficiente posible, aprendiendo el uso correcto de diferentes softwares y herramientas a fondo, para una comprensión puntual y personalizada, mejorando la calidad y limpieza de cada pieza. Comprendiendo las bases y perfeccionando cada detalle para así alcanzar un nivel profesional en cada uno de mis trabajos.
+                        </p>
+                        <button onclick="irAEnlace('https://www.artstation.com/roadsky', event)">Ver Proyecto Final</button>
                     </div>
-                    <div>
-                        <img src="assets/img/courses/course_2.png" alt="Imagen relacionada con Persona 2">
+                    <div class="person-info-img">
+                        <img src="assets/img/Alumnos/img_proyect_Diego_Meza.png" alt="Imagen relacionada con Persona Diego Meza">
                     </div>
 
 
                 </div>
                 <div id="info-3" class="person-info" style="display: none;">
-                    <div>
-                        <h2>Persona 3</h2>
-                        <p>Texto descriptivo de la persona 3.</p>
-                        <button onclick="irAEnlace('https://www.ejemplo.com/1')">Ir a Enlace</button>
+                    <div class="person-info-text">
+                        <h2>Mariel Nieto</h2>
+                        <p>Este curso me ha ayudado a mejorar mi flujo de trabajo, aprender sobre técnicas utilizadas en la industria y la implementación de buenas prácticas. El instructor explica muy bien y proporciona suficiente material para revisarlo más tarde.
+
+                        </p>
+                        <button onclick="irAEnlace('https://www.artstation.com/mandragonna', event)">Ver Proyecto Final</button>
                     </div>
-                    <div>
-                        <img src="assets/img/courses/course_3.png" alt="Imagen relacionada con Persona 3">
+                    <div class="person-info-img">
+                        <img src="assets/img/Alumnos/img_proyect_Mariel.png" alt="Imagen relacionada con Mariel Nieto">
                     </div>
                 </div>
 
                 <div id="info-4" class="person-info" style="display: none;">
-                    <div>
-                        <h2>Persona 4</h2>
-                        <p>Texto descriptivo de la persona 4.</p>
-                        <button onclick="irAEnlace('https://www.ejemplo.com/1')">Ir a Enlace</button>
+                    <div class="person-info-text">
+                        <h2>Henry Ramirez</h2>
+                        <p>El curso de modelado de personajes fue una inmersión profunda en el arte digital. Desde los fundamentos hasta técnicas avanzadas, cada clase ofrecía una progresión lógica. La atención personalizada de eso impulsó mi aprendizaje. Desarrollé habilidades técnicas sólidas y también exploré mi creatividad a través de proyectos prácticos. Recomiendo este curso a todos los apasionados del diseño digital que buscan un viaje formativo en el mundo del modelado de personajes.</p>
+                        <button onclick="irAEnlace('https://www.artstation.com/henryramirez', event)">Ver Proyecto Final</button>
                     </div>
-                    <div>
-                        <img src="assets/img/courses/course_1.png" alt="Imagen relacionada con Persona 4">
+                    <div class="person-info-img">
+                        <img src="assets/img/Alumnos/img_proyect_Henry_Ramirez.png" alt="Imagen relacionada con Persona Henry Ramirez">
                     </div>
 
 
                 </div>
                 <div id="info-5" class="person-info" style="display: none;">
-                    <div>
-                        <h2>Persona 5</h2>
-                        <p>Texto descriptivo de la persona 5.</p>
-                        <button onclick="irAEnlace('https://www.ejemplo.com/1')">Ir a Enlace</button>
+                    <div class="person-info-text">
+                        <h2>Luis David</h2>
+                        <p>El curso ha sido de gran ayuda y crecimiento profesional. Desde el inicio comienzas aprendiendo lo fundamental para llegar a la culminación de tu proyecto final. Gracias a este curso pude obtener mis primeras entrevistas de trabajo y mi primer empleo como 3d modeller Hardsurface. Lo recomiendo mucho para las personas que quieran iniciarse en el mundo del modelado Hardsurface, también para las personas que quieran desarrollar piezas de calidad para su portafolio. Un aspecto bastante importante es que el profesor te guía en todo tu camino, con su experiencia en la industria, atención personalizada y ejercicios para tu crecimiento profesional.</p>
+                        <button onclick="irAEnlace('https://www.artstation.com/luisdavidperez', event)">Ver Proyecto Final</button>
                     </div>
-                    <div>
-                        <img src="assets/img/courses/course_2.png" alt="Imagen relacionada con Persona 5">
+                    <div class="person-info-img">
+                        <img src="assets/img/Alumnos/img_proyect_Luis_David.png" alt="Imagen relacionada con Persona Luis David">
                     </div>
 
 
@@ -337,6 +449,44 @@
     </section>
     <!-- ============================================-->
     <!-- <section students> close ============================-->
+
+    
+
+
+    <!-- ============================================-->
+    <!-- <section community> close ============================-->
+    <section class="section-form" id="container-form">
+        <h3>¿Aún tienes dudas?</h3>
+        <h3>SOLICITA <strong>INFORMACIÓN</strong></h3>
+
+
+        <!------ inicio de formulario ----->
+        <section >
+            <div class="container-form container">
+                <div class="form-container">
+                    <div class="flex-container">
+                        <p>Envíanos tus dudas y te responderemos lo antes posible</p>
+                        <p>> Cubonia <strong>School</strong>   </p>
+                        <p>> hola<strong>@cubonia.com</strong></p>
+                    </div>
+                    <form id="contactForm" class="flex-container" action="https://formsubmit.co/dnxbel@gmail.com"
+                        method="POST">
+                        <div class="contenedor">
+                            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        <textarea id="mensaje" name="consulta" placeholder="Escribe tu mensaje o consulta"
+                            required></textarea>
+                        <input type="hidden" name="_subject" value="CUBONIA WEB- Consulta">
+
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!--fin form-->
 
     <!---->
     <!-- <section community> begin ============================-->
@@ -364,61 +514,38 @@
     </div>
 
 
-    <!-- ============================================-->
-    <!-- <section community> close ============================-->
-    <section class="section-form">
-        <h3>¿Aún tienes dudas?</h3>
-        <span class="black-title-form"> SOLICITA <b>INFORMACIÓN</b></span>
-
-
-        <!------ inicio de formulario ----->
-        <section id="container-form">
-            <div class="container-form">
-                <div class="form-container">
-                    <div class="flex-container">
-                        <p>Envíanos tus dudas y te responderemos lo antes posible</p>
-                        <p>Cubonia school</p>
-                    </div>
-                    <form id="contactForm" class="flex-container" action="https://formsubmit.co/dnxbel@gmail.com"
-                        method="POST">
-                        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
-                        <input type="email" id="email" name="email" placeholder="Email" required>
-                        <textarea id="mensaje" name="consulta" placeholder="Escribe tu mensaje o consulta"
-                            required></textarea>
-                        <input type="hidden" name="_subject" value="CUBONIA WEB- Consulta">
-
-                        <input type="submit" value="Enviar">
-                    </form>
-                </div>
-            </div>
-        </section>
-    </section>
-
-    <!--fin form-->
-
-
+    <!-- boton flotante whastapp-->
+  
+      <div class="whatsapp-container">
+        <a href="#section-header" class="scroll-top">
+          <img  src="assets/img/buttons_fixed/icon_scroll_top_bottom_fixed.png" alt="Subir al Inicio" class="scroll-top-icon">
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=51949150692" target="_blank" class="whatsapp-link">
+          <img src="assets/img/buttons_fixed/icon_whatsapp_bottom_fixed.png" alt="WhatsApp" class="whatsapp-icon">
+        </a>
+      </div>
 
     <!--FOOTER-->
     <section class="section-footer">
         <footer>
             <a href="#">
-                <img src="assets/img/logo/logo_navbar.png" alt="Logo">
+                <img src="assets/img/logo/logo_cubonia_footer.png" alt="Logo">
             </a>
             <ul>
 
-                <li><a href="#section-about">Nosotros</a></li>
-                <li><a href="#section-courses">Cursos</a></li>
-                <li><a href="#">Instructor</a></li>
-                <li><a href="#">Alumnos</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a class = "nav-item"  href="#section-about">Nosotros</a></li>
+                <li><a class = "nav-item"  href="#section-courses">Cursos</a></li>
+                <li><a class = "nav-item"  href="#section-instructor">Instructor</a></li>
+                <li><a class = "nav-item"  href="#section-students">Alumnos</a></li>
+                <li><a class = "nav-item"  href="#section-form">Contacto</a></li>
             </ul>
-            <p>COPYRIGHT &copy; 2024 - ALL RIGHTS RESERVED BY 
-                
-                <a class="cubonia-link" href="https://www.facebook.com/cubonia">CUBONIA SCHOOL</a>
-            </p>
+            <p>COPYRIGHT &copy; 2024 - ALL RIGHTS RESERVED BY <a class="link-cubonia" href="https://www.linkedin.com/company/cubonia/">CUBONIA SCHOOL</a></p>
         </footer>
     </section>
     <!--fin footer-->
+
+
+
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
