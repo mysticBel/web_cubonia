@@ -6,7 +6,7 @@ $(document).ready(function () {
     autoplay: false,
     slidesToShow: 3,
     centerMode: true,
-    centerPadding: "10px",
+    centerPadding: "0px",
     responsive: [
       {
         breakpoint: 768,

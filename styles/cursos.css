@@ -5,18 +5,24 @@
 }
 
 .slide {
-    cursor: pointer; /* Cambia el cursor a mano */
+    cursor: pointer; 
+    filter: grayscale(100%); /* Aplica escala de grises */
+    transition: filter 0.3s; /* Agrega transición al filtro */
+    margin: 0px 10px;
+    max-width: 350px;
 }
 
 .slide:hover {
-    cursor: pointer; /* Cambia el cursor a mano al hacer hover */
+    cursor: pointer; 
+    filter: grayscale(0%); /* Elimina la escala de grises en el hover */
+    cursor: pointer;
 }
 
 .slider-cursos .hide-hover,
 .slider-cursos .show-hover {
     /* margin: auto; */
-    max-width: 320px;
-    transition: all 0.3s ease;
+     
+    transition: all 0.4s ease;
 }
 
 
@@ -31,10 +37,12 @@
 
     .slider-cursos .hide-hover,
     .slider-cursos .show-hover {
-        /* max-width: 00px; */
-        /* margin: auto; */
+        /* max-width: 320px; */
+        margin: auto; 
     }
 }
+
+
 
 .slick-prev::before,
 .slick-next::before {
@@ -51,6 +59,7 @@
     background-repeat: no-repeat;
     height: 30px;
     width: 30px;
+    
 }
 
 .slider-cursos .slick-next {
@@ -64,11 +73,13 @@
 .slider-cursos .slick-prev:hover,
 .slider-cursos .slick-prev:focus {
     background-image: url('/assets/img/slider/arrow-prev-white.png');
+  
 }
 
 .slider-cursos .slick-next:hover,
 .slider-cursos .slick-next:focus {
     background-image: url('/assets/img/slider/arrow-next-white.png');
+    
 }
 
 .slick-dots {
@@ -129,5 +140,5 @@
 
 .slider-cursos .show-hover {
     display: none;
-    /* margin: auto; */
+   
 }

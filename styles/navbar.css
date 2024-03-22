@@ -5,7 +5,7 @@ body {
   
   }
   nav {
-    background-color: rgba(0, 0, 0, 0.3); /* Fondo con transparencia */
+    background-color: rgba(255, 255, 255, 0); /* Fondo con transparencia */
     color: white;
     padding:20px 50px;
     display: flex;
@@ -16,8 +16,10 @@ body {
     left: 0;
     width: 100%;
     z-index: 1000; /* Asegura que el navbar esté encima de otros elementos */
-    transition: background-color 0.5s ease; /* Transición de color de fondo */
+    transition: background-color 2s ease; /* Transición de color de fondo */
   }
+
+
   nav .logo {
     font-size: 1.5rem;
     
