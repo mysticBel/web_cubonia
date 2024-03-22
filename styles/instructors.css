@@ -12,10 +12,50 @@
     margin-bottom:100px;
 }
 
+
+.section-instructor .container>h3:nth-of-type(2) {
+
+    /*font*/font-family: 'FractulAltLight' !important;
+    background-color: #000000;
+    color: #ffffff;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+}
+
+.section-instructor .container>h3:nth-of-type(1) {
+
+    /*font*/font-family: 'FractulAltLight' !important;
+
+    color: #000000;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    padding: 5px 5px;
+}
+
+
+
 .slider-instructor img {
     margin: auto;
     max-width: 320px;
-     
+    cursor: pointer; 
+    filter: grayscale(100%); /* Aplica escala de grises */
+    transition: filter 0.3s; /* Agrega transición al filtro */
+     margin-bottom: 50px;
+}
+
+.slider-instructor img:hover {
+    cursor: pointer; 
+    filter: grayscale(0%); /* Elimina la escala de grises en el hover */
 }
 
 
