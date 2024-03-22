@@ -47,7 +47,7 @@ $(document).ready(function () {
     } else {
       $("nav").css(
         "background-color",
-        "rgba(0, 0, 0, 0.3)"
+        "rgba(0, 0, 0, 0.01)"
       ); /* Restaurar el fondo con transparencia */
     }
   });
