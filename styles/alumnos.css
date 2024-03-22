@@ -32,3 +32,16 @@
     padding: 10px 10px;
 }
 
+.section-students>h3:nth-of-type(1) {
+    /*font*/font-family: 'FractulAltLight' !important;
+
+    color: #ffffff;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    padding: 5px 5px;
+}
+

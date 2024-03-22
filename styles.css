@@ -178,15 +178,16 @@ button{
   display: flex;
   transition: transform 0.5s ease;
   justify-content: center;
-  margin: 4rem auto;
+  margin: 2rem auto;
   flex-wrap: wrap;
+  width: 50%;
 
 }
 
 .slider img {
   border-radius: 50%;
   cursor: pointer;
-  margin: 0 20px;
+  margin: 20px 20px;
   width: 90px;
   /* Tamaño de las imágenes de perfil */
   height: 90px;
