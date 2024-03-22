@@ -180,7 +180,7 @@ button{
   justify-content: center;
   margin: 2rem auto;
   flex-wrap: wrap;
-  width: 50%;
+  width: 60%;
 
 }
 
@@ -216,38 +216,75 @@ button{
   width: 30%;
 }
 
+.person-info-text p{
+  font-size: 14px !important;
+  margin: 40px auto;
+  text-align: justify;
+}
+
 .person-info-text h2{
   text-align: start !important;
   width: 100%;
-  color: #08FFDE;
+  color: #ffffff;
 
 }
+
+.country-name{
+  color: #08FFDE;
+  /* margin-bottom: 10px; */
+}
+
 
 .person-info img {
   max-width: 300px;
-  margin: 10px 80px;
+  margin: 10px 100px;
 }
 
-.container-country{
-  display: flex;
-  justify-content:left;
-  
-}
 .container-country div {
-  margin-right: 0px; /* Espacio entre los elementos */
-  justify-content:left;
-}
-.container-img-flag{
-  justify-content:left;
+  display: inline-block;
+  width: 10%;
+  text-align: start !important;
+  vertical-align: middle;
+  /* vertical-align: middle; Para alinear verticalmente los elementos */
 }
 
-.img-flag {
-  height: 5x; /* Ancho de la bandera */
-  width: 40px;
-  
+.flag {
+  width: 30px; /* ajusta el ancho de la imagen según sea necesario */
+  height: auto; /* permite que la altura se ajuste automáticamente manteniendo la proporción */
+  margin: 10px 0px !important;
 }
+
+.country-name {
+  padding-top: 5px;
+  font-size: 25px; /* ajusta el tamaño de la fuente según sea necesario */
+}
+
 
 @media only screen and (max-width: 600px) {
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease;
+    justify-content: center;
+    margin: 2rem auto;
+    flex-wrap: wrap;
+    width: 90%;
+  
+  }
+
+  .slider img {
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 15px 15px;
+    width: 70px;
+    /* Tamaño de las imágenes de perfil */
+    height: 70px;
+    filter: grayscale(100%);
+    /* Imágenes en escala de grises */
+    transition: all 0.3s ease;
+  }
+  
+
+
   .person-info {
     flex-direction: column;
     /* Cambiar a columna en pantallas pequeñas */
@@ -258,16 +295,16 @@ button{
 
   }
   .person-info-text{
-    text-align: center;
-    justify-content: center;
-    width: 80%;
+    text-align: justify !important;
+    justify-content: justify !important;
+    width: 60%;
   
 
   }
 
   .person-info-text p{
     margin: 50px auto;
-    text-align: center;
+    text-align: justify;
   }
 
   .person-info-text h2{
@@ -275,6 +312,17 @@ button{
     margin: 50px auto;
 
   }
+  .person-info img {
+    max-width: 300px;
+    margin: 10px 80px;
+  }
+  
+  .flag {
+    width: 30px; /* ajusta el ancho de la imagen según sea necesario */
+    height: auto; /* permite que la altura se ajuste automáticamente manteniendo la proporción */
+    margin: 10px 30px !important;
+  }
+  
 
 }
 

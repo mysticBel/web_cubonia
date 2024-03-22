@@ -2,7 +2,7 @@
 @import url('../assets/fonts/fonts.css');
 
 .section-students .person-info button {
-    padding: 10px 20px;
+    padding: 10px 100px;
     border: #08FFDE 2px solid;
     background-color: #000000;
     color: #08FFDE;
@@ -45,3 +45,12 @@
     padding: 5px 5px;
 }
 
+@media only screen and (max-width: 600px) {
+    .section-students .person-info button {
+        padding: 10px 50px;
+        border: #08FFDE 2px solid;
+        background-color: #000000;
+        color: #08FFDE;
+        cursor: pointer;
+    }
+}
