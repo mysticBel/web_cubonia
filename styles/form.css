@@ -64,6 +64,23 @@ h2 {
     margin-right: 20px;
 }
 
+.mail-to{
+    color:  #000000;
+
+}
+
+
+.mail-to:hover{
+    text-decoration: none;
+    color: #059C87;
+    transition: all 0.3s ease;
+
+
+}
+.icon-contact{
+    margin-right: 10px;
+}
+
 input[type="text"],
 input[type="email"],
 textarea {
@@ -109,10 +126,12 @@ textarea:focus {
         /* width: 100%; */
         border: none;
         flex-direction: column;
+        padding-top: 10px;
     }
 
     .flex-container {
         margin-right: 0;
+        margin-bottom: 20px;
     }
 
     input[type="submit"] {

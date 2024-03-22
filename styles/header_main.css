@@ -11,6 +11,33 @@ header img {
   display: block;
 }
 
+
+/****button Inscribete ahora****/
+header button {
+  padding: 10px 10px;
+  border: #08FFDE 0.5px solid;
+  background-color: #00000000;
+  color: #08FFDE;
+  cursor: pointer;
+  width: 200px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  position: absolute;
+  bottom: 10vw;
+  right: 15vw;
+ 
+}
+
+header button:hover {
+  
+  color: #ffffff;
+  border: #ffffff 1px solid;
+  transition: color 0.3s ease;
+ 
+
+}
+
 /* Estilos para la vista de escritorio */
 @media only screen and (min-width: 768px) {
   header {
@@ -53,6 +80,10 @@ header img {
     background-color: #00bfff;
     /* Celeste al hacer hover */
   }
+
+
+  
+
 }
 
 /* Estilos para la vista móvil */
@@ -74,19 +105,21 @@ header img {
     margin-top: -50px;
     /* Espacio negativo para superponer el texto sobre la imagen */
   }
-}
-
-header button {
-  padding: 10px 20px;
-  border: #08FFDE 2px solid;
-  background-color: #000000;
-  color: #08FFDE;
-  cursor: pointer;
-  width: 313px;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  position: absolute;
-  bottom: 10vw;
-  right: 15vw;
+  
+  header button {
+    padding: 10px 10px;
+    border: #08FFDE 0.5px solid;
+    background-color: #00000000;
+    color: #08FFDE;
+    cursor: pointer;
+    width: 100px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    position: absolute;
+    bottom: 10vw;
+    right: 15vw;
+    font-size: 14px;
+   
+  } 
 }

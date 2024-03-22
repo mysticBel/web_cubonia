@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- jquery css -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
@@ -58,8 +60,8 @@
     <!-- ============================================-->
     <!-- <section header> begin ============================-->
     <header id="section-header">
-        <img src="assets/img/bg/background_header_main_v2.png" alt="Imagen de Header">
-        <button   onclick="irAEnlace('https://api.whatsapp.com/send?phone=51949150692')">Inscríbete ahora</button>
+        <img src="assets/img/bg/banner_principal_bg.png" alt="Imagen de Header">
+        <button   onclick="irAEnlace('https://docs.google.com/forms/d/e/1FAIpQLSe16WxFFokphM0r7mdPI7-_4yFBjuERZ546MXYYIAcrS5Rg0g/viewform')">Inscríbete ahora</button>
     </header>
     <!-- <section header> close ============================-->
     <!-- ============================================-->
@@ -82,7 +84,8 @@
         </p>
         <div class="contenedor contenedor-btns">
             <button onclick="irAEnlace('https://linktr.ee/cubonia.com')">Más información</button>
-            <button onclick="irAEnlace('https://api.whatsapp.com/send?phone=51949150692')">Inscríbete ahora</button>
+            <button onclick="irAEnlace('https://docs.google.com/forms/d/e/1FAIpQLSe16WxFFokphM0r7mdPI7-_4yFBjuERZ546MXYYIAcrS5Rg0g/viewform')">Inscríbete ahora</button>
+            <!-- <button onclick="irAEnlace('https://api.whatsapp.com/send?phone=51949150692')">Inscríbete ahora</button> -->
         </div>
         <!--rrss-->
         <div class="container-social-icons">
@@ -469,10 +472,16 @@
                 <div class="form-container">
                     <div class="flex-container">
                         <p>Envíanos tus dudas y te responderemos lo antes posible</p>
-                        <p>> Cubonia <strong>School</strong>   </p>
-                        <p>> hola<strong>@cubonia.com</strong></p>
+                        <!-- <p>Cubonia <strong>School</strong>   </p> -->
+                       
+                         <a href="mailto:hola@cubonia.com" class="mail-to">
+                           <span><i class="fa-solid fa-envelope icon-contact" style="color: #000000;"></i><strong>hola@cubonia.com</strong></span>
+                        </a> 
+                        <span> <i class="fa-solid fa-phone icon-contact" style="color: #000000;"></i>+51 949150692</span>
+
+                        
                     </div>
-                    <form id="contactForm" class="flex-container" action="https://formsubmit.co/dnxbel@gmail.com"
+                    <form id="contactForm" class="flex-container" action="https://formsubmit.co/admin@cubonia.com"
                         method="POST">
                         <div class="contenedor">
                             <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
@@ -501,15 +510,15 @@
 
         <!--rrss-->
         <div class="container-social-icons">
-            <a href="https://www.facebook.com/"><img class="icon" src="assets/img/rrss/icon_discord.png"
+            <a href="https://discord.gg/thUf64TRwa" target="_blank"><img class="icon" src="assets/img/rrss/icon_discord.png"
                     alt="discord"></a>
-            <a href="https://www.facebook.com/"><img class="icon" src="assets/img/rrss/icon_instagram.png"
+            <a href="https://www.instagram.com/cubonia.school/" target="_blank"><img class="icon" src="assets/img/rrss/icon_instagram.png"
                     alt="instagram"></a>
-            <a href="https://www.facebook.com/"><img class="icon" src="assets/img/rrss/icon_facebook.png"
+            <a href="https://www.facebook.com/cubonia" target="_blank"><img class="icon" src="assets/img/rrss/icon_facebook.png"
                     alt="facebook"></a>
-            <a href="https://www.facebook.com/"><img class="icon" src="assets/img/rrss/icon_tiktok.png"
+            <a href="https://www.tiktok.com/@cubonia.com" target="_blank"><img class="icon" src="assets/img/rrss/icon_tiktok.png"
                     alt="tiktok"></a>
-            <a href="https://www.facebook.com/"><img class="icon" src="assets/img/rrss/icon_youtube.png"
+            <a href="#" target="_blank"><img class="icon" src="assets/img/rrss/icon_youtube.png"
                     alt="youtube"></a>
 
         </div>
