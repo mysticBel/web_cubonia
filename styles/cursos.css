@@ -1,3 +1,6 @@
+
+@import url('../assets/fonts/fonts.css');
+
 .section-curses {
     background-color: black;
     padding-top: 100px;
@@ -28,7 +31,7 @@
 
 .text-white-descrip{
     color: white;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 100px;
 }
 
@@ -127,15 +130,32 @@
 }
 
 .section-curses .container>h3:nth-of-type(2) {
+
+    /*font*/font-family: 'FractulAltLight' !important;
+    background-color: #FFFFFF;
     color: #000000;
-    background-color: #ffffff;
     display: block;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
     width: 100%;
-    max-width: 530px;
-    padding: 10px 25px;
+    max-width: 350px;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+}
+
+.section-curses .container>h3:nth-of-type(1) {
+
+    /*font*/font-family: 'FractulAltLight' !important;
+
+    color: #ffffff;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    padding: 5px 5px;
 }
 
 .slider-cursos .show-hover {
