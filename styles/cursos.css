@@ -9,7 +9,7 @@
 
 .slide {
     cursor: pointer; 
-    filter: grayscale(100%); /* Aplica escala de grises */
+   /* filter: grayscale(100%);  Aplica escala de grises */
     transition: filter 0.3s; /* Agrega transición al filtro */
     margin: 0px 10px;
     max-width: 350px;
@@ -17,7 +17,7 @@
 
 .slide:hover {
     cursor: pointer; 
-    filter: grayscale(0%); /* Elimina la escala de grises en el hover */
+   /* filter: grayscale(0%); /* Elimina la escala de grises en el hover */
     cursor: pointer;
 }
 
