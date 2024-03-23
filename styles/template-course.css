@@ -302,6 +302,11 @@ margin: 0 auto;
 
 /*********payments *********/
 
+.img-logo-pay{
+    width: 100px;
+}
+
+
 .card-cost-header{
     background-color: #08FFDE;
 }
@@ -309,6 +314,51 @@ margin: 0 auto;
 .card-cost-content{
     background-color: #f5f4f4;
 }
+
+.container-buttons{
+    margin-bottom: 50px;
+}
+
+.boton-paypal{
+    padding: 10px 20px;
+    background-color:#044068;
+    color: white;
+    cursor: pointer;
+    width: 313px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin: 20px auto;
+}
+
+
+.boton-paypal:hover {
+
+    border: #0070ba 2px solid;
+    background-color: white;
+    color: #0070ba
+}
+
+.boton-inscribete{
+    padding: 10px 20px;
+    border: #000000 2px solid;
+    background-color:#ffffff;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    width: 313px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin: 20px auto;
+}
+
+.boton-inscribete:hover {
+
+    border: #000000 2px solid;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff
+}
+
 
 @media only screen and (max-width: 1000px) {
 

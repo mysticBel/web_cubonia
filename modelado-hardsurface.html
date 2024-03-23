@@ -9,6 +9,8 @@
      <!--favicon.ico -->
      <link rel="icon" type="image/x-icon" href="assets/img/icon/favicon-cubonia.ico">
 
+         <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -662,40 +664,47 @@
 
 
 
-
-    <!-- ============================================-->
-    <!-- <section community> close ============================-->
-    <section class="section-form" id="container-form">
-        <h3>¿Aún tienes dudas?</h3>
-        <h3>SOLICITA <strong>INFORMACIÓN</strong></h3>
-
-
-         <!--inicio de formulario-->>
-        <section >
-            <div class="container-form container">
-                <div class="form-container">
-                    <div class="flex-container">
-                        <p>Envíanos tus dudas y te responderemos lo antes posible</p>
-                        <p>> Cubonia <strong>School</strong>   </p>
-                        <p>> hola<strong>@cubonia.com</strong></p>
-                    </div>
-                    <form id="contactForm" class="flex-container" action="https://formsubmit.co/dnxbel@gmail.com"
-                        method="POST">
-                        <div class="contenedor">
-                            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
-                            <input type="email" id="email" name="email" placeholder="Email" required>
+   <!-- ============================================-->
+    <!-- <section form   ============================-->
+        <section class="section-form" id="container-form">
+            <h3>¿Aún tienes dudas?</h3>
+            <h3>SOLICITA <strong>INFORMACIÓN</strong></h3>
+    
+    
+            <!------ inicio de formulario ----->
+            <section >
+                <div class="container-form container">
+                    <div class="form-container">
+                        <div class="flex-container">
+                            <p>Envíanos tus dudas y te responderemos lo antes posible</p>
+                            <!-- <p>Cubonia <strong>School</strong>   </p> -->
+                           
+                             <a href="mailto:hola@cubonia.com" class="mail-to">
+                               <span><i class="fa-solid fa-envelope icon-contact" style="color: #000000;"></i><strong>hola@cubonia.com</strong></span>
+                            </a> 
+                            <span> <i class="fa-solid fa-phone icon-contact" style="color: #000000;"></i>+51 949150692</span>
+    
+                            
                         </div>
-                        <textarea id="mensaje" name="consulta" placeholder="Escribe tu mensaje o consulta"
-                            required></textarea>
-                        <input type="hidden" name="_subject" value="CUBONIA WEB- Consulta">
-
-                        <input type="submit" value="Enviar">
-                    </form>
+                        <form id="contactForm" class="flex-container" action="https://formsubmit.co/admin@cubonia.com"
+                            method="POST">
+                            <div class="contenedor">
+                                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                                <input type="email" id="email" name="email" placeholder="Email" required>
+                            </div>
+                            <textarea id="mensaje" name="consulta" placeholder="Escribe tu mensaje o consulta"
+                                required></textarea>
+                            <input type="hidden" name="_subject" value="CUBONIA WEB- Consulta">
+    
+                            <input type="submit" value="Enviar">
+                        </form>
+                    </div>
                 </div>
-            </div>
+            </section>
         </section>
-    </section>
-
+    
+   <!-- ============================================-->
+    <!-- <section form  close ============================-->
  
 
     <!-- boton flotante whastapp-->
@@ -716,12 +725,11 @@
                 <img src="assets/img/logo/logo_cubonia_footer.png" alt="Logo">
             </a>
             <ul>
-
-                <li><a class = "nav-item"  href="#section-about">Nosotros</a></li>
-                <li><a class = "nav-item"  href="#section-courses">Cursos</a></li>
-                <li><a class = "nav-item"  href="#section-instructor">Instructor</a></li>
-                <li><a class = "nav-item"  href="#section-students">Alumnos</a></li>
-                <li><a class = "nav-item"  href="#section-form">Contacto</a></li>
+                <li><a class = "nav-item"  href="index.html#section-about">Nosotros</a></li>
+                <li><a class = "nav-item"  href="index.html#section-courses">Cursos</a></li>
+                <li><a class = "nav-item"  href="index.html#section-instructor">Instructor</a></li>
+                <li><a class = "nav-item"  href="index.html#section-students">Alumnos</a></li>
+                <li><a class = "nav-item"  href="index.html#section-form">Contacto</a></li>
             </ul>
             <p>COPYRIGHT &copy; 2024 - ALL RIGHTS RESERVED BY <a class="link-cubonia" href="https://www.linkedin.com/company/cubonia/">CUBONIA SCHOOL</a></p>
         </footer>
