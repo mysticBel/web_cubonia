@@ -51,6 +51,7 @@ text-align: center;
 
 .descrip_card{
     margin: auto 20px;
+    
 }
 .descrip_card h2{
     color:#08FFDE;
@@ -134,7 +135,7 @@ text-align: center;
         flex-direction: column-reverse;
         flex-wrap: wrap;
         margin: 20px;
-        width: 100%;
+        width: 90%;
         transition: 0.3s;
     }
 
@@ -148,6 +149,9 @@ text-align: center;
         padding-top: 100px ;
     }
     /**/
+
+
+
 .container-buttons-teachers{
     display: flex;
     flex-direction: row;
@@ -155,13 +159,30 @@ text-align: center;
     
     .boton-proyectos,
     .boton-linkedin{
-        width: 120px;
+        width: 100px;
     }
+
+   
+
+    .descrip_card h2{
+        color:#08FFDE;
+        padding: 20px 0px;
+        font-size: 20px;
+    }
+    
 
     .descrip_card p,
 .descrip_card ul{
     color: white;
     font-size: 14px;
+}
+
+.boton-proyectos,
+.boton-proyectos:hover,
+.boton-linkedin,
+.boton-linkedin:hover{
+    font-size: 14px;
+    padding: 5px 10px;
 }
         
   }
