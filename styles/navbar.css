@@ -70,6 +70,28 @@ body {
     display: none;
   }
 
+  @media screen and (max-width: 1225px) {
+
+    nav {
+      background-color: rgba(175, 175, 175, 0); /* Fondo con transparencia */
+      color: white;
+      padding:20px 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000; /* Asegura que el navbar esté encima de otros elementos */
+      transition: background-color 0.8s ease; /* Transición de color de fondo */
+    }
+    .logo img {
+      width: 150px;
+      margin-left: 10px;
+    }
+  }
+
   /* Estilos para vista móvil */
   @media screen and (max-width: 768px) {
     nav {
@@ -102,6 +124,7 @@ body {
       right: 20px;
       z-index: 1500; /* Asegura que el ícono esté encima del menú */
       color: white;
+      font-size: 24px;
     }
 
     .logo img {
