@@ -36,6 +36,14 @@ body {
     margin-left: 20px;
   }
 
+  .logo {
+    cursor: pointer; /* Cambiar cursor a puntero en el hover */
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
   nav ul {
     list-style-type: none;
     margin: 0;

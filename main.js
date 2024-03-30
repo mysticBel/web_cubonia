@@ -214,3 +214,11 @@ jQuery(heads).on('click', function() {
     }
 });
 });
+
+//logo scroll to top
+function scrollToTopHeader() {
+  window.scrollTo({
+      top: 0,
+      behavior: "smooth" // Hacer que el desplazamiento sea suave
+  });
+}
