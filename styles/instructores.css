@@ -81,19 +81,25 @@ display: flex;
     width: 200px;
     display: block;
     margin: 10px 10px;
+    border:#059C87 2px solid;
 }
 
 
 .boton-proyectos:hover {
 
-    border:#059C87 2px solid;
+    border:#00dabd 2px solid;
     background-color: white;
-    color: #059C87 
+    color: #09ad98 ;
+    transition: color 0.4s ease;
+    /* border: #08FFDE 2px solid;
+    background-color: #08FFDE;
+    color: #0f6460 ;  */
+
 }
 
 .boton-linkedin{
     padding: 10px 20px;
-    border: #000000 2px solid;
+    border: #ffffff 2px solid;
     background-color:#ffffff;
     color: rgb(0, 0, 0);
     cursor: pointer;
@@ -106,7 +112,8 @@ display: flex;
 
     border: #000000 2px solid;
     background-color: rgb(0, 0, 0);
-    color: #ffffff
+    color: #ffffff;
+    transition: color 0.4s ease;
 }
 
 
