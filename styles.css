@@ -323,7 +323,12 @@ a:hover{
   .flag {
     width: 30px; /* ajusta el ancho de la imagen según sea necesario */
     height: auto; /* permite que la altura se ajuste automáticamente manteniendo la proporción */
-    margin: 10px 30px !important;
+    margin: 10px 10px !important;
+  }
+
+  .country-name{
+   
+    margin-left: 20px; 
   }
   
 
