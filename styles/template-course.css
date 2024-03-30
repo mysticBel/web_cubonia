@@ -124,8 +124,7 @@ background-color: rgb(236, 236, 236);
 .course-info {
     justify-content: space-around;
     background-color: rgb(255, 255, 255);
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding: 70px 30px;
     width: 90%;
     margin: 0 auto;
     border: #08FFDE 3px solid;
@@ -195,6 +194,20 @@ margin: 0 auto;
     .btn-requirements {
         width: 100%;
       }
+
+    .course-info {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: rgb(255, 255, 255);
+        padding: 70px 40px;
+  
+        width: 90%;
+        margin: 0 auto;
+        border: #08FFDE 3px solid;
+    }
+    
   }
   
 
