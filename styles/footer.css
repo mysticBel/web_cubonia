@@ -65,8 +65,12 @@
         max-width: 50%;
         height: auto;
         margin: 50px; /* Aumenta el margen inferior */
+        cursor: pointer; /* Cambiar cursor a puntero en el hover */
       }
     
+      footer img:hover {
+        cursor: pointer;
+      }
       /* Estilos para vista móvil */
       @media only screen and (max-width: 600px) {
         footer img {

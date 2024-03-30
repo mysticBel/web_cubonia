@@ -222,3 +222,12 @@ function scrollToTopHeader() {
       behavior: "smooth" // Hacer que el desplazamiento sea suave
   });
 }
+//
+function scrollToSection(sectionId) {
+  const section = document.getElementById(sectionId);
+  if (section) {
+      section.scrollIntoView({
+          behavior: 'smooth'
+      });
+  }
+}

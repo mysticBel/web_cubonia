@@ -16,6 +16,9 @@ button{
   font-family: FractulAltMedium;
 }
 
+a:hover{
+  cursor: pointer;
+}
 
 /*********************/
 /** section nosotros**/
