@@ -313,6 +313,47 @@ margin: 0 auto;
     font-size: 20px;
 }
 
+
+/*********NEW INVESTMENTS *********/
+.container-invest{
+    display: block;
+    flex-direction: row;
+    margin: 50px auto;
+    
+    width: 90%;
+    text-align: center;
+    justify-content: center;
+}
+
+.slot-title{
+    padding: 10px;
+    background-color: #08FFDE;
+}
+.slot-content{
+    display: flex;
+    
+    
+}
+.slot-content-1,
+.slot-content-2{
+    width: 50%;
+    padding: 15px;
+    color: white;
+}
+
+.slot-content-1{
+    background-color: #FF0043;
+}
+.slot-content-2{
+    background-color:#414141;
+    
+}
+.big-number{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
 /*********payments *********/
 
 .img-logo-pay{
@@ -508,5 +549,17 @@ margin: 0 auto;
         
 
         
+    }
+
+    /*****/
+    .slot-content{
+        display: flex;
+        flex-direction: column;}
+
+    .slot-content-1,
+    .slot-content-2{
+        width: 100%;
+        padding: 15px;
+       
     }
 }
