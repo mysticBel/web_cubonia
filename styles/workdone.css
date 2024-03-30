@@ -43,3 +43,22 @@
     border-radius: 50%;
     border: 2px solid #000000;
 }
+
+
+.slider-workdone .slick-next {
+    background-image: url('/assets/img/slider/arrow-next-black.png');
+}
+
+.slider-workdone .slick-prev {
+    background-image: url('/assets/img/slider/arrow-prev-black.png');
+}
+
+.slider-workdone .slick-prev:hover,
+.slider-workdone .slick-prev:focus {
+    background-image: url('/assets/img/slider/arrow-prev.png');
+}
+
+.slider-workdone .slick-next:hover,
+.slider-workdone .slick-next:focus {
+    background-image: url('/assets/img/slider/arrow-next.png');
+}

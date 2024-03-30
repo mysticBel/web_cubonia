@@ -31,10 +31,10 @@ $(document).ready(function () {
     ],
   });
   $(".slider-workdone").slick({
-    dots: true,
-    arrows: false,
+    dots: false,
+    arrows: true,
     autoplay: true,
-    slidesToShow: 5,
+    slidesToShow: 4,
   });
 
   $(window).scroll(function () {
