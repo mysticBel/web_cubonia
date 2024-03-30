@@ -150,12 +150,18 @@ text-align: center;
     /**/
 .container-buttons-teachers{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     }
     
     .boton-proyectos,
     .boton-linkedin{
-        width: 300px;
+        width: 120px;
     }
+
+    .descrip_card p,
+.descrip_card ul{
+    color: white;
+    font-size: 14px;
+}
         
   }
