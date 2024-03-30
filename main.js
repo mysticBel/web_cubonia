@@ -35,6 +35,14 @@ $(document).ready(function () {
     arrows: true,
     autoplay: true,
     slidesToShow: 4,
+    responsive: [
+      {
+        breakpoint: 668,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
   });
 
   $(window).scroll(function () {
