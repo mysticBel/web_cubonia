@@ -47,6 +47,8 @@ header button:hover {
     /* Para ocultar el texto que pueda desbordar del header */
   }
 
+
+
   .header-text {
     position: absolute;
     bottom: 20px;
@@ -112,14 +114,22 @@ header button:hover {
     background-color: #00000000;
     color: #08FFDE;
     cursor: pointer;
-    width: 100px;
+    width: 300px;
     display: block;
-    margin-right: auto;
-    margin-left: auto;
+    margin:  auto;
     position: absolute;
-    bottom: 10vw;
-    right: 15vw;
     font-size: 14px;
-   
+    bottom: 7vw;
   } 
+
+
+header button:hover {
+  
+  color: #ffffff;
+  border: #ffffff 1px solid;
+  transition: color 0.3s ease;
+ 
+
+}
+
 }
