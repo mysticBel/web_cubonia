@@ -52,7 +52,14 @@ body {
   }
   nav ul li {
     margin-right: 20px;
+    color: white;
   }
+
+  nav ul li:hover  {
+    margin-right: 20px;
+    color: black;
+  }
+
   nav ul li a {
     text-decoration: none;
     color: white;
