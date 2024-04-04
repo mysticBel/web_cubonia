@@ -46,7 +46,7 @@ body {
 .form-container {
     width: 100%;
     /* max-width: 600px; */
-    padding: 20px;
+    /* padding: 20px; */
     /* border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
@@ -109,7 +109,7 @@ input[type="submit"] {
     transition: background-color 0.3s ease;
     /* Agrega la transición */
     box-sizing: border-box;
-   
+   margin-top: 10px;
     font-weight: bold;
     border:#000000 2px solid;
 }
@@ -129,6 +129,46 @@ textarea:focus {
     /* Cambia el color del borde al seleccionar */
 }
 
+.section-form #contactForm .contenedor input:nth-of-type(1){
+    width: 50%;
+    
+}
+.section-form #contactForm .contenedor input:nth-of-type(2){
+    width: 50%;
+    margin-left: 15px;
+}
+.section-form #contactForm .contenedor{
+    width: 100%;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 600px)  {
+    .container-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* height: 100vh; */
+        margin: 0 auto;
+        padding: 80px 5px;
+        background-color: #ccc;
+    }
+    .form-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        font-family: 'FractulAltLight' !important;
+    }
+    .flex-container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    
+    
+}
+
 @media only screen and (max-width: 600px) {
     .form-container {
         /* width: 100%; */
@@ -136,6 +176,7 @@ textarea:focus {
         flex-direction: column;
         padding-top: 10px;
     }
+   
 
     .flex-container {
         margin-right: 0;
@@ -146,14 +187,23 @@ textarea:focus {
 
         width: 100%;
     }
-}
-.section-form #contactForm .contenedor input:nth-of-type(1){
-    width: 50%;
-    margin-right: 15px;
-}
-.section-form #contactForm .contenedor input:nth-of-type(2){
-    width: 50%;
-}
-.section-form #contactForm .contenedor{
-    width: 100%;
+
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .section-form #contactForm .contenedor input:nth-of-type(1){
+        width: 100%;
+       
+    }
+    .section-form #contactForm .contenedor input:nth-of-type(2){
+        width: 100%;
+        margin-left: 0px;
+    }
+    .section-form #contactForm .contenedor{
+        width: 100%;
+    }
+    
 }
