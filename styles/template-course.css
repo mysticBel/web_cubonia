@@ -229,12 +229,12 @@ margin: 0 auto;
     width: 200px;
     height: 200px;
     /* border-radius: 50%; */
-    filter: grayscale(100%); /* Aplica escala de grises */
+   /*filter: grayscale(100%);  Aplica escala de grises */
     transition: filter 0.3s; /* Agrega transición al filtro */
   }
   
   .instructor:hover .instructor-img {
-    filter: grayscale(0%); /* Elimina la escala de grises en el hover */
+   /* filter: grayscale(100%);  Elimina la escala de grises en el hover */
   }
     
   .instructor-img-linkedin {
