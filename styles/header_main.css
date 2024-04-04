@@ -115,7 +115,7 @@ header button:hover {
     color: #08FFDE;
     cursor: pointer;
     width: 300px;
-    display: block;
+    display: none;
     margin:  auto;
     position: absolute;
     font-size: 14px;
