@@ -13,7 +13,7 @@ header img {
 
 
 /****button Inscribete ahora****/
-header button {
+.header-button-up {
   padding: 10px 10px;
   border: #08FFDE 0.5px solid;
   background-color: #00000000;
@@ -26,14 +26,41 @@ header button {
   position: absolute;
   bottom: 10vw;
   right: 15vw;
- 
+ margin-bottom: 5px;
 }
 
-header button:hover {
+.header-button-up:hover {
   
   color: #ffffff;
   border: #ffffff 1px solid;
   transition: color 0.3s ease;
+  margin-bottom: 5px;
+
+}
+
+.header-button-down {
+  padding: 10px 10px;
+  border: #08FFDE 0.5px solid;
+  background-color: #00000000;
+  color: #08FFDE;
+  cursor: pointer;
+  width: 200px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  position: absolute;
+  bottom: 14vw;
+  right: 15vw;
+  margin-bottom: 5px;
+ 
+}
+
+.header-button-down:hover {
+  
+  color: #ffffff;
+  border: #ffffff 1px solid;
+  transition: color 0.3s ease;
+  margin-bottom: 5px;
  
 
 }
@@ -84,9 +111,15 @@ header button:hover {
   }
 
 
-  
-
 }
+
+@media only screen and (min-width: 768px)and (max-width: 1250px) {
+.header-button-up {
+  bottom: 7vw;
+ margin-bottom: 5px;
+}
+}
+
 
 /* Estilos para la vista móvil */
 @media only screen and (max-width: 767px) {
@@ -107,8 +140,12 @@ header button:hover {
     margin-top: -50px;
     /* Espacio negativo para superponer el texto sobre la imagen */
   }
+  .header-button-up, .header-button-down {
+    visibility: hidden;
+  }
+
   
-  header button {
+  /* .header-button-up {
     padding: 10px 10px;
     border: #08FFDE 0.5px solid;
     background-color: #00000000;
@@ -123,13 +160,13 @@ header button:hover {
   } 
 
 
-header button:hover {
+  .header-button-up:hover {
   
   color: #ffffff;
   border: #ffffff 1px solid;
   transition: color 0.3s ease;
  
 
-}
+} */
 
 }

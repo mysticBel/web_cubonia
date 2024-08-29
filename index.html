@@ -13,7 +13,9 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- jquery css -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
@@ -46,11 +48,11 @@
         </div>
         <span class="menu-icon">&#9776;</span>
         <ul class="nav-links">
-            <li><a class = "nav-item" onclick="scrollToSection('section-about')">Nosotros</a></li>
-            <li><a class = "nav-item" onclick="scrollToSection('section-courses')" >Cursos</a></li>
-            <li><a class = "nav-item" onclick="scrollToSection('section-instructor')">Instructores</a></li>
-            <li><a class = "nav-item" onclick="scrollToSection('section-students')">Alumnos</a></li>
-            <li><a class = "nav-item" onclick="scrollToSection('container-form')">Contacto</a></li>
+            <li><a class="nav-item" onclick="scrollToSection('section-about')">Nosotros</a></li>
+            <li><a class="nav-item" onclick="scrollToSection('section-courses')">Cursos</a></li>
+            <li><a class="nav-item" onclick="scrollToSection('section-instructor')">Instructores</a></li>
+            <li><a class="nav-item" onclick="scrollToSection('section-students')">Alumnos</a></li>
+            <li><a class="nav-item" onclick="scrollToSection('container-form')">Contacto</a></li>
         </ul>
     </nav>
 
@@ -63,11 +65,16 @@
         <!-- <img src="assets/img/bg/banner_principal_bg.png" alt="Imagen de Header"> -->
         <picture>
             <!-- Imagen para pantallas de escritorio -->
-            <source media="(min-width: 768px)" srcset="assets/img/bg/banner_principal_bg.png" alt="Imagen de Header desktop">
+            <source media="(min-width: 768px)" srcset="assets/img/bg/banner_principal_bg.png"
+                alt="Imagen de Header desktop">
             <!-- Imagen para pantallas pequeñas (responsive) -->
             <img src="assets/img/bg/banner_responsive_principal_bg.png" alt="Imagen de Header responsive">
         </picture>
-        <button   onclick="irAEnlace('https://docs.google.com/forms/d/e/1FAIpQLSe16WxFFokphM0r7mdPI7-_4yFBjuERZ546MXYYIAcrS5Rg0g/viewform')">Inscríbete ahora</button>
+        <button class="header-button-up" onclick="scrollToSection('section-courses')">Ver
+            Cursos</button>
+        <button class="header-button-down"
+            onclick="irAEnlace('https://docs.google.com/forms/d/e/1FAIpQLSe16WxFFokphM0r7mdPI7-_4yFBjuERZ546MXYYIAcrS5Rg0g/viewform')">Inscríbete
+            ahora</button>
     </header>
     <!-- <section header> close ============================-->
     <!-- ============================================-->
@@ -82,33 +89,38 @@
             SOBRE <strong>NOSOTROS</strong>
         </h3>
         <p>
-            ¡Bienvenido a <strong>Cubonia School</strong>, donde hacer <strong>3D </strong>es nuestra especialidad! <br> <br>En nuestra comunidad, te rodearás de
+            ¡Bienvenido a <strong>Cubonia School</strong>, donde hacer <strong>3D </strong>es nuestra especialidad! <br>
+            <br>En nuestra comunidad, te rodearás de
             instructores que no solo son expertos en cine, publicidad y videojuegos, sino que también están inmersos en
-            proyectos que marcan tendencia en la industria. Aquí, <strong>encontrarás el apoyo y los consejos </strong> que necesitas para
-            llevar tu talento al siguiente nivel y convertirlo en una carrera emocionante. <br> <br><strong>Únete a nosotros hoy</strong> y
+            proyectos que marcan tendencia en la industria. Aquí, <strong>encontrarás el apoyo y los consejos </strong>
+            que necesitas para
+            llevar tu talento al siguiente nivel y convertirlo en una carrera emocionante. <br> <br><strong>Únete a
+                nosotros hoy</strong> y
             comienza a forjar tu camino hacia el éxito en el mundo de la producción 3D.
         </p>
         <div class="contenedor contenedor-btns">
             <button onclick="irAEnlace('https://linktr.ee/cubonia.com')">Más información</button>
-            <button onclick="irAEnlace('https://docs.google.com/forms/d/e/1FAIpQLSe16WxFFokphM0r7mdPI7-_4yFBjuERZ546MXYYIAcrS5Rg0g/viewform')">Inscríbete ahora</button>
+            <button
+                onclick="irAEnlace('https://docs.google.com/forms/d/e/1FAIpQLSe16WxFFokphM0r7mdPI7-_4yFBjuERZ546MXYYIAcrS5Rg0g/viewform')">Inscríbete
+                ahora</button>
             <!-- <button onclick="irAEnlace('https://api.whatsapp.com/send?phone=51949150692')">Inscríbete ahora</button> -->
         </div>
         <!--rrss-->
         <div class="container-social-icons">
             <!-- <a href="https://www.facebook.com/"><img class="icon" src="assets/img/rrss/icon_discord.png"
                     alt="discord"></a> -->
-            <a href="https://www.instagram.com/cubonia.school" target="_blank"><img class="icon" src="assets/img/rrss/icon_instagram.png"
-                    alt="instagram"></a>
-            <a href="https://www.facebook.com/cubonia" target="_blank"><img class="icon" src="assets/img/rrss/icon_facebook.png"
-                    alt="facebook"></a>
-            <a href="https://www.tiktok.com/@cubonia.com" target="_blank"><img class="icon" src="assets/img/rrss/icon_tiktok.png"
-                    alt="tiktok"></a>
-            <a href="https://www.linkedin.com/company/cubonia/" target="_blank"><img class="icon" src="assets/img/rrss/icon_linkedin.png"
-                    alt="linkedin"></a>
+            <a href="https://www.instagram.com/cubonia.school" target="_blank"><img class="icon"
+                    src="assets/img/rrss/icon_instagram.png" alt="instagram"></a>
+            <a href="https://www.facebook.com/cubonia" target="_blank"><img class="icon"
+                    src="assets/img/rrss/icon_facebook.png" alt="facebook"></a>
+            <a href="https://www.tiktok.com/@cubonia.com" target="_blank"><img class="icon"
+                    src="assets/img/rrss/icon_tiktok.png" alt="tiktok"></a>
+            <a href="https://www.linkedin.com/company/cubonia/" target="_blank"><img class="icon"
+                    src="assets/img/rrss/icon_linkedin.png" alt="linkedin"></a>
             <!-- <a href="https://www.facebook.com/"><img class="icon" src="assets/img/rrss/icon_youtube.png"
                     alt="youtube"></a> -->
-            <a href="https://wa.me/message/EX6HYBSQLSB2N1" target="_blank"><img class="icon" src="assets/img/rrss/icon_whatsapp.png"
-                    alt="whatsapp"></a>
+            <a href="https://wa.me/message/EX6HYBSQLSB2N1" target="_blank"><img class="icon"
+                    src="assets/img/rrss/icon_whatsapp.png" alt="whatsapp"></a>
 
         </div>
 
@@ -137,24 +149,27 @@
 
                 <div class="slide">
                     <div>
-                        <img src="assets/img/courses/Web_Afiches_Cursos-03.png" class="img-fluid hide-hover">
-                        <img src="assets/img/courses/Web_Afiches_Cursos-04.png" class="img-fluid show-hover" onclick="irACurso2()">
+                        <img src="assets/img/courses/afiches/Afiches_WEB-02" class="img-fluid hide-hover">
+                        <img src="assets/img/courses/afiches/Afiches_WEB-01" class="img-fluid show-hover"
+                            onclick="irACurso2()">
                     </div>
                 </div>
 
                 <div class="slide">
                     <div>
                         <img src="assets/img/courses/Web_Afiches_Cursos-05.png" class="img-fluid hide-hover">
-                        <img src="assets/img/courses/Web_Afiches_Cursos-06.png" class="img-fluid show-hover" onclick="irACurso3()">
-                        
+                        <img src="assets/img/courses/Web_Afiches_Cursos-06.png" class="img-fluid show-hover"
+                            onclick="irACurso3()">
+
                     </div>
-                    
+
                 </div>
 
                 <div class="slide">
                     <div>
                         <img src="assets/img/courses/Web_Afiches_Cursos-07.png" class="img-fluid hide-hover">
-                        <img src="assets/img/courses/Web_Afiches_Cursos-08.png" class="img-fluid show-hover" onclick="irACurso4()">
+                        <img src="assets/img/courses/Web_Afiches_Cursos-08.png" class="img-fluid show-hover"
+                            onclick="irACurso4()">
                     </div>
                 </div>
 
@@ -172,11 +187,12 @@
                         <img src="assets/img/courses/Web_Afiches_Cursos-12.png" class="img-fluid show-hover">
                     </div>
                 </div>
-                
-                <div class="slide" >               
+
+                <div class="slide">
                     <div>
                         <img src="assets/img/courses/Web_Afiches_Cursos-01.png" class="img-fluid hide-hover">
-                        <img src="assets/img/courses/Web_Afiches_Cursos-02.png" class="img-fluid show-hover" onclick="irACurso1()">
+                        <img src="assets/img/courses/Web_Afiches_Cursos-02.png" class="img-fluid show-hover"
+                            onclick="irACurso1()">
                     </div>
                 </div>
 
@@ -193,12 +209,12 @@
     <section class="section-instructor" id="section-instructor">
         <div class="container">
             <h3 class="text-center">CONOCE A</h3>
-            
 
-                <h3>NUESTROS
-                    <strong>INSTRUCTORES</strong>
-                </h3>
-            
+
+            <h3>NUESTROS
+                <strong>INSTRUCTORES</strong>
+            </h3>
+
 
 
             <p class="text-instructores text-center">
@@ -211,7 +227,7 @@
                         <a href="https://www.linkedin.com/in/elvizlopez/" target="_blank">
                             <img src="assets/img/instructores/Web_Instructores_Individuales-01.png" class="img-fluid">
                         </a>
-                       
+
                         <h3>Elvis <strong>Lopez</strong></h3>
                         <p> <strong>3D </strong>Supervisor</p>
                     </div>
@@ -230,7 +246,7 @@
                         <a href="https://www.linkedin.com/in/edwin-ayala-pereda/" target="_blank">
                             <img src="assets/img/instructores/Web_Instructores_Individuales-03.png" class="img-fluid">
                         </a>
-                            <h3>Edwin <strong>Ayala</strong></h3>
+                        <h3>Edwin <strong>Ayala</strong></h3>
                         <p> <strong>3D Modeler </strong>Artist</p>
                     </div>
                 </div>
@@ -257,7 +273,7 @@
                         <a href="https://www.linkedin.com/in/bettocgi/" target="_blank">
                             <img src="assets/img/instructores/Web_Instructores_Individuales-06.png" class="img-fluid">
                         </a>
-                            <h3>Betto <strong>Vera</strong></h3>
+                        <h3>Betto <strong>Vera</strong></h3>
                         <p> <strong>3D </strong>Sculptor</p>
                     </div>
                 </div>
@@ -283,7 +299,7 @@
             </div>
 
             <div class="contenedor contenedor-inscribete">
-                
+
                 <button class="boton-ver-mas" onclick="window.location.href = 'instructores.html';">Ver más</button>
             </div>
 
@@ -474,42 +490,57 @@
         <section>
             <div class="slider-container">
                 <div class="slider ">
-                    <img src="assets/img/students/profile-picture/Alumnos_Fotos-01.png" alt="Persona 1" onclick="mostrarInformacion(1)">
-                    <img src="assets/img/students/profile-picture/Alumnos_Fotos-02.png" alt="Persona 2" onclick="mostrarInformacion(2)">
-                    <img src="assets/img/students/profile-picture/Alumnos_Fotos-03.png" alt="Persona 3" onclick="mostrarInformacion(3)">
-                    <img src="assets/img/students/profile-picture/Alumnos_Fotos-04.png" alt="Persona 4" onclick="mostrarInformacion(4)">
-                    <img src="assets/img/students/profile-picture/Alumnos_Fotos-05.png" alt="Persona 5" onclick="mostrarInformacion(5)">
-                    <img src="assets/img/students/profile-picture/Alumnos_Fotos-06.png" alt="Persona 6" onclick="mostrarInformacion(6)">
-                    <img src="assets/img/students/profile-picture/Alumnos_Fotos-07.png" alt="Persona 7" onclick="mostrarInformacion(7)">
-                    <img src="assets/img/students/profile-picture/Alumnos_Fotos-08.png" alt="Persona 8" onclick="mostrarInformacion(8)">
-                    <img src="assets/img/students/profile-picture/Alumnos_Fotos-09.png" alt="Persona 9" onclick="mostrarInformacion(9)">
-                    <img src="assets/img/students/profile-picture/Alumnos_Fotos-10.png" alt="Persona 10" onclick="mostrarInformacion(10)">
-            
+                    <img src="assets/img/students/profile-picture/Alumnos_Fotos-01.png" alt="Persona 1"
+                        onclick="mostrarInformacion(1)">
+                    <img src="assets/img/students/profile-picture/Alumnos_Fotos-02.png" alt="Persona 2"
+                        onclick="mostrarInformacion(2)">
+                    <img src="assets/img/students/profile-picture/Alumnos_Fotos-03.png" alt="Persona 3"
+                        onclick="mostrarInformacion(3)">
+                    <img src="assets/img/students/profile-picture/Alumnos_Fotos-04.png" alt="Persona 4"
+                        onclick="mostrarInformacion(4)">
+                    <img src="assets/img/students/profile-picture/Alumnos_Fotos-05.png" alt="Persona 5"
+                        onclick="mostrarInformacion(5)">
+                    <img src="assets/img/students/profile-picture/Alumnos_Fotos-06.png" alt="Persona 6"
+                        onclick="mostrarInformacion(6)">
+                    <img src="assets/img/students/profile-picture/Alumnos_Fotos-07.png" alt="Persona 7"
+                        onclick="mostrarInformacion(7)">
+                    <img src="assets/img/students/profile-picture/Alumnos_Fotos-08.png" alt="Persona 8"
+                        onclick="mostrarInformacion(8)">
+                    <img src="assets/img/students/profile-picture/Alumnos_Fotos-09.png" alt="Persona 9"
+                        onclick="mostrarInformacion(9)">
+                    <img src="assets/img/students/profile-picture/Alumnos_Fotos-10.png" alt="Persona 10"
+                        onclick="mostrarInformacion(10)">
+
                 </div>
 
-                
+
                 <div id="info-1" class="person-info">
                     <div class="person-info-text">
                         <h2>Alexis <strong>Franco</strong> </h2>
                         <div class="container-country">
                             <div>
                                 <img class="flag" src="assets/img/flags/flag_mexico.png" alt="">
-                            </div>  
+                            </div>
                             <div>
                                 <h5 class="country-name">MÉXICO</h5>
-                                
-                            </div>  
-                                              
+
+                            </div>
+
                         </div>
-                        <p>Este curso me ayudó a  tener un mejor workflow en cuanto al desarrollo de personajes para animación, desde el modelado hasta la presentación, comprendiendo mejor temas tanto artísticos como técnicos como son la lectura de silueta, topología, texturizado e iluminación.Todo esto de forma clara y con gran apoyo por parte de Elvis.</p>
-                        <button onclick="irAEnlace('https://www.artstation.com/alexis_franco', event)">Ver Proyecto Final</button>
+                        <p>Este curso me ayudó a tener un mejor workflow en cuanto al desarrollo de personajes para
+                            animación, desde el modelado hasta la presentación, comprendiendo mejor temas tanto
+                            artísticos como técnicos como son la lectura de silueta, topología, texturizado e
+                            iluminación.Todo esto de forma clara y con gran apoyo por parte de Elvis.</p>
+                        <button onclick="irAEnlace('https://www.artstation.com/alexis_franco', event)">Ver Proyecto
+                            Final</button>
                     </div>
                     <div class="person-info-img">
-                        <img src="assets/img/students/project/Alumnos_Proyectos-01.png" alt="Imagen relacionada con Persona 1">
+                        <img src="assets/img/students/project/Alumnos_Proyectos-01.png"
+                            alt="Imagen relacionada con Persona 1">
                     </div>
                 </div>
 
-                
+
                 <div id="info-2" class="person-info" style="display: none;">
                     <div class="person-info-text">
                         <h2>Brajhan <strong>Amaya</strong> </h2>
@@ -519,200 +550,258 @@
                             </div>
                             <div>
                                 <h5 class="country-name">PERÚ</h5>
-                                
-                            </div>  
-                                               
+
+                            </div>
+
                         </div>
-                        <p>Este curso ha sido una experiencia increíble ya que he mejorado mis habilidades tanto teórico como práctico y ha ampliado mi visión profesional en el mundo de la animación. Recomiendo este curso a cualquier persona interesada en explorar el campo del modelado de personajes 3D, Otro aspecto destacado es la atención personalizada que recibo como alumno.</p>
-                        <button onclick="irAEnlace('https://www.artstation.com/brajhanamayaabanto', event)">Ver Proyecto Final</button>
+                        <p>Este curso ha sido una experiencia increíble ya que he mejorado mis habilidades tanto teórico
+                            como práctico y ha ampliado mi visión profesional en el mundo de la animación. Recomiendo
+                            este curso a cualquier persona interesada en explorar el campo del modelado de personajes
+                            3D, Otro aspecto destacado es la atención personalizada que recibo como alumno.</p>
+                        <button onclick="irAEnlace('https://www.artstation.com/brajhanamayaabanto', event)">Ver Proyecto
+                            Final</button>
                     </div>
                     <div class="person-info-img">
-                        <img src="assets/img/students/project/Alumnos_Proyectos-02.png" alt="Imagen relacionada con Persona 2">
+                        <img src="assets/img/students/project/Alumnos_Proyectos-02.png"
+                            alt="Imagen relacionada con Persona 2">
                     </div>
                 </div>
 
-                
+
                 <div id="info-3" class="person-info" style="display: none;">
                     <div class="person-info-text">
                         <h2>Diego <strong>Meza</strong> </h2>
                         <div class="container-country">
                             <div>
                                 <img class="flag" src="assets/img/flags/flag_mexico.png" alt="">
-                            </div> 
+                            </div>
                             <div>
                                 <h5 class="country-name">MÉXICO</h5>
-                                
-                            </div>  
-                                                
+
+                            </div>
+
                         </div>
-                        <p>Gracias a este curso, he tenido la oportunidad de explorar y explotar mis habilidades en 3d al máximo y sobretodo realizar cada paso de la manera más eficiente posible, aprendiendo el uso correcto de diferentes softwares y herramientas a fondo, para una comprensión puntual y personalizada, mejorando la calidad y limpieza de cada pieza. Comprendiendo las bases y perfeccionando cada detalle para así alcanzar un nivel profesional en cada uno de mis trabajos.</p>
-                        <button onclick="irAEnlace('https://www.artstation.com/roadsky', event)">Ver Proyecto Final</button>
+                        <p>Gracias a este curso, he tenido la oportunidad de explorar y explotar mis habilidades en 3d
+                            al máximo y sobretodo realizar cada paso de la manera más eficiente posible, aprendiendo el
+                            uso correcto de diferentes softwares y herramientas a fondo, para una comprensión puntual y
+                            personalizada, mejorando la calidad y limpieza de cada pieza. Comprendiendo las bases y
+                            perfeccionando cada detalle para así alcanzar un nivel profesional en cada uno de mis
+                            trabajos.</p>
+                        <button onclick="irAEnlace('https://www.artstation.com/roadsky', event)">Ver Proyecto
+                            Final</button>
                     </div>
                     <div class="person-info-img">
-                        <img src="assets/img/students/project/Alumnos_Proyectos-03.png" alt="Imagen relacionada con Persona 3">
+                        <img src="assets/img/students/project/Alumnos_Proyectos-03.png"
+                            alt="Imagen relacionada con Persona 3">
                     </div>
                 </div>
-                
+
                 <div id="info-4" class="person-info" style="display: none;">
                     <div class="person-info-text">
                         <h2>Facundo <strong>Gómez</strong> </h2>
                         <div class="container-country">
                             <div>
                                 <img class="flag" src="assets/img/flags/flag_uruguay.png" alt="">
-                            </div> 
+                            </div>
                             <div>
-                                <h5 class="country-name">URUGUAY</h5>                              
-                            </div>                                              
+                                <h5 class="country-name">URUGUAY</h5>
+                            </div>
                         </div>
-                        <p>Las sólidas bases del curso me permiten adaptarme a todos los proyectos en los que he participado, desde la creación de assets con topología super optimizada (low poly) hasta assets realistas, lo que me ha permitido trabajar en diversos proyectos como cortos, comerciales, videos musicales, y películas animadas. La forma de enseñar de Elvis, tanto su ojo de águila para encontrar errores en topología, como su buen sentido del humor, hacen que el curso se disfrute al máximo.</p>
-                        <button onclick="irAEnlace('https://www.artstation.com/cufagomz', event)">Ver Proyecto Final</button>
+                        <p>Las sólidas bases del curso me permiten adaptarme a todos los proyectos en los que he
+                            participado, desde la creación de assets con topología super optimizada (low poly) hasta
+                            assets realistas, lo que me ha permitido trabajar en diversos proyectos como cortos,
+                            comerciales, videos musicales, y películas animadas. La forma de enseñar de Elvis, tanto su
+                            ojo de águila para encontrar errores en topología, como su buen sentido del humor, hacen que
+                            el curso se disfrute al máximo.</p>
+                        <button onclick="irAEnlace('https://www.artstation.com/cufagomz', event)">Ver Proyecto
+                            Final</button>
                     </div>
                     <div class="person-info-img">
-                        <img src="assets/img/students/project/Alumnos_Proyectos-04.png" alt="Imagen relacionada con Persona 4">
+                        <img src="assets/img/students/project/Alumnos_Proyectos-04.png"
+                            alt="Imagen relacionada con Persona 4">
                     </div>
                 </div>
 
-               
+
                 <div id="info-5" class="person-info" style="display: none;">
                     <div class="person-info-text">
                         <h2>Henry <strong>Hugo</strong> </h2>
                         <div class="container-country">
                             <div>
                                 <img class="flag" src="assets/img/flags/flag_peru.png" alt="">
-                            </div> 
+                            </div>
                             <div>
                                 <h5 class="country-name">PERÚ</h5>
-                                
-                            </div>  
-                    
+
+                            </div>
+
                         </div>
-                        <p>Este curso me ayudó a enderezar el workflow que tenía sobre modelado de personajes, además me permitió comprender mejor el uso de programas como Substance Painter y maximizar todas sus herramientas a disposición para conseguir buenos acabados.</p>
-                        <button onclick="irAEnlace('https://www.artstation.com/henryhugo', event)">Ver Proyecto Final</button>
+                        <p>Este curso me ayudó a enderezar el workflow que tenía sobre modelado de personajes, además me
+                            permitió comprender mejor el uso de programas como Substance Painter y maximizar todas sus
+                            herramientas a disposición para conseguir buenos acabados.</p>
+                        <button onclick="irAEnlace('https://www.artstation.com/henryhugo', event)">Ver Proyecto
+                            Final</button>
                     </div>
                     <div class="person-info-img">
-                        <img src="assets/img/students/project/Alumnos_Proyectos-05.png" alt="Imagen relacionada con Persona 5">
+                        <img src="assets/img/students/project/Alumnos_Proyectos-05.png"
+                            alt="Imagen relacionada con Persona 5">
                     </div>
                 </div>
 
-                
-               
+
+
                 <div id="info-6" class="person-info" style="display: none;">
                     <div class="person-info-text">
                         <h2>Henry <strong>Ramirez</strong> </h2>
                         <div class="container-country">
                             <div>
                                 <img class="flag" src="assets/img/flags/flag_peru.png" alt="">
-                            </div> 
+                            </div>
                             <div>
                                 <h5 class="country-name">PERÚ</h5>
-                                
-                            </div>  
-                    
+
+                            </div>
+
                         </div>
-                        <p>El curso de modelado de personajes fue una inmersión profunda en el arte digital. Desde los fundamentos hasta técnicas avanzadas, cada clase ofrecía una progresión lógica. La atención personalizada de eso impulsó mi aprendizaje. Desarrollé habilidades técnicas sólidas y también exploré mi creatividad a través de proyectos prácticos. Recomiendo este curso a todos los apasionados del diseño digital que buscan un viaje formativo en el mundo del modelado de personajes.</p>
-                        <button onclick="irAEnlace('https://www.artstation.com/henryramirez', event)">Ver Proyecto Final</button>
+                        <p>El curso de modelado de personajes fue una inmersión profunda en el arte digital. Desde los
+                            fundamentos hasta técnicas avanzadas, cada clase ofrecía una progresión lógica. La atención
+                            personalizada de eso impulsó mi aprendizaje. Desarrollé habilidades técnicas sólidas y
+                            también exploré mi creatividad a través de proyectos prácticos. Recomiendo este curso a
+                            todos los apasionados del diseño digital que buscan un viaje formativo en el mundo del
+                            modelado de personajes.</p>
+                        <button onclick="irAEnlace('https://www.artstation.com/henryramirez', event)">Ver Proyecto
+                            Final</button>
                     </div>
                     <div class="person-info-img">
-                        <img src="assets/img/students/project/Alumnos_Proyectos-06.png" alt="Imagen relacionada con Persona 6">
+                        <img src="assets/img/students/project/Alumnos_Proyectos-06.png"
+                            alt="Imagen relacionada con Persona 6">
                     </div>
                 </div>
 
-                
-                
+
+
                 <div id="info-7" class="person-info" style="display: none;">
                     <div class="person-info-text">
                         <h2>Jhon <strong>Alfredo</strong> </h2>
                         <div class="container-country">
                             <div>
                                 <img class="flag" src="assets/img/flags/flag_peru.png" alt="">
-                            </div> 
+                            </div>
                             <div>
                                 <h5 class="country-name">PERÚ</h5>
-                                
-                            </div>  
-                    
+
+                            </div>
+
                         </div>
-                        <p>Este curso me ayudó mucho a entender el flujo de trabajo que se debe seguir para poder modelar props de manera correcta y listos para producción. El tutor ayuda mucho enseñando a detalle cada paso para llegar al modelado final, explicando y corrigiendo la topología con la que uno debe crear los objetos deseados. Recomendaría al 100% este curso a aquellas personas que quieran conseguir hacer modelado de alta calidad y desarrollarse como profesional en la industria 3D.</p>
-                        <button onclick="irAEnlace('https://www.artstation.com/johnalfredoyupanquivelasquez', event)">Ver Proyecto Final</button>
+                        <p>Este curso me ayudó mucho a entender el flujo de trabajo que se debe seguir para poder
+                            modelar props de manera correcta y listos para producción. El tutor ayuda mucho enseñando a
+                            detalle cada paso para llegar al modelado final, explicando y corrigiendo la topología con
+                            la que uno debe crear los objetos deseados. Recomendaría al 100% este curso a aquellas
+                            personas que quieran conseguir hacer modelado de alta calidad y desarrollarse como
+                            profesional en la industria 3D.</p>
+                        <button
+                            onclick="irAEnlace('https://www.artstation.com/johnalfredoyupanquivelasquez', event)">Ver
+                            Proyecto Final</button>
                     </div>
                     <div class="person-info-img">
-                        <img src="assets/img/students/project/Alumnos_Proyectos-07.png" alt="Imagen relacionada con Persona 7">
+                        <img src="assets/img/students/project/Alumnos_Proyectos-07.png"
+                            alt="Imagen relacionada con Persona 7">
                     </div>
                 </div>
 
-                
+
                 <div id="info-8" class="person-info" style="display: none;">
                     <div class="person-info-text">
                         <h2>Jonathan <strong>Jose</strong> </h2>
                         <div class="container-country">
                             <div>
                                 <img class="flag" src="assets/img/flags/flag_mexico.png" alt="">
-                            </div> 
+                            </div>
                             <div>
                                 <h5 class="country-name">MÉXICO</h5>
-                                
-                            </div>  
-                    
+
+                            </div>
+
                         </div>
-                        <p>El curso de modelado y texturizado de personajes para cine me ayudó a entender de mejor manera el flujo de trabajo que se hace en una producción real, aprendí la manera correcta y sus diferentes formas óptimas del exportado de la escultura realizada en zbrush a maya , la realización de correctas retopologia para evitar conflictos en rigging y también a darle el texturizado adecuado con substance painter para finalmente completar un buen shading en render y tener un modelo atractivo para portafolio.</p>
-                        <button onclick="irAEnlace('https://www.artstation.com/henryhugo', event)">Ver Proyecto Final</button>
+                        <p>El curso de modelado y texturizado de personajes para cine me ayudó a entender de mejor
+                            manera el flujo de trabajo que se hace en una producción real, aprendí la manera correcta y
+                            sus diferentes formas óptimas del exportado de la escultura realizada en zbrush a maya , la
+                            realización de correctas retopologia para evitar conflictos en rigging y también a darle el
+                            texturizado adecuado con substance painter para finalmente completar un buen shading en
+                            render y tener un modelo atractivo para portafolio.</p>
+                        <button onclick="irAEnlace('https://www.artstation.com/henryhugo', event)">Ver Proyecto
+                            Final</button>
                     </div>
                     <div class="person-info-img">
-                        <img src="assets/img/students/project/Alumnos_Proyectos-08.png" alt="Imagen relacionada con Persona 8">
+                        <img src="assets/img/students/project/Alumnos_Proyectos-08.png"
+                            alt="Imagen relacionada con Persona 8">
                     </div>
                 </div>
-               
-                
+
+
                 <div id="info-9" class="person-info" style="display: none;">
                     <div class="person-info-text">
                         <h2>Luis <strong>David</strong> </h2>
                         <div class="container-country">
                             <div>
                                 <img class="flag" src="assets/img/flags/flag_mexico.png" alt="">
-                            </div> 
+                            </div>
                             <div>
                                 <h5 class="country-name">MÉXICO</h5>
-                                
-                            </div>  
-                    
+
+                            </div>
+
                         </div>
-                        <p>El curso ha sido de gran ayuda y crecimiento profesional. Desde el inicio comienzas aprendiendo lo fundamental para llegar a la culminación de tu proyecto final. Gracias a este curso pude obtener mis primeras entrevistas de trabajo y mi primer empleo como 3d modeller Hardsurface. Lo recomiendo mucho para las personas que quieran iniciarse en el mundo del modelado Hardsurface, también para las personas que quieran desarrollar piezas de calidad para su portafolio. Un aspecto bastante importante es que el profesor te guía en todo tu camino, con su experiencia en la industria, atención personalizada y ejercicios para tu crecimiento profesional.</p>
-                        <button onclick="irAEnlace('https://www.artstation.com/luisdavidperez', event)">Ver Proyecto Final</button>
+                        <p>El curso ha sido de gran ayuda y crecimiento profesional. Desde el inicio comienzas
+                            aprendiendo lo fundamental para llegar a la culminación de tu proyecto final. Gracias a este
+                            curso pude obtener mis primeras entrevistas de trabajo y mi primer empleo como 3d modeller
+                            Hardsurface. Lo recomiendo mucho para las personas que quieran iniciarse en el mundo del
+                            modelado Hardsurface, también para las personas que quieran desarrollar piezas de calidad
+                            para su portafolio. Un aspecto bastante importante es que el profesor te guía en todo tu
+                            camino, con su experiencia en la industria, atención personalizada y ejercicios para tu
+                            crecimiento profesional.</p>
+                        <button onclick="irAEnlace('https://www.artstation.com/luisdavidperez', event)">Ver Proyecto
+                            Final</button>
                     </div>
                     <div class="person-info-img">
-                        <img src="assets/img/students/project/Alumnos_Proyectos-09.png" alt="Imagen relacionada con Persona 9">
+                        <img src="assets/img/students/project/Alumnos_Proyectos-09.png"
+                            alt="Imagen relacionada con Persona 9">
                     </div>
                 </div>
-            
-                
+
+
                 <div id="info-10" class="person-info" style="display: none;">
                     <div class="person-info-text">
                         <h2>Mariel <strong>Nieto </strong> </h2>
                         <div class="container-country">
                             <div>
                                 <img class="flag" src="assets/img/flags/flag_mexico.png" alt="">
-                            </div> 
+                            </div>
                             <div>
                                 <h5 class="country-name">MÉXICO</h5>
-                                
-                            </div>  
-                    
+
+                            </div>
+
                         </div>
-                        <p>Este curso me ha ayudado a mejorar mi flujo de trabajo, aprender sobre técnicas utilizadas en la industria y la implementación de buenas prácticas. El instructor explica muy bien y proporciona suficiente material para revisarlo más tarde.</p>
-                        <button onclick="irAEnlace('https://www.artstation.com/mandragonna', event)">Ver Proyecto Final</button>
+                        <p>Este curso me ha ayudado a mejorar mi flujo de trabajo, aprender sobre técnicas utilizadas en
+                            la industria y la implementación de buenas prácticas. El instructor explica muy bien y
+                            proporciona suficiente material para revisarlo más tarde.</p>
+                        <button onclick="irAEnlace('https://www.artstation.com/mandragonna', event)">Ver Proyecto
+                            Final</button>
                     </div>
                     <div class="person-info-img">
-                        <img src="assets/img/students/project/Alumnos_Proyectos-10.png" alt="Imagen relacionada con Persona 10">
+                        <img src="assets/img/students/project/Alumnos_Proyectos-10.png"
+                            alt="Imagen relacionada con Persona 10">
                     </div>
                 </div>
 
             </div>
         </section>
-    </section> 
+    </section>
     <!-- ============================================-->
     <!-- <section students> close ============================-->
 
-    
+
 
 
     <!-- ============================================-->
@@ -723,19 +812,21 @@
 
 
         <!------ inicio de formulario ----->
-        <section >
+        <section>
             <div class="container-form container">
                 <div class="form-container">
                     <div class="flex-container">
                         <p>Envíanos tus dudas y te responderemos lo antes posible</p>
                         <!-- <p>Cubonia <strong>School</strong>   </p> -->
-                       
-                         <a href="mailto:hola@cubonia.com" class="mail-to">
-                           <span><i class="fa-solid fa-envelope icon-contact" style="color: #000000;"></i><strong>hola@cubonia.com</strong></span>
-                        </a> 
-                        <span> <i class="fa-solid fa-phone icon-contact" style="color: #000000;"></i>+51 949150692</span>
 
-                        
+                        <a href="mailto:hola@cubonia.com" class="mail-to">
+                            <span><i class="fa-solid fa-envelope icon-contact"
+                                    style="color: #000000;"></i><strong>hola@cubonia.com</strong></span>
+                        </a>
+                        <span> <i class="fa-solid fa-phone icon-contact" style="color: #000000;"></i>+51
+                            949150692</span>
+
+
                     </div>
                     <form id="contactForm" class="flex-container" action="https://formsubmit.co/admin@cubonia.com"
                         method="POST">
@@ -766,16 +857,16 @@
 
         <!--rrss-->
         <div class="container-social-icons">
-            <a href="https://discord.gg/thUf64TRwa" target="_blank"><img class="icon" src="assets/img/rrss/icon_discord.png"
-                    alt="discord"></a>
-            <a href="https://www.instagram.com/cubonia.school/" target="_blank"><img class="icon" src="assets/img/rrss/icon_instagram.png"
-                    alt="instagram"></a>
-            <a href="https://www.facebook.com/cubonia" target="_blank"><img class="icon" src="assets/img/rrss/icon_facebook.png"
-                    alt="facebook"></a>
-            <a href="https://www.tiktok.com/@cubonia.com" target="_blank"><img class="icon" src="assets/img/rrss/icon_tiktok.png"
-                    alt="tiktok"></a>
-            <a href="#" target="_blank"><img class="icon" src="assets/img/rrss/icon_youtube.png"
-                    alt="youtube"></a>
+            <a href="https://discord.gg/thUf64TRwa" target="_blank"><img class="icon"
+                    src="assets/img/rrss/icon_discord.png" alt="discord"></a>
+            <a href="https://www.instagram.com/cubonia.school/" target="_blank"><img class="icon"
+                    src="assets/img/rrss/icon_instagram.png" alt="instagram"></a>
+            <a href="https://www.facebook.com/cubonia" target="_blank"><img class="icon"
+                    src="assets/img/rrss/icon_facebook.png" alt="facebook"></a>
+            <a href="https://www.tiktok.com/@cubonia.com" target="_blank"><img class="icon"
+                    src="assets/img/rrss/icon_tiktok.png" alt="tiktok"></a>
+            <a href="https://www.youtube.com/@CuboniaSchool" target="_blank"><img class="icon"
+                    src="assets/img/rrss/icon_youtube.png" alt="youtube"></a>
 
         </div>
 
@@ -783,30 +874,32 @@
 
 
     <!-- boton flotante whastapp-->
-  
-      <div class="whatsapp-container">
+
+    <div class="whatsapp-container">
         <a href="#section-header" class="scroll-top">
-          <img  src="assets/img/buttons_fixed/icon_scroll_top_bottom_fixed.png" alt="Subir al Inicio" class="scroll-top-icon">
+            <img src="assets/img/buttons_fixed/icon_scroll_top_bottom_fixed.png" alt="Subir al Inicio"
+                class="scroll-top-icon">
         </a>
         <a href="https://wa.me/message/EX6HYBSQLSB2N1" target="_blank" class="whatsapp-link">
-          <img src="assets/img/buttons_fixed/icon_whatsapp_bottom_fixed.png" alt="WhatsApp" class="whatsapp-icon">
+            <img src="assets/img/buttons_fixed/icon_whatsapp_bottom_fixed.png" alt="WhatsApp" class="whatsapp-icon">
         </a>
-      </div>
+    </div>
 
     <!--FOOTER-->
     <section class="section-footer">
         <footer>
             <a onclick="scrollToTopHeader()">
-                <img src="assets/img/logo/logo_cubonia_footer.png" alt="Logo" >
+                <img src="assets/img/logo/logo_cubonia_footer.png" alt="Logo">
             </a>
             <ul>
-                <li><a class = "nav-item"  onclick="scrollToSection('section-about')">Nosotros</a></li>
-                <li><a class = "nav-item"  onclick="scrollToSection('section-courses')" >Cursos</a></li>
-                <li><a class = "nav-item"  onclick="scrollToSection('section-instructor')" >Instructores</a></li>
-                <li><a class = "nav-item"  onclick="scrollToSection('section-students')" >Alumnos</a></li>
-                <li><a class = "nav-item"  onclick="scrollToSection('container-form')" >Contacto</a></li>
+                <li><a class="nav-item" onclick="scrollToSection('section-about')">Nosotros</a></li>
+                <li><a class="nav-item" onclick="scrollToSection('section-courses')">Cursos</a></li>
+                <li><a class="nav-item" onclick="scrollToSection('section-instructor')">Instructores</a></li>
+                <li><a class="nav-item" onclick="scrollToSection('section-students')">Alumnos</a></li>
+                <li><a class="nav-item" onclick="scrollToSection('container-form')">Contacto</a></li>
             </ul>
-            <p>COPYRIGHT &copy; 2024 - ALL RIGHTS RESERVED BY <a class="link-cubonia" href="https://www.linkedin.com/company/cubonia/">CUBONIA SCHOOL</a></p>
+            <p>COPYRIGHT &copy; 2024 - ALL RIGHTS RESERVED BY <a class="link-cubonia"
+                    href="https://www.linkedin.com/company/cubonia/">CUBONIA SCHOOL</a></p>
         </footer>
     </section>
     <!--fin footer-->
