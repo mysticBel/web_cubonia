@@ -208,6 +208,13 @@ a:hover{
   transition: all 0.3s ease;
 }
 
+.slider img:hover {
+  cursor: pointer;
+  filter: grayscale(0%);
+  /* Imágenes en escala de grises */
+  transition: all 0.3s ease;
+}
+
 .slider img.active {
   border: 4px solid #08FFDE;
   /* Borde celeste alrededor de la imagen activa */
