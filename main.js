@@ -150,13 +150,19 @@ function irACurso1() {
   window.location.href = "topologia-personajes-produccion-3d.html";
 }
 function irACurso2() {
-  window.location.href = "modelado-props.html";
+  window.location.href = "iluminacion-avanzada-produccion-3d.html";
 }
 function irACurso3() {
-  window.location.href = "modelado-hardsurface.html";
+  window.location.href = "grooming-xgen-personajes-3d.html";
 }
 function irACurso4() {
-  window.location.href = "escultura-personajes-zbrush.html";
+  window.location.href = "programacion-python-artistas-3d.html";
+}
+function irACurso5() {
+  window.location.href = "texturizado-de-objetos-produccion-3d.html";
+}
+function irACurso6() {
+  window.location.href = "diseno-y-creacion-de-mascotas-3d.html";
 }
 
 //instructores template
