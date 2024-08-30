@@ -88,15 +88,12 @@ text-align: center;
 }
 
 
-.boton-proyectos:hover {
+.boton-proyectos:hover { 
 
-    border:#00dabd 2px solid;
     background-color: white;
     color: #09ad98 ;
     transition: color 0.4s ease;
-    /* border: #08FFDE 2px solid;
-    background-color: #08FFDE;
-    color: #0f6460 ;  */
+    border: white 2px solid;
 
 }
 
