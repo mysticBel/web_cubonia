@@ -233,6 +233,14 @@ function scrollToTopHeader() {
   });
 }
 //
+// function scrollToSection(sectionId) {
+//   const section = document.getElementById(sectionId);
+//   if (section) {
+//     section.scrollIntoView({
+//       behavior: "smooth",
+//     });
+//   }
+// }
 function scrollToSection(sectionId) {
   const section = document.getElementById(sectionId);
   if (section) {
@@ -240,4 +248,39 @@ function scrollToSection(sectionId) {
       behavior: "smooth",
     });
   }
+}
+
+// function toggleMenu() {
+//   const navLinks = document.querySelector(".nav-links");
+//   navLinks.classList.toggle("show");
+// }
+
+function navigateAndCloseMenu(sectionId) {
+  // Cierra el menú si está abierto
+  const navLinks = document.querySelector(".nav-links");
+  if (navLinks.classList.contains("show")) {
+    navLinks.classList.remove("show");
+  }
+
+  // Navega a la sección deseada
+  scrollToSection(sectionId);
+}
+
+function handleMenuClick(sectionId) {
+  const navLinks = document.querySelector(".nav-links");
+
+  // Verifica si el menú está en modo responsive (si el ícono del menú es visible)
+  const isResponsive =
+    window.getComputedStyle(document.querySelector(".menu-icon")).display !==
+    "none";
+
+  if (isResponsive) {
+    navigateAndCloseMenu(sectionId);
+  } else {
+    scrollToSection(sectionId);
+  }
+}
+
+function scrollToTopHeader() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
