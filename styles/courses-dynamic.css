@@ -2,13 +2,19 @@
 .course-info{
     width: 70%;
     margin: 100px auto;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; 
+    justify-content: center;  */
     display: flex;
     flex-wrap: wrap;
 }
+.software{
+    /* display: flex;
+    flex-direction: row;
+    width: 50%;
+
+    background-color: blueviolet;
+    color: blueviolet; */
+}
 .course-info img{
-    width: 100px;
-    margin: auto 20px;
-    
+    width: 10px;
 }

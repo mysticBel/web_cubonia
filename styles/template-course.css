@@ -132,10 +132,13 @@ h2{
     width: 90%;
     margin: 0 auto;
     border: #08FFDE 3px solid;
+    display:flex ;
+    flex-direction: row;
 }
 
 .software {
     text-align: center;
+
 }
 
 .software img {
