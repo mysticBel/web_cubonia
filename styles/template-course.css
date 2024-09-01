@@ -14,7 +14,7 @@ background-color: rgb(236, 236, 236);
 
 
 .subtitle__main{
-    margin-top: 50px;
+    margin-top: 60px;
     display: flex;
     color: white;
     background-color: black;
@@ -76,6 +76,10 @@ background-color: rgb(236, 236, 236);
 .img-level{
     width: 130px;
     margin-top: 20px;
+}
+.container-btn-cta{
+    display: flex;
+    flex-direction: column;
 }
 
 /********* dirigido a *********/
@@ -411,6 +415,23 @@ margin: 0 auto;
     margin-right: auto;
     margin-left: auto;
     margin: 20px auto;
+}
+.btn-ver-temario{  /*objectives*/
+    padding: 10px 20px;
+    background-color:#059C87;;
+    color: white;
+    cursor: pointer;
+    width: 313px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin: 20px auto; border: #059C87 2px solid;
+}
+.btn-ver-temario:hover { /*objectives*/
+
+    border: #059C87 2px solid;
+    background-color: white;
+    color:  #059C87;
 }
 
 .boton-inscribete:hover {
